@@ -1,0 +1,57 @@
+// Definicje breakpointów
+$small-mobile-max: 375px;
+$mobile-max: 767.9px;
+$tablet-min: 768px;
+$tablet-max: 1023px;
+$nav-header-min: 768px;
+$nav-header-max: 1129.9px;
+$desktop-min: 1024px;
+$standard-desktop-max: 1439.9px;
+$wide-desktop-min: 1300px;
+$wide-desktop-max: 1299.9px;
+$extra-wide-desktop-min: 1440px;
+
+// Mixiny dla breakpointów
+@mixin for-small-mobile {
+  @media (max-width: $small-mobile-max) { @content; }
+}
+
+@mixin for-mobile {
+  @media (max-width: $mobile-max) { @content; }
+}
+
+@mixin for-tablet {
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) { @content; }
+}
+
+@mixin for-tablet-up {
+  @media (min-width: $tablet-min) { @content; }
+}
+
+@mixin for-tablet-down {
+  @media (max-width: $tablet-max) { @content; }
+}
+
+@mixin for-nav-header {
+  @media (min-width: $nav-header-min) and (max-width: $nav-header-max) { @content; }
+}
+
+@mixin for-desktop {
+  @media (min-width: $desktop-min) { @content; }
+}
+
+@mixin for-standard-desktop {
+  @media (min-width: $desktop-min) and (max-width: $standard-desktop-max) { @content; }
+}
+
+@mixin for-wide-desktop {
+  @media (min-width: $wide-desktop-min) { @content; }
+}
+
+@mixin for-wide-desktop-down {
+  @media (max-width: $wide-desktop-max) { @content; }
+}
+
+@mixin for-extra-wide-desktop {
+  @media (min-width: $extra-wide-desktop-min) { @content; }
+}

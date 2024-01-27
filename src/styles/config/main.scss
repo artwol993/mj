@@ -1,0 +1,19 @@
+
+@import 'reset';
+
+@import './breakpoints';
+@import './colors';
+@import './fonts';
+@import './mixins';
+
+
+@import '../header.scss';
+@import '../welcome.scss';
+@import '../footer.scss';
+
+
+h1 {
+  font-family: $f-detal-bold; 
+  color: $c-primary; 
+  font-size: $font-size-large; 
+}
