@@ -6,22 +6,26 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    console.log("Przed zmianą:", isOpen);
+    setIsOpen((prevIsOpen) => {
+      console.log("W trakcie zmiany, poprzedni stan:", prevIsOpen);
+      return !prevIsOpen;
+    });
   };
 
   return (
     <div>
       <div className="h-container">
-        {/* Dodaj klasę `active` do hamburgera w zależności od stanu `isOpen` */}
         <div
           className={`hamburger ${isOpen ? "active" : ""}`}
           onClick={toggleMenu}
         >
-          <div></div>
-          <div></div>
-          <div></div>
+          <div className="hamburger-bar"></div>
+          <div className="hamburger-bar"></div>
+          <div className="hamburger-bar"></div>
         </div>
-        <ul className={isOpen ? "mobile-nav active" : "mobile-nav"}>
+        {/* Menu mobilne */}
+        <ul className={`mobile-nav ${isOpen ? "active" : ""}`}>
           <li className="h-c-list">
             <Link
               to="welcome"
@@ -54,6 +58,29 @@ function Header() {
               duration={500}
               onClick={toggleMenu}
             >
+              Kontakt
+            </Link>
+          </li>
+        </ul>
+        {/* Menu desktopowe */}
+        <ul className="desktop-nav">
+          <li className="h-c-list">
+            <Link to="welcome" smooth={true} duration={500}>
+              Witaj
+            </Link>
+          </li>
+          <li className="h-c-list">
+            <Link to="services" smooth={true} duration={500}>
+              Metody leczenia
+            </Link>
+          </li>
+          <li className="h-c-list">
+            <Link to="about" smooth={true} duration={500}>
+              Trochę o mnie
+            </Link>
+          </li>
+          <li className="h-c-list">
+            <Link to="contact" smooth={true} duration={500}>
               Kontakt
             </Link>
           </li>
