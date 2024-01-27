@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.scss";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Welcome from "./components/welcome";
 
 function App() {
   return (
     <div className="App">
-      <h1>Witamy</h1>
+      <Header />
+      <Welcome />
+      <Footer />
     </div>
   );
 }
