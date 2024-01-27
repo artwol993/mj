@@ -117,18 +117,41 @@
 
 @include for-desktop {
   .hamburger {
-    display: none; // Ukryj hamburger w wersji desktopowej
+    display: none; 
   }
 
   .desktop-nav {
-    display: flex; // Pokaż listę w wersji desktopowej
+    display: flex; 
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
   .desktop-nav .h-c-list {
-    display: block; // Upewnij się, że elementy listy są wyświetlane
+    display: block; 
+  }
+
+  .h-c-list a {
+    color: $c-white; 
+    text-decoration: none; 
+    padding: 5px 0; 
+    position: relative; 
+    display: inline-block; 
+  
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0; 
+      left: 0; 
+      width: 0; 
+      height: 2px; 
+      background-color: $c-white;
+      transition: width 0.3s linear; 
+    }
+  
+    &:hover::after, &:focus::after {
+      width: 100%; 
+    }
   }
 }
 
