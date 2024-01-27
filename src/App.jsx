@@ -1,15 +1,19 @@
 import React from "react";
 import "./styles/config/main.scss";
 import Header from "./components/header";
-import Footer from "./components/footer";
 import Welcome from "./components/welcome";
+import About from "./components/about";
+import Services from "./components/services";
+import Contact from "./components/contact";
 
 function App() {
   return (
     <div>
       <Header />
       <Welcome />
-      <Footer />
+      <About />
+      <Services />
+      <Contact />
     </div>
   );
 }
