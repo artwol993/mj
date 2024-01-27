@@ -43,3 +43,8 @@ p {
   color: $c-black; 
   font-size: $font-size-medium; 
 }
+
+.container {
+  height: 500px;
+  border-bottom: 2px solid red;
+}

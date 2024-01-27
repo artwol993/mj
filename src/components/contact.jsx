@@ -3,7 +3,7 @@ import "../styles/contact.scss";
 
 function Contact() {
   return (
-    <div className="container contact-container">
+    <div className="container contact-container" id="contact">
       <h4>Kontakt</h4>
     </div>
   );
