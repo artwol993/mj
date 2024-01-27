@@ -2,6 +2,18 @@
 @import './config/breakpoints';
 @import './config/fonts';
 
+.header {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  transition: top 0.3s ease-in-out; 
+  z-index: 1000;
+}
+
+.header.is-visible {
+  top: 0; 
+}
+
 .h-container {
   height: 50px;
   background-color: $c-primary;

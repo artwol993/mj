@@ -1,9 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/header.scss";
 import { Link } from "react-scroll";
 
 function Header() {
+  const [isVisible, setIsVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      setIsVisible(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     console.log("Przed zmianą:", isOpen);
@@ -14,7 +29,7 @@ function Header() {
   };
 
   return (
-    <div>
+    <div className={`header ${isVisible ? "is-visible" : ""}`}>
       <div className="h-container">
         <div
           className={`hamburger ${isOpen ? "active" : ""}`}
