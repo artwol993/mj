@@ -45,8 +45,8 @@ function Welcome() {
       </div>
       <div className="bottom-section">
         <div className="name">
-          <h1>Marzanna Jakoniuk</h1>
           <p>Psychoterapeuta</p>
+          <h1>Marzanna Jakoniuk</h1>
         </div>
       </div>
     </div>
