@@ -1,0 +1,20 @@
+.about-container {
+  background: linear-gradient(to bottom, $c-theme, $c-primary);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $c-accent;
+
+  h2 {
+    padding-bottom: 15px;
+  }
+}
+
+.about-box {
+  font-size: $font-size-small;
+  background-color: $c-white;
+  padding: 15px;
+  margin: 10px;
+}
