@@ -6,18 +6,28 @@
   position: relative;
 
   .top-section {
-    background-image: url('../assets/las.jpg');
+    background-image: url('../assets/background.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    height: 100%; /* Pełna wysokość sekcji */
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    transition: background-color 0.5s ease; 
+    transition: background-color 1s ease; 
     position: relative; 
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); // Ciemna nakładka
+      z-index: 2; // Upewnij się, że nakładka jest nad innymi elementami, ale pod logo
+      display: none; // Początkowo ukryta
+    }
   }
 
   .logo-container {
@@ -33,11 +43,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1; /* Wysuń kontener na wierzch */
+    z-index: 1; 
     position: absolute; /* Ustaw pozycję absolutną */
     top: 50%; /* Przesuń kontener do połowy wysokości */
     left: 30%; /* Ustaw lewą krawędź kontenera na 30% szerokości sekcji */
     transform: translate(-50%, -50%); 
+  }
+
+  @include for-tablet {
+    .logo-container {
+    width: 350px;
+    height: 350px;
+
+    }
+  }
+
+  @include for-desktop {
+    .logo-container {
+    width: 500px;
+    height: 500px;
+    }
   }
 
   img {
@@ -46,25 +71,43 @@
   }
 
   .bottom-section {
-    background-color: $c-theme; /* Kolor tła dolnej sekcji */
+    background-color: $c-theme; 
     box-sizing: border-box;
-    height: 0; /* Początkowo ukryj dolną sekcję */
-    transition: height 0.5s ease; /* Dodaj efekt pojawiania się dolnej sekcji */
+    height: 0; 
+    transition: height 0.5s ease; 
     overflow: hidden;
-    position: absolute; /* Ustaw pozycję absolutną */
-    bottom: 0; /* Przyklej dolną sekcję do dolnej krawędzi */
+    position: absolute; 
+    bottom: 0; 
     left: 0;
     right: 0;
-    z-index: 0; /* Schowaj dolną sekcję pod tłem */
+    z-index: 0; 
+    display: flex;
+    justify-content: flex-end;
+
+    .name {
+      padding: 20px;
+      text-align: right;
+    }
+
+    @include for-desktop {
+      .name {
+        padding: 100px 100px 0 0;
+        line-height: 44px;
+      }
+    }
+
+    
   }
 
   &.show-bottom {
     .top-section {
-      background-color: rgba(0, 0, 0, 0.7); /* Przyciemnione tło */
+      background-color: rgba(0, 0, 0, 0.7); // Przyciemnij tło
+    
     }
-
+  
     .bottom-section {
-      height: 50%; /* Pojawienie się dolnej sekcji (50% wysokości sekcji) */
+      height: 50%; // Odsłoń dolną sekcję
     }
   }
 }
+

@@ -24,7 +24,7 @@ function Welcome() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowBottomSection(true);
-      setLogoBackground(mj); // Zmiana tła logo
+      setLogoBackground(mj);
     }, 2000);
 
     return () => clearTimeout(timeout);
@@ -38,15 +38,17 @@ function Welcome() {
       id="welcome"
     >
       <div className="top-section">
-        {/* Górna część z tłem zdjęcia */}
         <div
           className="logo-container"
-          style={{ backgroundImage: `url(${logoBackground})` }} // Dynamiczne tło logo
-        >
-          <img src="/assets/logo.png" alt="Logo" />
+          style={{ backgroundImage: `url(${logoBackground})` }}
+        ></div>
+      </div>
+      <div className="bottom-section">
+        <div className="name">
+          <h1>Marzanna Jakoniuk</h1>
+          <p>Psychoterapeuta</p>
         </div>
       </div>
-      <div className="bottom-section">{/* Dolna część jako osobny div */}</div>
     </div>
   );
 }
