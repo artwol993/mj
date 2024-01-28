@@ -24,9 +24,9 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5); // Ciemna nakładka
-      z-index: 2; // Upewnij się, że nakładka jest nad innymi elementami, ale pod logo
-      display: none; // Początkowo ukryta
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: 2; 
+      display: none;
     }
   }
 
@@ -39,14 +39,14 @@
     height: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-    border: 2px solid $c-primary;
+    border: 2px solid $c-accent;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1; 
-    position: absolute; /* Ustaw pozycję absolutną */
-    top: 50%; /* Przesuń kontener do połowy wysokości */
-    left: 25%; /* Ustaw lewą krawędź kontenera na 30% szerokości sekcji */
+    position: absolute; 
+    top: 50%; 
+    left: 25%;
     transform: translate(-50%, -50%); 
   }
 
@@ -87,6 +87,10 @@
     .name {
       padding: 100px 30px 0 0;
       text-align: right;
+      
+      p{
+        font-size: 25px;
+      }
     }
 
     @include for-desktop {
@@ -95,18 +99,15 @@
         line-height: 44px;
       }
     }
-
-    
   }
 
   &.show-bottom {
     .top-section {
-      background-color: rgba(0, 0, 0, 0.7); // Przyciemnij tło
-    
+      background-color: rgba(0, 0, 0, 0.49); 
     }
   
     .bottom-section {
-      height: 50%; // Odsłoń dolną sekcję
+      height: 50%; 
     }
   }
 }
