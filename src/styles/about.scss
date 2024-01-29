@@ -1,43 +1,21 @@
 .about-section{
-  background: $c-theme;
-  text-align: center;
-}
-
-.about-container {
   background: linear-gradient(to bottom, $c-theme, $c-primary);
+
   padding: 20px;
   color: $c-accent;
-  text-align: center;
 
   h2 {
     padding-bottom: 15px;
   }
 }
 
+.about-container-1{
+  background-color: #ffffff8e ;
+  padding: 25px 25px;
+}
+
 .about-container-2{
-  background: $c-primary;
-  height: 500px;
-}
-
-.relax-bar {
-  position: relative; 
-  height: 150px;
-  width: 100%;
-  background-image: url('../assets/relax.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-}
-
-.relax-bar::before {
-  content: ''; 
-  position: absolute; 
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.567); 
+  background-color: #ffffff8e ;
 }
 
 .about-container-box{ 
@@ -51,24 +29,23 @@
   font-size: $font-size-small;
   background-color: #ffffff8e ;
   border: 1px solid $c-accent;
-  padding: 15px;
+  padding: 15px 30px;
   margin: 10px;
+  width: 90%;
+
+  h3 {
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
 }
 
 @include for-tablet {
-  .about-box {
-  padding: 20px;
-  margin: 10px 100px;
-  }
-
-  .relax-bar {
-    height: 250px;
-  }
-}
-
-@include for-desktop {
   .about-container {
     padding-top: 25px;
+  }
+
+  .about-container-1 {
+    padding-inline: 60px;
   }
  
   .about-container-box{
@@ -76,19 +53,32 @@
   }
 
   .about-box {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &.box-end {
-      width: 800px;
-      height: 100px
-    }
+    padding: 20px 30px;
   }
-  .relax-bar {
+}
+
+@include for-desktop {
+  .about-container {
+    padding-top: 25px;
+  }
+
+  .about-container-1 {
+    padding:10px 130px;
+  }
+ 
+  .about-container-box{
+    flex-direction: row;
+  }
+
+  .about-box {
+    width: 300px;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
   }
 }
