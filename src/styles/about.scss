@@ -1,20 +1,56 @@
 .about-container {
   background: linear-gradient(to bottom, $c-theme, $c-primary);
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: $c-accent;
+  text-align: center;
 
   h2 {
     padding-bottom: 15px;
   }
 }
 
+.about-container-box{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-box {
   font-size: $font-size-small;
-  background-color: $c-white;
+  background-color: #ffffff8e ;
+  border: 1px solid $c-accent;
   padding: 15px;
   margin: 10px;
+}
+
+@include for-tablet {
+  .about-box {
+  padding: 20px;
+  margin: 10px 100px;
+  }
+}
+
+@include for-desktop {
+  .about-container {
+    padding-top: 25px;
+  }
+ 
+  .about-container-box{
+    flex-direction: row;
+  }
+
+  .about-box {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.box-end {
+      width: 800px;
+      height: 100px
+    }
+  }
 }

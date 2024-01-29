@@ -10,7 +10,7 @@ function About() {
   return (
     <div className="container about-container" id="about">
       <h2>O mnie</h2>
-      <div>
+      <div className="about-container-box">
         <motion.div
           className="about-box"
           initial="hidden"
@@ -64,6 +64,8 @@ function About() {
             psychoterapeutką w trakcie szkolenia w <b>nurcie Gestalt</b>.
           </p>
         </motion.div>
+      </div>
+      <div className="about-container-box">
         <motion.div
           className="about-box"
           initial="hidden"
@@ -114,8 +116,10 @@ function About() {
             trudnościami.
           </p>
         </motion.div>
+      </div>
+      <div className="about-container-box">
         <motion.div
-          className="about-box"
+          className="about-box box-end"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
