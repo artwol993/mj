@@ -1,3 +1,8 @@
+.about-section{
+  background: $c-theme;
+  text-align: center;
+}
+
 .about-container {
   background: linear-gradient(to bottom, $c-theme, $c-primary);
   padding: 20px;
@@ -7,6 +12,32 @@
   h2 {
     padding-bottom: 15px;
   }
+}
+
+.about-container-2{
+  background: $c-primary;
+  height: 500px;
+}
+
+.relax-bar {
+  position: relative; 
+  height: 150px;
+  width: 100%;
+  background-image: url('../assets/relax.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+
+.relax-bar::before {
+  content: ''; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.567); 
 }
 
 .about-container-box{ 
@@ -28,6 +59,10 @@
   .about-box {
   padding: 20px;
   margin: 10px 100px;
+  }
+
+  .relax-bar {
+    height: 250px;
   }
 }
 
@@ -52,5 +87,8 @@
       width: 800px;
       height: 100px
     }
+  }
+  .relax-bar {
+    height: 300px;
   }
 }
