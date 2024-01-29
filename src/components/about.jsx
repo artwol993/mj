@@ -1,11 +1,24 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function About() {
+  const boxVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="container about-container" id="about">
       <h2>O mnie</h2>
       <div>
-        <div className="about-box">
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
           <p style={{ textIndent: "20px" }}>
             Mam <b>ponad 20-letnie doświadczenie </b> w pracy z młodzieżą i
             młodymi dorosłymi, które zdobywałam pracując w szkole średniej.
@@ -18,8 +31,15 @@ function About() {
             oraz
             <b>Antydepresyjnym Telefonie Zaufania Młodych Fundacji Itaka</b>.
           </p>
-        </div>
-        <div className="about-box">
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
           <p style={{ textIndent: "20px" }}>
             W ramach Szkoły dla Rodziców i Wychowawców prowadziłam
             <b>40-godzinne warsztaty dla rodziców</b> a także autorskie
@@ -29,15 +49,29 @@ function About() {
             Jestem członkiem Polskiego Stowarzyszenia Terapeutów Terapii
             Skoncentrowanej na Rozwiązaniach (PSTTSR).
           </p>
-        </div>
-        <div className="about-box">
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
           <p style={{ textIndent: "20px" }}>
             Jestem absolwentką psychologii na
             <b> Uniwersytecie Humanistycznospołecznym SWPS w Warszawie</b> oraz
             psychoterapeutką w trakcie szkolenia w <b>nurcie Gestalt</b>.
           </p>
-        </div>
-        <div className="about-box">
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
           <p style={{ textIndent: "20px" }}>
             Ukończyłam studia podyplomowe
             <b>Konflikty w Rodzinie i Mediacje Rodzinne</b>
@@ -45,8 +79,15 @@ function About() {
             <b>Terapii Skoncentrowanej na Rozwiązaniach</b>. Obecnie jestem w
             procesie certyfikacji w Centrum TSR.
           </p>
-        </div>
-        <div className="about-box">
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
           <p style={{ textIndent: "20px" }}>
             Ważna jest dla mnie <b>autentyczność</b> oraz <b>uważność</b> na
             siebie i drugiego człowieka, które pomagają budować pozytywną
@@ -55,9 +96,15 @@ function About() {
             którym to terapeuta wspiera Klienta w zmierzaniu do preferowanej
             przyszłości, do życia bez problemu.
           </p>
-        </div>
-        <div className="about-box">
-          {" "}
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
           <p style={{ textIndent: "20px" }}>
             Dlatego też, w pracy terapeutycznej, wspólnie z Klientami, poszukuję{" "}
             <b>składników ich potencjału</b> aby odzyskiwali kontrolę,
@@ -66,15 +113,22 @@ function About() {
             wystarczające zasoby i umiejętności żeby poradzić sobie z
             trudnościami.
           </p>
-        </div>
-        <div className="about-box">
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
           <p style={{ textAlign: "center" }}>
             <b>
               Ponieważ gotowe rozwiązania nie istnieją, zapraszam do wspólnych
               poszukiwań.
             </b>
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
