@@ -1,0 +1,39 @@
+.spcialization-section {
+  background-color: $c-primary;
+  padding: 20px;
+  text-align: center;
+}
+
+.specialization-container {
+  padding: 30px;
+  h3 {
+    color: $c-theme;
+    padding-bottom: 20px;
+  }
+}
+
+.specialization-picture {
+  position: relative;
+  color: $c-white;
+  background-image: url('../assets/relax.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.582); // Czarna nakładka z 50% nieprzezroczystości
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
