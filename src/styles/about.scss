@@ -1,21 +1,26 @@
 .about-section{
   background: linear-gradient(to bottom, $c-theme, $c-primary);
-
-  padding: 20px;
+  padding: 20px 50px;
   color: $c-accent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   h2 {
-    padding-bottom: 15px;
+    padding: 10px 0 20px 0;
   }
 }
 
-.about-container-1{
+.about-container {
+  padding: 20px;
   background-color: #ffffff8e ;
-  padding: 25px 25px;
 }
 
-.about-container-2{
-  background-color: #ffffff8e ;
+.about-container-1{
+  padding: 20px 30px;
+  text-align: center;
+  
 }
 
 .about-container-box{ 
@@ -35,13 +40,18 @@
 
   h3 {
     line-height: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 }
 
 @include for-tablet {
+  .about-section{
+    padding: 70px 50px;
+  }
+
   .about-container {
-    padding-top: 25px;
+    padding: 50px 0;
+    width: 740px;
   }
 
   .about-container-1 {
@@ -50,24 +60,39 @@
  
   .about-container-box{
     flex-direction: row;
+
+    li {
+      font-size: $font-size-medium;
+    }
   }
 
   .about-box {
     width: 300px;
-    height: 300px;
+    height: 370px;
     display: flex;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 20px 25px;
   }
 }
 
 @include for-desktop {
+  .about-section{
+    background: linear-gradient(to bottom, $c-theme, $c-primary);
+    padding: 20px 200px;
+    color: $c-accent;
+  
+    h2 {
+      padding: 0 15px 20px 150px;
+    }
+  }
+
+
   .about-container {
     padding-top: 25px;
   }
 
   .about-container-1 {
-    padding:10px 130px;
+    padding: 30px 0;
   }
  
   .about-container-box{
