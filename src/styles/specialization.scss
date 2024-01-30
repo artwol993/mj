@@ -1,11 +1,11 @@
 .spcialization-section {
   background-color: $c-primary;
-  padding: 20px;
+  padding:30px 20px;
   text-align: center;
 }
 
 .specialization-container {
-  padding: 30px;
+  padding: 20px 40px;
   h3 {
     color: $c-theme;
     padding-bottom: 20px;
@@ -20,6 +20,9 @@
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 
   &::before {
     content: '';
@@ -35,5 +38,51 @@
   > * {
     position: relative;
     z-index: 2;
+  }
+}
+
+
+@include for-tablet {
+  .spcialization-section {
+    padding: 30px 20px 50px 20px;
+  }
+
+  .specialization-container {
+    padding: 20px 80px;
+    h3 {
+     font-size: $header-size-semi-large;
+    }
+  }
+
+  .specialization-picture {
+    height: 160px;
+    p{
+      font-size: $header-size-medium;
+    }
+  }
+}
+
+
+@include for-desktop {
+  .spcialization-section {
+    padding: 40px 30px 60px 30px;
+  }
+
+  .specialization-container {
+    padding: 10px 200px 30px 200px;
+    h3 {
+     font-size: $header-size-semi-large;
+    }
+    p{
+      font-size: $font-size-semi-large;
+    }
+  }
+
+  .specialization-picture {
+    height: 160px;
+
+    p{
+      font-size: $header-size-medium;
+    }
   }
 }

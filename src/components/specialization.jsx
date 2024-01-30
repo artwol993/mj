@@ -34,7 +34,10 @@ function Specialization() {
             ipsa voluptas a? Mollitia ut reprehenderit, commodi velit,
             asperiores repellendus aperiam beatae maiores natus et eligendi
             placeat! Impedit consectetur mollitia cumque repudiandae excepturi
-            ratione!
+            ratione! Amet odio eveniet reprehenderit illo possimus ipsa voluptas
+            a? Mollitia ut reprehenderit, commodi velit, asperiores repellendus
+            aperiam beatae maiores natus et eligendi placeat! Impedit
+            consectetur mollitia cumque repudiandae excepturi ratione!
           </p>
         </motion.div>
         <motion.div
