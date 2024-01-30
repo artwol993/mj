@@ -17,34 +17,28 @@
 h1 {
   font-family: $f-detal-bold; 
   color: $c-accent; 
-  font-size: $font-size-large; 
+  font-size: $header-size-large; 
 }
 
 h2 {
   font-family: $f-detal-medium; 
   color: $c-accent; 
-  font-size:$font-size-large; 
+  font-size:$header-size-medium; 
 }
 
 h3 {
   font-family: $f-main-bold; 
   color: $c-support; 
-  font-size: $font-size-medium; 
+  font-size: $header-size-medium; 
 }
 
 h4 {
   font-family: $f-main-medium; 
   color: $c-theme; 
-  font-size: $font-size-small; 
+  font-size: $header-size-small; 
 }
 
 p {
   font-family: $f-main-regular; 
-  color: $c-black; 
   font-size: $font-size-medium; 
-}
-
-.container {
-  height: 500px;
-  border-bottom: 2px solid red;
 }

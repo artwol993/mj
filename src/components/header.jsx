@@ -60,22 +60,22 @@ function Header() {
               </li>
               <li className="h-c-list">
                 <Link
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  onClick={toggleMenu}
+                >
+                  O mnie
+                </Link>
+              </li>
+              <li className="h-c-list">
+                <Link
                   to="services"
                   smooth={true}
                   duration={500}
                   onClick={toggleMenu}
                 >
                   Metody leczenia
-                </Link>
-              </li>
-              <li className="h-c-list">
-                <Link
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  onClick={toggleMenu}
-                >
-                  Trochę o mnie
                 </Link>
               </li>
               <li className="h-c-list">
@@ -97,13 +97,13 @@ function Header() {
                 </Link>
               </li>
               <li className="h-c-list">
-                <Link to="services" smooth={true} duration={500}>
-                  Metody leczenia
+                <Link to="about" smooth={true} duration={500}>
+                  O mnie
                 </Link>
               </li>
               <li className="h-c-list">
-                <Link to="about" smooth={true} duration={500}>
-                  Trochę o mnie
+                <Link to="services" smooth={true} duration={500}>
+                  Metody leczenia
                 </Link>
               </li>
               <li className="h-c-list">
