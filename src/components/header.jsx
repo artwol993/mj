@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../styles/header.scss";
 import { Link } from "react-scroll";
 
 function Header() {
@@ -102,8 +101,13 @@ function Header() {
                 </Link>
               </li>
               <li className="h-c-list">
-                <Link to="services" smooth={true} duration={500}>
+                <Link to="speciialization" smooth={true} duration={500}>
                   Metody leczenia
+                </Link>
+              </li>
+              <li className="h-c-list">
+                <Link to="services" smooth={true} duration={500}>
+                  Zakres leczenia
                 </Link>
               </li>
               <li className="h-c-list">
