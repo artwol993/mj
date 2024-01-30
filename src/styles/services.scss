@@ -1,0 +1,50 @@
+@import './config/colors';
+@import './config/breakpoints';
+
+.services {
+  padding: 80px; 
+  background-color: $c-theme;
+  color: $c-accent;
+
+  &__title {
+    margin-bottom: 16px; 
+    text-align: center;
+  }
+
+  &__list-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px; 
+  }
+
+  &__item {
+    background-color: $c-white;
+    padding: 8px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Tablet
+@include for-tablet {
+  .services__list-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; 
+  }
+}
+
+// Desktop
+@include for-desktop {
+  .services__list-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px; 
+  }
+}
+
+// Wide Desktop
+@include for-wide-desktop {
+  .services__list-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px; 
+  }
+}

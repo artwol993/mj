@@ -101,7 +101,7 @@ function Header() {
                 </Link>
               </li>
               <li className="h-c-list">
-                <Link to="speciialization" smooth={true} duration={500}>
+                <Link to="specialization" smooth={true} duration={500}>
                   Metody leczenia
                 </Link>
               </li>

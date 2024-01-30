@@ -8,7 +8,12 @@ function Welcome() {
   const [logoBackground, setLogoBackground] = useState(logo);
   const [title, setTitle] = useState("Psychoterapeuta");
 
-  const titles = ["Psychoterapeuta", "Psycholog", "Terapeuta TSR"];
+  const titles = [
+    "Psychoterapeuta",
+    "Psycholog",
+    "Terapeuta TSR",
+    "Terapeuta Gestalt",
+  ];
 
   useEffect(() => {
     const adjustWelcomeHeight = () => {
