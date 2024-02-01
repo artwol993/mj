@@ -1,0 +1,133 @@
+@import './config/colors';
+@import './config/fonts';
+@import './config/breakpoints';
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+
+  h3 {
+    padding-top: 15px;
+  }
+
+  h4 {
+    color: $c-accent;
+    padding: 10px;
+    font-size: $header-size-small;
+  }
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 200px;
+  border:solid 1px $c-accent;
+  padding: 5px;
+}
+
+.contact-box-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $c-theme;
+  padding: 20px 40px;
+  border: solid 1px $c-accent;
+  width: calc(100% - 60px); 
+  box-sizing: border-box; 
+}
+
+.contact-link{
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.contact-link:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.contact-icon {
+  width: 240px;
+  height: 50px;
+  background-color: white;
+  margin: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1); 
+}
+
+.zl {
+  background-image: url('../assets/znany-lekarz-logo.png');
+}
+
+.booksy {
+  background-image: url('../assets/Booksy-logo.svg');
+}
+
+
+@include for-tablet {
+  .contact-box-row {
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: flex-start; 
+  }
+  .map {
+    margin: 10px;
+  }
+
+  .contact-link {
+    margin: 0 60px;
+    min-width: 120px;
+    white-space: nowrap;
+  }
+
+  .contact-box-inner {
+    padding-inline: 10px;
+  }
+
+  .contact-icon { 
+    width: 280px;
+    height: 60px;
+  }
+}
+
+@include for-desktop {
+  .contact-box-row {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .contact-link {
+      margin: 0 60px; 
+      min-width: 150px; 
+      white-space: nowrap;
+    }
+  }
+
+  .map {
+    padding: 15px;
+  }
+
+  .contact-icon {
+    width: 310px;
+    height: 70px;
+    margin: 15px;
+  }
+}
