@@ -28,7 +28,6 @@ function Contact() {
 
           <div className="contact-box">
             <div className="contact-box-row">
-              
               <a href="mailto:marzanna.jakoniuk@psychoterapia.pl">
                 <h5 className="contact-link">
                   marzanna.jakoniuk@psychoterapia.pl
