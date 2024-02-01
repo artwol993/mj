@@ -15,25 +15,6 @@ function Services() {
     "trudności w relacjach z innymi",
     "trudności szkolne",
     "ataki paniki",
-    "trudności z wyrażaniem uczuć",
-    "wybuchy agresji",
-    "DDA",
-    "DDD",
-    "zaburzenia zachowania",
-    "OCD (nerwica natręctw)",
-    "PTSD (zaburzenia pourazowe)",
-    "kłopoty ze snem",
-    "lęk separacyjny",
-    "hipochondria",
-    "konflikty rodzinne",
-    "autoagresja",
-    "myśli samobójcze",
-    "stres",
-    "napady paniki",
-    "wypalenie zawodowe",
-    "dotknięcie przemocą",
-    "zagrożenie alienacją rodzicielską",
-    "zmiana, kryzys życiowy",
   ];
 
   const listItemVariants = {
@@ -48,26 +29,29 @@ function Services() {
   };
 
   return (
-    <div className="services" id="services">
-      <h2 className="services__title">Zakres leczenia</h2>
-      <motion.div
-        className="services__list-container"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        {services.map((service, i) => (
-          <motion.div
-            className="services__item"
-            custom={i}
-            variants={listItemVariants}
-            key={i}
-          >
-            {service}
-          </motion.div>
-        ))}
-      </motion.div>
-    </div>
+    <>
+      <div className="services" id="services">
+        <h2 className="services__title">Zakres leczenia</h2>
+        <motion.div
+          className="services__list-container"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {services.map((service, i) => (
+            <motion.div
+              className="services__item"
+              custom={i}
+              variants={listItemVariants}
+              key={i}
+            >
+              {service}
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+      <div className="photo-services"></div>
+    </>
   );
 }
 
