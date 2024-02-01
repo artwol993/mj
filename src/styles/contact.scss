@@ -1,16 +1,23 @@
 @import './config/colors';
+@import './config/fonts';
 
 .contact-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
+  padding-bottom: 50px;
+
+  h3 {
+      padding-top: 15px;
+  }
 
   h4 {
     color: $c-accent;
-    padding: 20px;
+    padding: 10px;
+    font-size: $header-size-small;
   }
+
 }
 
 .contact-box {
@@ -18,23 +25,59 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
-  padding: 20px;
-
-  p {
-    padding: 20px;
-  }
+  padding-bottom: 20px;
 }
 
+.map iframe {
+  width: 100%;
+  height: 200px;
+
+}
 
 .contact-box-row {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  background-color: red;
+  justify-content: center;
+  align-items: center;
+  background-color: $c-theme;
+  padding: 20px 40px;
+  border: solid 1px $c-accent;
+  width: calc(100% - 60px); 
+  box-sizing: border-box; 
 }
 
+.contact-link{
+  font-size: 15px;
+  padding-bottom: 5px;
+}
 
+.contact-link:hover {
+  color: grey;
+  text-decoration: underline;
+}
 
+.contact-icon {
+  width: 270px;
+  height: 50px;
+  background-color: white;
+  margin: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
+  
+}
 
+.contact-icon:hover {
+  transform: scale(1.2); 
+}
+
+.zl {
+  background-image: url('../assets/znany-lekarz-logo.png');
+}
+
+.booksy {
+  background-image: url('../assets/Booksy-logo.svg');
+}
