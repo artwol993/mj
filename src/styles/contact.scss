@@ -1,0 +1,40 @@
+@import './config/colors';
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+
+  h4 {
+    color: $c-accent;
+    padding: 20px;
+  }
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  padding: 20px;
+
+  p {
+    padding: 20px;
+  }
+}
+
+
+.contact-box-row {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: red;
+}
+
+
+
+
+
