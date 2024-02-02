@@ -1,2 +1,0 @@
-# mj
-wizytówka Marzanna Jakoniuk

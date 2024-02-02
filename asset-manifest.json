@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/mj/static/css/main.19ed66ca.css",
+    "main.js": "/mj/static/js/main.337050c8.js",
+    "static/media/relax.jpg": "/mj/static/media/relax.5552bdd5b4996e98d2f9.jpg",
+    "static/media/therpay.jpeg": "/mj/static/media/therpay.8ed51d9a3eda5c802edf.jpeg",
+    "static/media/background.jpg": "/mj/static/media/background.3a91a7562287a341b96b.jpg",
+    "static/media/mj.jpg": "/mj/static/media/mj.38afbd35e42829dcd3d4.jpg",
+    "static/media/logo.png": "/mj/static/media/logo.2568319bb2b106e5be0d.png",
+    "static/media/Booksy-logo.svg": "/mj/static/media/Booksy-logo.cb0faba6711f422ceeec.svg",
+    "index.html": "/mj/index.html",
+    "main.19ed66ca.css.map": "/mj/static/css/main.19ed66ca.css.map",
+    "main.337050c8.js.map": "/mj/static/js/main.337050c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19ed66ca.css",
+    "static/js/main.337050c8.js"
+  ]
+}
