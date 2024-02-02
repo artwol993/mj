@@ -44,7 +44,7 @@ function Contact() {
             <div className="contact-box-row">
               <div className="contact-box-inner">
                 <a
-                  href="https://booksy.com/pl-pl/..."
+                  href="https://booksy.com/pl-pl/133194_poradnia-co-tam-wilanow_psychoterapia_3_warszawa/staffer/272186#ba_s=bd_1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -53,7 +53,7 @@ function Contact() {
               </div>
               <div className="contact-box-inner">
                 <a
-                  href="https://www.znanylekarz.pl/..."
+                  href="https://www.znanylekarz.pl/marzanna-jakoniuk/psycholog/warszawa"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
