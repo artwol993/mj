@@ -69,12 +69,22 @@ function Header() {
               </li>
               <li className="h-c-list">
                 <Link
-                  to="services"
+                  to="specialization"
                   smooth={true}
                   duration={500}
                   onClick={toggleMenu}
                 >
                   Metody leczenia
+                </Link>
+              </li>
+              <li className="h-c-list">
+                <Link
+                  to="services"
+                  smooth={true}
+                  duration={500}
+                  onClick={toggleMenu}
+                >
+                  Zakres leczenia
                 </Link>
               </li>
               <li className="h-c-list">
