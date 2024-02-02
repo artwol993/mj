@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Wizytówka Marzanny Jakoniuk - psychologa i psychoterapeuty.",
   "main": "index.js",
+  "homepage": "https://artwol993.github.io/mj",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
   "dependencies": {
     "babel-preset-react-app": "^10.0.1",
     "framer-motion": "^11.0.3",
+    "gh-pages": "^6.1.1",
     "npm": "^10.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
