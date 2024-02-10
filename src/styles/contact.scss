@@ -10,7 +10,7 @@
   padding-bottom: 50px;
 
   h3 {
-    padding-top: 15px;
+    padding-top: 25px;
   }
 
   h4 {
@@ -26,6 +26,11 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+  width: 500px;
+}
+
+.map {
+  text-align: center;
 }
 
 .map iframe {
@@ -83,6 +88,10 @@
 
 
 @include for-tablet {
+  .contact-box {
+    width: 700px;
+  }
+
   .contact-box-row {
     flex-direction: row;
     justify-content: space-around; 
@@ -109,6 +118,10 @@
 }
 
 @include for-desktop {
+  .contact-box {
+    width: 1000px;
+  }
+
   .contact-box-row {
     flex-direction: row;
     justify-content: space-around;
@@ -127,7 +140,20 @@
 
   .contact-icon {
     width: 310px;
-    height: 70px;
+    height: 65px;
     margin: 15px;
+  }
+}
+
+@include for-wide-desktop {
+  .contact-box {
+    width: 1200px;
+  }
+
+  .map iframe {
+    width: 450px;
+    height: 300px;
+    border:solid 1px $c-accent;
+    padding: 5px;
   }
 }
