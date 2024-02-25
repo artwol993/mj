@@ -54,7 +54,7 @@ function Header() {
                   duration={500}
                   onClick={toggleMenu}
                 >
-                  Witaj
+                  Start
                 </Link>
               </li>
               <li className="h-c-list">
@@ -84,7 +84,7 @@ function Header() {
                   duration={500}
                   onClick={toggleMenu}
                 >
-                  Zakres leczenia
+                  Oferta
                 </Link>
               </li>
               <li className="h-c-list">

@@ -1,6 +1,6 @@
 .about-section{
   background: linear-gradient(to bottom, $c-theme, $c-primary);
-  padding: 20px 50px;
+  padding: 20px 30px;
   color: $c-accent;
   display: flex;
   flex-direction: column;
@@ -13,35 +13,18 @@
 }
 
 .about-container {
-  padding: 20px;
+  padding: 10px;
   background-color: #ffffff8e ;
-}
-
-.about-container-1{
-  padding: 20px 30px;
-  text-align: center;
-  
-}
-
-.about-container-box{ 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .about-box {
-  font-size: $font-size-small;
-  background-color: #ffffff8e ;
-  border: 1px solid $c-accent;
-  padding: 15px 30px;
-  margin: 10px;
-  width: 90%;
+  background-color: $c-primary;
+  margin: 20px 10px;
+}
 
-  h3 {
-    line-height: 20px;
-    padding-bottom: 15px;
-  }
+.about-text-box {
+  padding: 50px 20px;
+  text-align: center;
 }
 
 @include for-tablet {
@@ -53,26 +36,6 @@
     padding: 50px 0;
     width: 700px;
   }
-
-  .about-container-1 {
-    padding-inline: 60px;
-  }
- 
-  .about-container-box{
-    flex-direction: row;
-
-    li {
-      font-size: $font-size-medium;
-    }
-  }
-
-  .about-box {
-    width: 300px;
-    height: 370px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 25px;
-  }
 }
 
 @include for-desktop {
@@ -83,30 +46,6 @@
   .about-container {
     padding: 50px 0;
     width: 850px;
-  }
-
-  .about-container-1 {
-    padding-inline: 80px;
-
-    p {
-      font-size: $font-size-large;
-    }
-  }
- 
-  .about-container-box{
-    flex-direction: row;
-
-    li {
-      font-size: $font-size-semi-large;
-    }
-  }
-
-  .about-box {
-    width: 350px;
-    height: 420px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 25px;
   }
 }
 
@@ -123,33 +62,5 @@
   .about-container {
     padding: 50px 0;
     width: 1050px;
-  }
-
-  .about-container-1 {
-    padding-inline: 150px;
-
-    p {
-      font-size: $font-size-semi-large;
-    }
-  }
- 
-  .about-container-box{
-    flex-direction: row;
-
-    li {
-      font-size: $font-size-semi-large;
-    }
-  }
-
-  .about-box {
-    width: 400px;
-    height: 420px;
-    display: flex;
-    flex-direction: column;
-    padding: 25px 50px;
-
-    h3 {
-      padding-bottom: 15px;
-    }
   }
 }
