@@ -1,0 +1,116 @@
+.offer-section {
+  background-color: $c-primary;
+  padding:30px 20px;
+  text-align: center;
+}
+
+.offer-container {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+
+  .offer-header {
+    color: $c-theme;
+    padding-bottom: 20px;
+  }
+}
+
+.offer-box {
+  background-color: $c-theme;
+  height: 70px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  color: $c-accent;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-picture {
+  position: relative;
+  color: $c-white;
+  background-image: url('../assets/relax.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.582); // Czarna nakładka z 50% nieprzezroczystości
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+
+@include for-tablet {
+  .offer-container {
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .offer-picture {
+    height: 300px;
+  }
+
+  .offer-box {
+    height: 200px;
+  }
+  
+  .offer-header {
+    font-size: $header-size-semi-large;
+    padding-bottom: 25px;
+   }
+
+  .offer-box-text{
+    font-size: $font-size-large;
+    font-weight: 500;
+  }
+}
+
+@include for-desktop {
+  .offer-container {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+  }
+  .offer-box {
+    height: 150px;
+    margin: 20px 40px;
+  }
+  
+  .offer-header {
+    font-size: $header-size-semi-large;
+    padding-bottom: 25px;
+   }
+
+  .offer-box-text{
+    font-size: $font-size-large;
+    font-weight: 500;
+  }
+}
+
+@include for-wide-desktop {
+  .offer-box {
+    height: 150px;
+    margin: 40px 70px;
+  }
+}
