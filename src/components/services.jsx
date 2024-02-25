@@ -31,7 +31,7 @@ function Services() {
   return (
     <>
       <div className="services" id="services">
-        <h2 className="services__title">Zakres leczenia</h2>
+        <h2 className="services__title">Oferta</h2>
         <motion.div
           className="services__list-container"
           initial="hidden"

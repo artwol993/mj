@@ -84,7 +84,7 @@ function Header() {
                   duration={500}
                   onClick={toggleMenu}
                 >
-                  Zakres leczenia
+                  Oferta
                 </Link>
               </li>
               <li className="h-c-list">

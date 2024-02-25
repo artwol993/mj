@@ -11,134 +11,91 @@ function About() {
     <div className="about-section" id="about">
       <h2>O mnie</h2>
       <div className="about-container">
-        <div className="about-container-1">
-          <motion.div
-            className="about-text-box"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            variants={boxVariants}
-          >
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
+          <div className="about-text-box">
             <p style={{ textIndent: "20px" }}>
-              Mam <b>ponad 20-letnie doświadczenie </b> w pracy z młodzieżą i
-              młodymi dorosłymi, które zdobywałam pracując w szkole średniej.
-              Ważna jest dla mnie autentyczność oraz uważność na siebie i
-              drugiego człowieka, które pomagają budować pozytywną relację.
-              Widzę głęboki sens stosowania filozofii Podejścia Skoncentrowanego
-              na Rozwiązaniach, w którym to terapeuta wspiera Klienta w
-              zmierzaniu do preferowanej przyszłości, do życia bez problemu.
+              Jestem psychoterapeutką w trakcie szkolenia w Szkole Psychoterapii
+              Gestalt, która posiada akredytację EAGT (European Association of
+              Gestalt Therapy), jest członkiem European Association for
+              Psychotherapy (EAP) i spełnia wymogi „Ustawy o Niektórych Zawodach
+              Medycznych”. Jestem także psycholożką, terapeutką TSR i trenerką
+              grupową.
+              <br></br>
+              <br></br>
+              Doświadczenie zawodowe kształtowałam współpracując z Fundacją
+              Itaka, w Centrum Wsparcia dla Osób w Kryzysie Psychicznym, w
+              Centrum Wsparcia i Mediacji dla Rodzin, Samodzielnym Wojewódzkim
+              Zespole Publicznych Zakładów Psychiatrycznej Opieki Zdrowotnej w
+              Warszawie, oraz przez 20 lat w pracy z młodzieżą i młodymi
+              dorosłymi w szkole średniej.
+              <br></br>
+              <br></br>
+              Ponieważ wierzę, że człowiek kształci się przez całe życie, nadal
+              doskonalę swoje umiejętności podczas szkoleń i warsztatów
+              prowadzonych przez certyfikowanych trenerów różnych podejść
+              psychoterapeutycznych.
             </p>
-            <br></br>
+          </div>
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
+          <div className="about-text-box">
             <p style={{ textIndent: "20px" }}>
-              Od 6 lat zajmuję się udzielaniem szeroko pojętego wsparcia
-              psychologicznego osobom dorosłym i nastolatkom. Pracowałam między
-              innymi w{" "}
-              <b>Centrum Wsparcia dla Osób Dorosłych w Kryzysie Psychicznym </b>
-              oraz
-              <b> Antydepresyjnym Telefonie Zaufania Młodych Fundacji Itaka</b>.
+              Pracuję indywidualnie z młodzieżą w wieku od 16 roku życia oraz z
+              osobami dorosłymi. Superwizuję swoją praktykę indywidualną u
+              certyfikowanych superwizorów. Kieruję się Kodeksami Etyki
+              Psychologa i Polskiego Towarzystwa Psychoterapii Gestalt.
+              <br></br>
+              <br></br>W pracy psychoterapeutki ważna jest dla mnie otwartość
+              oraz uważność na drugiego człowieka, które pomagają budować
+              autentyczną relację, opartą na szacunku i współodczuwaniu.
+              Towarzyszę ludziom w podróży do satysfakcjonującego życia,
+              nazywania potrzeb i rozpoznawania składników potencjału,
+              akceptowania siebie. Aby odzyskiwali kontrolę, doświadczali
+              sprawczości, przezwyciężali kryzys.
+              <br></br>
+              <br></br>
+              Wierzę, że akceptujący kontakt jest początkiem zmiany a każdy
+              człowiek ma wystarczające zasoby i umiejętności żeby poradzić
+              sobie z trudnościami.
             </p>
-          </motion.div>
-        </div>
-        <div className="about-container-2">
-          <div className="about-container-box">
-            <motion.div
-              className="about-box"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-              variants={boxVariants}
-            >
-              <h3>Edukacja</h3>
-              <ul>
-                <li>Szkoła Psychoterapii Gestalt (w trakcie)</li>
-                <li>
-                  Uniwersytet Humanistycznospołeczny SWPS – jednolite studia
-                  magisterskie
-                </li>
-                <li>
-                  SWPS – Konflikty w Rodzinie i Mediacje Rodzinne – studia
-                  podyplomowe
-                </li>
-                <li>
-                  CTSR – Terapia Skoncentrowana na Rozwiązaniach – kurs
-                  podstawowy i zaawansowany
-                </li>
-                <li>Psychoedukacji – Trener Umiejętności Wychowawczych</li>
-              </ul>
-            </motion.div>
-            <motion.div
-              className="about-box"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-              variants={boxVariants}
-            >
-              <h3>Szkolenia</h3>
-              <ul>
-                <li>„Depresja jako sygnał”</li>
-                <li>„TSR w obliczu lęku”</li>
-                <li>
-                  „Interwencja kryzysowa – jak pracować z osobą, którą dotknęła
-                  nagła tragedia”
-                </li>
-                <li>
-                  „Kryzys w kryzysie – czyli praca z cierpiącym nastolatkiem”
-                </li>
-                <li>„Od rodziny nie można uciec”</li>
-              </ul>
-            </motion.div>
           </div>
-          <div className="about-container-box">
-            <motion.div
-              className="about-box"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-              variants={boxVariants}
-            >
-              <h3> Specjalizacje</h3>
-              <ul>
-                <li>Konsultacje psychologiczne i terapia osób dorosłych</li>
-                <li>
-                  Konsultacje psychologiczne i terapia młodzieży od 16 r.ż.
-                </li>
-                <li>Trener Umiejętności Wychowawczych</li>
-              </ul>
-            </motion.div>
-            <motion.div
-              className="about-box"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-              variants={boxVariants}
-            >
-              <h3>Doświadczenie zawodowe</h3>
-              <ul>
-                <li>
-                  Antydepresyjny Telefon Zaufania Młodych – psycholog /
-                  terapeuta – terapia krótkoterminowa
-                </li>
-                <li>
-                  Pogotowie Psychologiczne – psycholog – konsultacje
-                  psychologiczne, psychoedukacja
-                </li>
-                <li>
-                  Centrum Wsparcia dla Osób w Kryzysie Psychicznym – psycholog –
-                  konsultacje psychologiczne, interwencje
-                </li>
-                <li>
-                  Fundacja Pracownia Relacji Rodzinnych – trener – warsztaty dla
-                  rodziców nastolatków
-                </li>
-              </ul>
-            </motion.div>
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
+          <div className="about-text-box">
+            <p style={{ textIndent: "20px" }}>
+              Ponieważ gotowe rozwiązania nie istnieją, zapraszam do wspólnych
+              poszukiwań.
+              <br></br>
+              <br></br>
+              Bogate doświadczenia zawodowe i osobiste pomagają mi lepiej
+              zrozumieć świat moich klientów.
+              <br></br> <br></br>
+              Prywatnie jestem żoną i mamą. W wolnym czasie lubię kontakt z
+              naturą, piesze wędrówki i wycieczki rowerowe.
+            </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

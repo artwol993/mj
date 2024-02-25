@@ -14,7 +14,7 @@ function Specialization() {
   return (
     <>
       <div className="spcialization-section" id="specialization">
-        <h2>Metody leczenia</h2>
+        <h2>Oferta</h2>
         <motion.div
           className="specialization-container"
           initial="hidden"
