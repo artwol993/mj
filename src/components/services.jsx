@@ -4,17 +4,17 @@ import "../styles/services.scss";
 
 function Services() {
   const services = [
-    "lęk",
-    "depresja",
-    "niska samoocena",
-    "rozwód, rozstanie, rozpad związku",
-    "nerwica",
-    "zaburzenia adaptacyjne",
-    "zaburzenia nastroju",
-    "problemy z koncentracją uwagi",
+    "kryzys, zmiana życiowa, konflikt rodzinny, rozpad związku, rozstanie z bliską osobą",
+    "depresja, zaburzenia nastroju, obniżony nastrój, brak energii",
+    "doświadczanie przemocy, wybuchy agresji",
+    "lęk, napady paniki, nerwica",
+    "niska samoocena, niskie poczucie własnej wartości",
+    "stres",
+    "trudności z wyrażaniem uczuć, trudności w relacjach partnerskich, trudności ze snem, trudności w komunikacji",
+    "utrata sensu życia, samotność, cierpienie",
     "trudności w relacjach z innymi",
     "trudności szkolne",
-    "ataki paniki",
+    "choroba bliskiej osoby, żałoba",
   ];
 
   const listItemVariants = {
@@ -31,7 +31,9 @@ function Services() {
   return (
     <>
       <div className="services" id="services">
-        <h2 className="services__title">Oferta</h2>
+        <h3 className="services__title">
+          W terapii indywidualnej pracuję z osobami, którym towarzyszy:
+        </h3>
         <motion.div
           className="services__list-container"
           initial="hidden"
