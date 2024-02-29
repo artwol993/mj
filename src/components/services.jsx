@@ -42,7 +42,6 @@ function Services() {
           <p className="services__paragraph">choroba bliskiej osoby, żałoba</p>
         </motion.div>
       </div>
-      <div className="photo-services"></div>
     </div>
   );
 }

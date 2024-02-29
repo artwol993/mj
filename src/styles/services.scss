@@ -25,14 +25,22 @@
   }
 
   &__box {
-    padding: 15px;
+    padding: 25px;
     background-color: $c-white;
     border: solid 1px $c-black;
     border-radius: 15px;
+    position: relative;
+    color: $c-white;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
   }
 
   &__paragraph {
     font-size: $font-size-semi-large;
+    padding: 5px;
     margin: 10px 2px;
     background-color: $c-theme;
     color: $c-black;
