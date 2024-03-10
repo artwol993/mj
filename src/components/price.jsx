@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function Offer() {
+function Price() {
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -13,22 +13,22 @@ function Offer() {
 
   return (
     <>
-      <div className="offer-section" id="offer">
-        <h2 className="offer-header">Oferta</h2>
+      <div className="price-section" id="price">
+        <h2 className="price-header">Oferta</h2>
         <motion.div
-          className="offer-container offer-picture"
+          className="price-container price-picture"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={containerVariants}
         >
-          <div className="offer-box">
-            <p className="offer-box-text">Konsultacja psychologiczna</p>
-            <p className="offer-box-text">200 zł</p>
+          <div className="price-box">
+            <p className="price-box-text">Konsultacja psychologiczna</p>
+            <p className="price-box-text">200 zł</p>
           </div>
-          <div className="offer-box">
-            <p className="offer-box-text">Psychoterapia</p>
-            <p className="offer-box-text">200 zł</p>
+          <div className="price-box">
+            <p className="price-box-text">Psychoterapia</p>
+            <p className="price-box-text">200 zł</p>
           </div>
         </motion.div>
       </div>
@@ -36,4 +36,4 @@ function Offer() {
   );
 }
 
-export default Offer;
+export default Price;

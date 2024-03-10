@@ -1,21 +1,21 @@
-.offer-section {
+.price-section {
   background-color: $c-primary;
   padding:30px 20px;
   text-align: center;
 }
 
-.offer-container {
+.price-container {
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
 
-  .offer-header {
+  .price-headepricer {
     color: $c-theme;
     padding-bottom: 20px;
   }
 }
 
-.offer-box {
+.price-box {
   background-color: $c-theme;
   height: 70px;
   width: 100%;
@@ -30,7 +30,7 @@
   justify-content: center;
 }
 
-.offer-picture {
+.price-picture {
   position: relative;
   color: $c-white;
   background-image: url('../assets/relax.jpg');
@@ -61,55 +61,55 @@
 
 
 @include for-tablet {
-  .offer-container {
+  .price-container {
     padding: 20px 80px;
     display: flex;
     flex-direction: row;
   }
 
-  .offer-picture {
+  .price-picture {
     height: 300px;
   }
 
-  .offer-box {
+  .price-box {
     height: 200px;
   }
   
-  .offer-header {
+  .price-header {
     font-size: $header-size-semi-large;
     padding-bottom: 25px;
    }
 
-  .offer-box-text{
+  .price-box-text{
     font-size: $font-size-large;
     font-weight: 500;
   }
 }
 
 @include for-desktop {
-  .offer-container {
+  .price-container {
     padding: 20px 100px;
     display: flex;
     flex-direction: row;
   }
-  .offer-box {
+  .price-box {
     height: 150px;
     margin: 20px 40px;
   }
   
-  .offer-header {
+  .price-header {
     font-size: $header-size-semi-large;
     padding-bottom: 25px;
    }
 
-  .offer-box-text{
+  .price-box-text{
     font-size: $font-size-large;
     font-weight: 500;
   }
 }
 
 @include for-wide-desktop {
-  .offer-box {
+  .price-box {
     height: 150px;
     margin: 40px 70px;
   }
