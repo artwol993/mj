@@ -26,15 +26,9 @@
 
   &__box {
     padding: 25px;
-    background-color: $c-white;
-    border: solid 1px $c-black;
-    border-radius: 15px;
+    background-color: $c-support;
+    border: solid 1px $c-accent;
     position: relative;
-    color: $c-white;
-    background-image: url('../assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     box-sizing: border-box;
   }
 
@@ -42,10 +36,7 @@
     font-size: $font-size-semi-large;
     padding: 5px;
     margin: 10px 2px;
-    background-color: $c-theme;
-    color: $c-black;
-    border-radius: 8px;
-    border: solid 1px $c-accent;
+    color: $c-white;
   }
 }
 
