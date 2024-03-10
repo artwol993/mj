@@ -48,25 +48,46 @@
 
 .offer-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 15px;
 
   @include for-tablet-up {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @include for-desktop-up {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
 }
 
 .offer-box {
-  background-color: $c-primary;
-  color: $c-white;
+  height: 300px;
+  width: 300px;
   padding: 10px;
+  margin: 15px;
   text-align: center;
   font-family: $f-main-medium;
   font-size: $font-size-medium;
+  background-color: $c-primary;
+  color: $c-white;
 
   @include for-tablet-up {
     padding: 15px;
     font-size: $font-size-semi-large;
+  }
+
+  @include for-desktop-up {
+    height: 220px;
+    width: 220px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  @include for-wide-desktop {
+    height: 300px;
+    width: 300px;
+    gap: 10px;
   }
 }
