@@ -17,10 +17,22 @@ function Offer() {
         sformułowanie celów terapeutycznych zgłaszającej się osoby.
       </p>
       <div className="offer-container">
-        <div className="offer-box">Konsultacja psychologiczna</div>
-        <div className="offer-box">Terapia krótkoterminowa</div>
-        <div className="offer-box">Terapia długoterminowa </div>
-        <div className="offer-box">Terapia młodzieży (16+)</div>
+        <div className="offer-box">
+          <div className="offer-box__picture"></div>
+          <h4 className="offer-box__title">Konsultacja psychologiczna</h4>
+        </div>
+        <div className="offer-box">
+          <div className="offer-box__picture"></div>
+          <h4 className="offer-box__title">Terapia krótkoterminowa</h4>
+        </div>
+        <div className="offer-box">
+          <div className="offer-box__picture"></div>
+          <h4 className="offer-box__title">Terapia długoterminowa</h4>
+        </div>
+        <div className="offer-box">
+          <div className="offer-box__picture"></div>
+          <h4 className="offer-box__title">Terapia młodzieży (16+)</h4>
+        </div>
       </div>
     </section>
   );
