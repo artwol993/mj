@@ -14,7 +14,7 @@ function Modal({ show, onHide, title, children }) {
         <div className="modal-body">{children}</div>
         <div className="modal-footer">
           <button onClick={onHide} className="close-modal-button">
-            Zamknij
+            <span>Zamknij</span>
           </button>
         </div>
       </div>
