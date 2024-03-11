@@ -8,22 +8,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1050; /* Upewnij się, że modal jest na wierzchu */
+  z-index: 1050; 
+  color: $c-white;
 }
 
 .modal-content {
-  background: white;
-  padding: 20px;
+  padding: 45px;
   border-radius: 5px;
   max-width: 500px;
   width: 100%;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .modal-header,
 .modal-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  margin-block: 15px;
 }
 
 .close-button,
@@ -32,4 +37,10 @@
   background: none;
   cursor: pointer;
   font-size: 1.5rem;
+  color: $c-white;
+}
+
+.modal-title{
+  color: $c-white;
+  text-align: center;
 }
