@@ -1,116 +1,176 @@
+@import './config/colors';
+@import './config/breakpoints';
+@import './config/fonts';
+
 .offer-section {
-  background-color: $c-primary;
-  padding:30px 20px;
+  padding: 20px;
+  background-color: $c-theme;
+  color: $c-black;
   text-align: center;
-}
 
-.offer-container {
-  padding: 20px 40px;
-  display: flex;
-  flex-direction: column;
+  @include for-mobile {
+    padding: 30px;
+  }
 
-  .offer-header {
-    color: $c-theme;
-    padding-bottom: 20px;
+  @include for-tablet-up {
+    padding: 50px;
+  }
+
+  @include for-desktop-up {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.offer-box {
-  background-color: $c-theme;
-  height: 70px;
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
+.offer-header {
+  font-family: $f-detal-bold;
   color: $c-accent;
-  font-weight: 400;
+  font-size: $header-size-medium;
+  margin-bottom: 20px;
+
+  @include for-tablet-up {
+    font-size: $header-size-semi-large;
+  }
+
+  @include for-desktop-up {
+    font-size: $header-size-large;
+  }
+}
+
+.offer-paragraph {
+  font-family: $f-main-regular;
+  font-size: $font-size-medium;
+  margin-bottom: 20px;
+
+  @include for-tablet-up {
+    font-size: $font-size-semi-large;
+    padding-inline: 30px;
+  }
+
+  @include for-desktop-up {
+    padding-inline: 100px;
+  }
+}
+
+.offer-container {
+  display: flex; // Domyślnie użyj flexboxa
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  @include for-tablet-up {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @include for-desktop-up {
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+  }
+}
+
+
+.offer-box {
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+  background-color: $c-primary;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+
+  @include for-tablet-up {
+    padding: 15px;
+    font-size: $font-size-semi-large;
+  }
+
+  @include for-desktop-up {
+    height: 220px;
+    width: 220px;
+    gap: 10px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      transition: transform 0.3s ease;
+      border-style: solid;
+      border-width: 3px; 
+      border-color: $c-accent; 
+    }
+  
+    &::before {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scale(0, 0);
+      transform-origin: top left;
+      border-bottom: none;
+      border-right: none;
+    }
+  
+    &::after {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scale(0, 0);
+      transform-origin: bottom right;
+      border-top: none; 
+      border-left: none; 
+    }
+  
+    &:hover::before,
+    &:hover::after {
+      transform: scale(1, 1);
+    }
+  }
+
+  @include for-wide-desktop {
+    height: 300px;
+    width: 300px;
+    gap: 10px;
+  }
+
+
+
+  &__picture {
+    width: 100%; 
+    height: 200px; 
+    background-color: $c-accent; 
+    padding: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  &__title {
+    font-family: $f-detal-light;
+    font-size: $font-size-medium;
+    font-weight: 200;
+    color: $c-white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+
 }
 
-.offer-picture {
-  position: relative;
-  color: $c-white;
-  background-image: url('../assets/relax.jpg');
+.offer-box__picture {
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.582); // Czarna nakładka z 50% nieprzezroczystości
-    z-index: 1;
-  }
-
-  > * {
-    position: relative;
-    z-index: 2;
-  }
-}
-
-
-@include for-tablet {
-  .offer-container {
-    padding: 20px 80px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .offer-picture {
-    height: 300px;
-  }
-
-  .offer-box {
-    height: 200px;
-  }
-  
-  .offer-header {
-    font-size: $header-size-semi-large;
-    padding-bottom: 25px;
-   }
-
-  .offer-box-text{
-    font-size: $font-size-large;
-    font-weight: 500;
-  }
-}
-
-@include for-desktop {
-  .offer-container {
-    padding: 20px 100px;
-    display: flex;
-    flex-direction: row;
-  }
-  .offer-box {
-    height: 150px;
-    margin: 20px 40px;
-  }
-  
-  .offer-header {
-    font-size: $header-size-semi-large;
-    padding-bottom: 25px;
-   }
-
-  .offer-box-text{
-    font-size: $font-size-large;
-    font-weight: 500;
-  }
-}
-
-@include for-wide-desktop {
-  .offer-box {
-    height: 150px;
-    margin: 40px 70px;
-  }
 }

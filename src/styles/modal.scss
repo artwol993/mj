@@ -1,0 +1,126 @@
+@import './config/colors';
+@import './config/breakpoints';
+@import './config/fonts';
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; 
+  color: $c-white;
+}
+
+.modal-content {
+  padding: 20px 35px;
+  margin: 20px;
+  border-radius: 5px;
+  max-width: 380px;
+  width: 100%;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+
+  @include for-tablet-up {
+    max-width: 670px;
+    padding: 20px 40px;
+  }
+
+  @include for-desktop-up {
+    max-width: 800px;
+    padding: 10px 40px;
+  }
+}
+
+.modal-header,
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-header {
+  margin-bottom: 15px;
+}
+
+.modal-title{
+  color: $c-white;
+  text-align: center;
+  font-size: $font-size-semi-large;
+  padding-bottom: 10px;
+
+  @include for-tablet-up {
+    font-size: $header-size-semi-large;
+   }
+}
+
+.modal-body {
+  padding-bottom: 15px;
+
+  @include for-tablet-up {
+    font-size: $font-size-large;
+   }
+}
+
+.modal-footer {
+  margin-top: 15px;
+}
+
+.close-button,
+.close-modal-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: $c-white;
+
+  @include for-desktop-up {
+    padding: 5px;
+    margin: 10px;
+   }
+}
+
+
+
+.close-modal-button {
+  background-image: linear-gradient(135deg, $c-primary, $c-accent);
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: $c-accent;
+  display: block;
+  height: 40px;
+  font-size: $font-size-semi-large;
+  font-weight: 600;
+  padding: 4px;
+  position: relative;
+  text-align: center;
+  width: 7em;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.close-modal-button:hover {
+  color: $c-white;
+}
+
+.close-modal-button span {
+  align-items: center;
+  background: $c-theme;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.close-modal-button:hover span {
+  background: transparent;
+}

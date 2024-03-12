@@ -10,8 +10,10 @@
 @import '../header.scss';
 @import '../welcome.scss';
 @import '../about.scss';
-@import '../offer.scss';
+@import '../price.scss';
 @import '../services.scss';
+@import '../offer.scss';
+@import '../modal.scss';
 @import '../contact.scss';
 
 
@@ -45,7 +47,4 @@ h5 {
   font-size: $font-size-medium; 
 }
 
-p {
-  font-family: $f-main-regular; 
-  font-size: $font-size-medium; 
-}
+
