@@ -17,13 +17,13 @@
 }
 
 .modal-content {
-  padding: 45px;
+  padding: 20px 35px;
+  margin: 20px;
   border-radius: 5px;
-  max-width: 500px;
+  max-width: 380px;
   width: 100%;
   background-color: #ffffff10;
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
 }
 
 .modal-header,
@@ -32,7 +32,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-block: 15px;
+}
+
+.modal-header {
+  margin-bottom: 15px;
+}
+
+.modal-footer {
+  margin-top: 15px;
 }
 
 .close-button,
@@ -47,9 +54,13 @@
 .modal-title{
   color: $c-white;
   text-align: center;
-  font-size: $font-size-large;
+  font-size: $font-size-semi-large;
+  padding-bottom: 10px;
 }
 
+.modal-body {
+  padding-bottom: 15px;
+}
 
 .close-modal-button {
   background-image: linear-gradient(135deg, $c-primary, $c-accent);
