@@ -87,6 +87,7 @@
   justify-content: center;
   cursor: pointer;
   transition: transform 0.3s ease;
+  position: relative;
 
   @include for-tablet-up {
     padding: 15px;
@@ -100,6 +101,43 @@
 
     &:hover {
       transform: scale(1.1);
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      transition: transform 0.3s ease;
+      border-style: solid;
+      border-width: 3px; 
+      border-color: $c-accent; 
+    }
+  
+    &::before {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scale(0, 0);
+      transform-origin: top left;
+      border-bottom: none;
+      border-right: none;
+    }
+  
+    &::after {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scale(0, 0);
+      transform-origin: bottom right;
+      border-top: none; 
+      border-left: none; 
+    }
+  
+    &:hover::before,
+    &:hover::after {
+      transform: scale(1, 1);
     }
   }
 
