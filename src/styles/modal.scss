@@ -24,6 +24,16 @@
   width: 100%;
   background-color: #ffffff10;
   backdrop-filter: blur(12px);
+
+  @include for-tablet-up {
+    max-width: 670px;
+    padding: 20px 40px;
+  }
+
+  @include for-desktop-up {
+    max-width: 800px;
+    padding: 10px 40px;
+  }
 }
 
 .modal-header,
@@ -38,6 +48,25 @@
   margin-bottom: 15px;
 }
 
+.modal-title{
+  color: $c-white;
+  text-align: center;
+  font-size: $font-size-semi-large;
+  padding-bottom: 10px;
+
+  @include for-tablet-up {
+    font-size: $header-size-semi-large;
+   }
+}
+
+.modal-body {
+  padding-bottom: 15px;
+
+  @include for-tablet-up {
+    font-size: $font-size-large;
+   }
+}
+
 .modal-footer {
   margin-top: 15px;
 }
@@ -49,18 +78,14 @@
   cursor: pointer;
   font-size: 1.5rem;
   color: $c-white;
+
+  @include for-desktop-up {
+    padding: 5px;
+    margin: 10px;
+   }
 }
 
-.modal-title{
-  color: $c-white;
-  text-align: center;
-  font-size: $font-size-semi-large;
-  padding-bottom: 10px;
-}
 
-.modal-body {
-  padding-bottom: 15px;
-}
 
 .close-modal-button {
   background-image: linear-gradient(135deg, $c-primary, $c-accent);
