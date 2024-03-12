@@ -28,7 +28,7 @@
   font-family: $f-detal-bold;
   color: $c-accent;
   font-size: $header-size-medium;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   @include for-tablet-up {
     font-size: $header-size-semi-large;
@@ -46,26 +46,29 @@
 
   @include for-tablet-up {
     font-size: $font-size-semi-large;
+    padding-inline: 30px;
+  }
+
+  @include for-desktop-up {
+    padding-inline: 100px;
   }
 }
 
 .offer-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 15px;
-  display: flex;
+  display: flex; // Domyślnie użyj flexboxa
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  gap: 15px;
 
   @include for-tablet-up {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
   @include for-desktop-up {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
   }
 }
@@ -83,6 +86,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: transform 0.3s ease;
 
   @include for-tablet-up {
     padding: 15px;
@@ -93,6 +97,10 @@
     height: 220px;
     width: 220px;
     gap: 10px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   @include for-wide-desktop {
@@ -101,12 +109,16 @@
     gap: 10px;
   }
 
+
+
   &__picture {
     width: 100%; 
     height: 200px; 
     background-color: $c-accent; 
     padding: 10px;
     margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
   }
   
   &__title {
@@ -115,8 +127,9 @@
     font-weight: 200;
     color: $c-white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
   }
-  
+
 }
 
 .offer-box__picture {
