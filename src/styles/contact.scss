@@ -20,7 +20,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 20px;
+  align-items: center;
+
 
   &__2 {
     width: 100%;
@@ -28,21 +29,29 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-sizing: border-box;
-    position: relative;
     background-image: url('../assets/background.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .contact-box-row {
   width: 350px;
-  background-color: rgba(255, 255, 255, 0.747);
-  padding: 15px;
+  
 
   &__icons {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
+  }
+
+  &__2 {
+    background-color: rgba(255, 255, 255, 0.747);
+    width: 350px;
+    padding: 14px 10px;
   }
 }
 
@@ -64,8 +73,7 @@
 .paragraph-online {
   font-weight: 500;
   text-align: center;
-  width: 300px;
-  padding-left: 10px;
+  width: 340px;
 }
 
 .icon {
@@ -91,20 +99,19 @@
   background-image: url('../assets/skype.png');
   width: 50px;
   height: 50px;
+  margin-right: 45px;
 }
 
 .gm-icon {
-  background-image: url('../assets/gm.png');
-  width: 50px;
-  height: 50px;
-  padding-right: 10px;
+  background-image: url('../assets/gm-1.png');
+  width: 45px;
+  height: 45px;
 }
 
 .map iframe {
-  width: 320px;
+  width: 350px;
   height: 250px;
-  border:solid 1px $c-accent;
-  padding: 5px;
+  border:solid 2px $c-accent;
 }
 
 .map-paragraph {
@@ -115,6 +122,11 @@
 
 @include for-tablet-up {
 
+  .contact-box {
+    padding: 10px;
+    margin: 15px;
+  }
+
   .contact-container {
     flex-direction: row;
   }
@@ -124,11 +136,11 @@
   }
 
   .map {
-    margin: 10px;
+    width: 300px;
   }
 
   .map-paragraph {
-    width: 400px;
+    width: 300px;
   }
 
   .map iframe {
