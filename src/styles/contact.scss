@@ -2,22 +2,17 @@
 @import './config/fonts';
 @import './config/breakpoints';
 
+.contact-header {
+  padding-top: 25px;
+  text-align: center;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-
-  h3 {
-    padding-top: 25px;
-  }
-
-  h4 {
-    color: $c-accent;
-    padding: 10px;
-    font-size: $header-size-small;
-  }
 }
 
 .contact-box {
@@ -28,32 +23,35 @@
   padding-bottom: 20px;
 }
 
-.map {
-  text-align: center;
-}
-
-.map iframe {
-  width: 100%;
-  height: 200px;
-  border:solid 1px $c-accent;
-  padding: 5px;
-}
-
 .contact-box-row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $c-theme;
-  padding: 20px 40px;
-  border: solid 1px $c-accent;
-  width: calc(100% - 60px); 
-  box-sizing: border-box; 
+}
+
+.map {
+  text-align: center;
+}
+
+.map iframe {
+  width: 300px;
+  height: 300px;
+  border:solid 1px $c-accent;
+  padding: 5px;
+}
+
+.map-paragraph {
+  font-weight: 500;
+  padding: 10px;
+  width: 350px;
 }
 
 .contact-link{
-  font-size: 15px;
+  text-align: center;
   padding-bottom: 5px;
+  font-weight: 500;
+  width: 350px;
 }
 
 .contact-link:hover {
@@ -61,86 +59,67 @@
   text-decoration: underline;
 }
 
-.contact-icon {
-  width: 240px;
-  height: 50px;
-  background-color: white;
-  margin: 15px;
-  cursor: pointer;
-  transition: transform 0.3s ease; 
-  background-size:contain;
-  background-position: center;
-  background-repeat: no-repeat;
+.paragraph-online {
+  padding: 10px 45px;
+  text-align: center;
+  font-weight: 500;
+  width: 400px;
 }
 
-.contact-icon:hover {
-  transform: scale(1.1); 
-}
+@include for-tablet-up {
 
-.zl {
-  background-image: url('../assets/znany-lekarz-logo.png');
-}
-
-.booksy {
-  background-image: url('../assets/Booksy-logo.svg');
-}
-
-
-@include for-tablet {
-  .contact-box {
-    width: 700px;
+  .contact-container {
+    flex-direction: row;
   }
 
   .contact-box-row {
-    flex-direction: row;
-    justify-content: space-around; 
-    align-items: flex-start; 
+    flex-direction: block;
   }
+
   .map {
     margin: 10px;
   }
 
+  .map-paragraph {
+    width: 400px;
+  }
+
+  .map iframe {
+    width: 350px;
+  }
+
   .contact-link {
-    margin: 0 60px;
-    min-width: 120px;
     white-space: nowrap;
+    text-align: left;
   }
 
-  .contact-box-inner {
-    padding-inline: 10px;
-  }
-
-  .contact-icon { 
-    width: 280px;
-    height: 60px;
+  .paragraph-online {
+    padding: 10px 20px;
+    text-align: left;
   }
 }
 
 @include for-desktop {
   .contact-box {
-    width: 1000px;
+    width: 500px;
   }
 
   .contact-box-row {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: block;
+  }
 
-    .contact-link {
-      margin: 0 60px; 
-      min-width: 150px; 
-      white-space: nowrap;
-    }
+  .contact-link {
+    margin: 0 60px; 
+    min-width: 150px; 
+    white-space: nowrap;
   }
 
   .map {
     padding: 15px;
   }
 
-  .contact-icon {
-    width: 310px;
-    height: 65px;
-    margin: 15px;
+  .map iframe {
+    width: 500px;
   }
 }
 
@@ -156,3 +135,4 @@
     padding: 5px;
   }
 }
+
