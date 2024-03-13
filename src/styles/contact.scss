@@ -12,8 +12,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-
 }
 
 .contact-box {
@@ -25,7 +23,6 @@
 
   &__2 {
     width: 100%;
-    padding: 30px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,12 +31,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px 20px;
+   
   }
 }
 
-.contact-box-row {
+.contact-box-background {
   width: 350px;
-  
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.781);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-box-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__icons {
     display: flex;
@@ -49,21 +57,19 @@
   }
 
   &__2 {
-    background-color: rgba(255, 255, 255, 0.747);
     width: 350px;
-    padding: 14px 10px;
+    padding: 10px;
   }
 }
 
 .contact-box-link {
   display: flex;
-  width: 350px;
 }
 
 .contact-link-p {
   padding-bottom: 7px;
   font-weight: 500;
-  font-size: 17px;
+  font-size: $font-size-medium
 }
 
 .contact-box-link:hover {
@@ -108,23 +114,45 @@
   height: 45px;
 }
 
+.map {
+  padding-bottom: 10px;
+}
+
 .map iframe {
   width: 350px;
   height: 250px;
   border:solid 2px $c-accent;
+
 }
 
 .map-paragraph {
   font-weight: 500;
-  padding: 10px;
+  font-size: $font-size-semi-large;
+  padding: 15px;
   text-align: center;
 }
 
 @include for-tablet-up {
+  .contact-container {
+    width: 100%;
+    padding: 50px 20px 70px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/background.jpg');
+  }
 
   .contact-box {
-    padding: 10px;
-    margin: 15px;
+    &__2 {
+      width: auto;
+      background-image: none;
+    }
+  }
+
+  .contact-box-background {
+    height: 400px;
+    width: 370px;
+    justify-content: center;
   }
 
   .contact-container {
@@ -132,63 +160,83 @@
   }
 
   .contact-box-row {
-    flex-direction: block;
-  }
-
-  .map {
-    width: 300px;
+    &__2 {
+      padding: 10px;
+    }
   }
 
   .map-paragraph {
     width: 300px;
-  }
-
-  .map iframe {
-    width: 350px;
+    color: $c-black;
   }
 
   .contact-link {
     white-space: nowrap;
-    text-align: left;
-  }
-
-  .paragraph-online {
-    padding: 10px 20px;
     text-align: left;
   }
 }
 
 @include for-desktop {
   .contact-box {
-    width: 500px;
+    padding: 50px;
+    &__2 {
+      padding: 50px;
+    }
+  }
+
+  .contact-box-background {
+    width: 450px;
+    height: 450px;
   }
 
   .contact-box-row {
-    flex-direction: block;
+    &__2 {
+      width: 400px;
+    }
   }
-
+  
   .contact-link {
     margin: 0 60px; 
     min-width: 150px; 
     white-space: nowrap;
   }
 
-  .map {
+  .map iframe {
     padding: 15px;
+    width: 410px;
+    height: 350px;
+    border: none;
   }
 
-  .map iframe {
-    width: 500px;
+  .map-paragraph {
+    padding-bottom: 10px;
+    padding-inline: 30px;
+    width: 400px;
+    font-size: $font-size-large;
+    font-weight: 600;
+  }
+
+  .contact-link-p  {
+    font-size: $font-size-large;
+  }
+
+  .paragraph-online {
+    font-size: $font-size-large;
+    padding: 10px;
+    width: 400px;
   }
 }
 
 @include for-wide-desktop {
-  .contact-box {
-    width: 1200px;
+
+  .contact-box-background {
+    width: 500px;
+    height: 450px;
+    padding: 40px;
   }
 
   .map iframe {
-    width: 450px;
+    width: 500px;
     height: 300px;
     border:solid 1px $c-accent;
     padding: 5px;
