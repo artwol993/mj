@@ -13,19 +13,31 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
+
 }
 
 .contact-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
   padding-bottom: 20px;
+
+  &__2 {
+    width: 100%;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url('../assets/background.jpg');
+  }
 }
 
 .contact-box-row {
   width: 350px;
-  padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.747);
+  padding: 15px;
 
   &__icons {
     display: flex;
@@ -34,16 +46,19 @@
   }
 }
 
-.contact-link{
-  padding-bottom: 5px;
-  font-weight: 500;
-  font-size: $font-size-large;
-  color: $c-accent
+.contact-box-link {
+  display: flex;
+  width: 350px;
 }
 
-.contact-link:hover {
-  color: grey;
-  text-decoration: underline;
+.contact-link-p {
+  padding-bottom: 7px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.contact-box-link:hover {
+  transform: scale(1.1);
 }
 
 .paragraph-online {
@@ -54,15 +69,40 @@
 }
 
 .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.email-icon {
+  background-image: url('../assets/email.png');
+}
+
+.phone-icon {
+  background-image: url('../assets/phone.png');
+}
+
+.skype-icon {
+  background-image: url('../assets/skype.png');
   width: 50px;
   height: 50px;
-  background-color: red;
-  margin: 15px;
+}
+
+.gm-icon {
+  background-image: url('../assets/gm.png');
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
 }
 
 .map iframe {
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 250px;
   border:solid 1px $c-accent;
   padding: 5px;
 }

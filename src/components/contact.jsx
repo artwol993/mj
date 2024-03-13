@@ -28,16 +28,25 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="contact-box">
+          <div className="contact-box__2">
             <div className="contact-box-row">
-              <a href="tel:+48509019090">
-                <p className="contact-link">+48 509 019 090</p>
-              </a>
-              <a href="mailto:marzanna.jakoniuk@psychoterapia.pl">
-                <p className="contact-link">
-                  marzanna.jakoniuk@psychoterapia.pl
-                </p>
-              </a>
+              <div>
+                <a className="contact-box-link" href="tel:+48509019090">
+                  <div className="icon phone-icon"></div>
+                  <div className="contact-link-p">
+                    <p>+48 509 019 090</p>
+                  </div>
+                </a>
+                <a
+                  className="contact-box-link"
+                  href="mailto:marzanna.jakoniuk@psychoterapia.pl"
+                >
+                  <div className="icon email-icon"></div>
+                  <p className="contact-link-p">
+                    marzanna.jakoniuk@psychoterapia.pl
+                  </p>
+                </a>
+              </div>
             </div>
             <div className="contact-box-row">
               <p className="paragraph-online">
