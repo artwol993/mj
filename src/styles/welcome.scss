@@ -87,6 +87,7 @@
     .name {
       padding: 100px 30px 0 0;
       text-align: right;
+      font-size: $header-size-large;
       
       p{
         font-size: 25px;
@@ -95,11 +96,20 @@
 
     @include for-desktop {
       .name {
-        padding: 100px 200px 0 0;
+        padding: 100px 70px 0 0;
         line-height: 44px;
       }
     }
+
+    @include for-wide-desktop {
+      .name {
+        padding: 100px 170px 0 0;
+        font-size: $header-size-extra-large;
+      }
+    }
   }
+
+ 
 
   &.show-bottom {
     .top-section {
