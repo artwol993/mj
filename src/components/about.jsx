@@ -12,7 +12,7 @@ function About() {
       <h2>O mnie</h2>
       <div className="about-container">
         <motion.div
-          className="about-box"
+          className="about-box exp"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -31,12 +31,13 @@ function About() {
           </div>
           <div className="about-text-box">
             <p>
-              Doświadczenie zawodowe kształtowałam współpracując z Fundacją
-              Itaka, w Centrum Wsparcia dla Osób w Kryzysie Psychicznym, w
-              Centrum Wsparcia i Mediacji dla Rodzin, Samodzielnym Wojewódzkim
-              Zespole Publicznych Zakładów Psychiatrycznej Opieki Zdrowotnej w
-              Warszawie, oraz przez 20 lat w pracy z młodzieżą i młodymi
-              dorosłymi w szkole średniej.
+              Doświadczenie zawodowe kształtowałam współpracując z
+              <b> Fundacją Itaka,</b> w Centrum Wsparcia dla Osób w Kryzysie
+              Psychicznym, w <b>Centrum Wsparcia i Mediacji dla Rodzin, </b>
+              Samodzielnym Wojewódzkim Zespole Publicznych Zakładów
+              Psychiatrycznej Opieki Zdrowotnej w Warszawie,
+              <b> oraz przez 20 lat w pracy z młodzieżą </b> i młodymi dorosłymi
+              w szkole średniej.
             </p>
           </div>
         </motion.div>
