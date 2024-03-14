@@ -2,22 +2,16 @@
 @import './config/fonts';
 @import './config/breakpoints';
 
+.contact-header {
+  padding: 10px;
+  text-align: center;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-
-  h3 {
-    padding-top: 25px;
-  }
-
-  h4 {
-    color: $c-accent;
-    padding: 10px;
-    font-size: $header-size-small;
-  }
 }
 
 .contact-box {
@@ -25,134 +19,226 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+
+
+  &__2 {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/background.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+  
+  }
 }
 
-.map {
-  text-align: center;
-}
-
-.map iframe {
-  width: 100%;
-  height: 200px;
-  border:solid 1px $c-accent;
-  padding: 5px;
+.contact-box-background {
+  width: 350px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.781);
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-box-row {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $c-theme;
-  padding: 20px 40px;
-  border: solid 1px $c-accent;
-  width: calc(100% - 60px); 
-  box-sizing: border-box; 
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  &__2 {
+    width: 350px;
+    padding: 10px;
+  }
 }
 
-.contact-link{
-  font-size: 15px;
-  padding-bottom: 5px;
+.contact-box-link {
+  display: flex;
 }
 
-.contact-link:hover {
-  color: grey;
-  text-decoration: underline;
+.contact-link-p {
+  padding-bottom: 7px;
+  font-weight: 500;
+  font-size: $font-size-medium
 }
 
-.contact-icon {
-  width: 240px;
-  height: 50px;
-  background-color: white;
-  margin: 15px;
-  cursor: pointer;
-  transition: transform 0.3s ease; 
-  background-size:contain;
+.contact-box-link:hover {
+  transform: scale(1.1);
+}
+
+.paragraph-online {
+  font-weight: 500;
+  text-align: center;
+  width: 340px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.contact-icon:hover {
-  transform: scale(1.1); 
+.email-icon {
+  background-image: url('../assets/email.png');
 }
 
-.zl {
-  background-image: url('../assets/znany-lekarz-logo.png');
+.phone-icon {
+  background-image: url('../assets/phone.png');
 }
 
-.booksy {
-  background-image: url('../assets/Booksy-logo.svg');
+.skype-icon {
+  background-image: url('../assets/skype.png');
+  width: 50px;
+  height: 50px;
+  margin-right: 45px;
 }
 
+.gm-icon {
+  background-image: url('../assets/gm-1.png');
+  width: 45px;
+  height: 45px;
+}
 
-@include for-tablet {
+.map {
+  padding-bottom: 10px;
+}
+
+.map iframe {
+  width: 350px;
+  height: 250px;
+  border:solid 2px $c-accent;
+
+}
+
+.map-paragraph {
+  font-weight: 500;
+  font-size: $font-size-semi-large;
+  padding: 0 5px 15px ;
+  text-align: center;
+}
+
+@include for-tablet-up {
+  .contact-container {
+    width: 100%;
+    padding: 50px 20px 70px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/background.jpg');
+  }
+
   .contact-box {
-    width: 700px;
+    &__2 {
+      width: auto;
+      background-image: none;
+    }
+  }
+
+  .contact-box-background {
+    height: 400px;
+    width: 370px;
+    justify-content: center;
+  }
+
+  .contact-container {
+    flex-direction: row;
   }
 
   .contact-box-row {
-    flex-direction: row;
-    justify-content: space-around; 
-    align-items: flex-start; 
+    &__2 {
+      padding: 10px;
+    }
   }
-  .map {
-    margin: 10px;
+
+  .map-paragraph {
+    width: 300px;
+    color: $c-black;
   }
 
   .contact-link {
-    margin: 0 60px;
-    min-width: 120px;
     white-space: nowrap;
-  }
-
-  .contact-box-inner {
-    padding-inline: 10px;
-  }
-
-  .contact-icon { 
-    width: 280px;
-    height: 60px;
+    text-align: left;
   }
 }
 
 @include for-desktop {
   .contact-box {
-    width: 1000px;
-  }
-
-  .contact-box-row {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-
-    .contact-link {
-      margin: 0 60px; 
-      min-width: 150px; 
-      white-space: nowrap;
+    padding: 50px;
+    &__2 {
+      padding: 50px;
     }
   }
 
-  .map {
-    padding: 15px;
+  .contact-box-background {
+    width: 450px;
+    height: 450px;
   }
 
-  .contact-icon {
-    width: 310px;
-    height: 65px;
-    margin: 15px;
+  .contact-box-row {
+    &__2 {
+      width: 400px;
+    }
+  }
+  
+  .contact-link {
+    margin: 0 60px; 
+    min-width: 150px; 
+    white-space: nowrap;
+  }
+
+  .map iframe {
+    padding: 15px;
+    width: 410px;
+    height: 350px;
+    border: none;
+  }
+
+  .map-paragraph {
+    padding-bottom: 10px;
+    padding-inline: 30px;
+    width: 400px;
+    font-size: $font-size-large;
+    font-weight: 600;
+  }
+
+  .contact-link-p  {
+    font-size: $font-size-large;
+  }
+
+  .paragraph-online {
+    font-size: $font-size-large;
+    padding: 10px;
+    width: 400px;
   }
 }
 
 @include for-wide-desktop {
-  .contact-box {
-    width: 1200px;
+
+  .contact-box-background {
+    width: 500px;
+    height: 450px;
+    padding: 40px;
   }
 
   .map iframe {
-    width: 450px;
+    width: 500px;
     height: 300px;
-    border:solid 1px $c-accent;
     padding: 5px;
   }
 }
+
