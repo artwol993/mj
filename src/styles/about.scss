@@ -12,29 +12,111 @@
   }
 }
 
-.about-container {
-  padding: 10px;
-  background-color: #ffffff8e ;
+.about-box {
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.about-box {
-  background-color: $c-primary;
-  margin: 20px 10px;
+.about-box-image {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.pic-therapy {
+  background-image: url('../assets/terapia.jpg');
+}
+
+.pic-change {
+  background-image: url('../assets/zmiana.jpg');
+}
+
+.about-box-picture {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 15px;
+  background-image: url('../assets/staw.jpg');
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 .about-text-box {
-  padding: 50px 20px;
+  margin: 15px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@include for-tablet {
+.white-box {
+  background-color: white;
+  padding: 25px 15px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.white-text {
+  color: white;
+  font-weight: 600;
+  font-size: $font-size-large;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-block: 20px;
+}
+
+.exp-ul {
+  margin-top: 5px;
+}
+
+.exp-li {
+  margin-left: 20px;
+  text-align: start;
+}
+
+@include for-tablet-up {
   .about-section{
     padding: 20px 50px 50px 50px;
   }
 
   .about-container {
-    padding: 50px 0;
     width: 700px;
+  }
+
+  .about-box {
+   flex-direction: row;
+   align-items: start;
+  }
+
+  .about-box-image {
+    width: 400px;
+    height: 250px;
+  }
+
+  .about-box-picture {
+    width: 400px;
+    height: 400px;
+  }
+
+  .about-text-box {
+    width: 50%;
+    justify-content: start;
+    text-align: start;
+    padding-top: 10px;
+  }
+
+  .white-text {
+    margin-inline: 35px;
+    margin-block: 0;
+    text-align: center;
+    width: 150%;
   }
 }
 
@@ -45,7 +127,21 @@
 
   .about-container {
     padding: 50px 0;
-    width: 850px;
+    width: 900px;
+  }
+
+  .about-box {
+   margin: 30px 20px;
+   }
+
+   .about-box-image {
+    width: 500px;
+    height: 300px;
+  }
+
+  .about-box-picture {
+    width: 500px;
+    height: 500px;
   }
 }
 

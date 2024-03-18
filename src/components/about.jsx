@@ -21,24 +21,51 @@ function About() {
         >
           <div className="about-text-box">
             <p style={{ textIndent: "20px" }}>
-              Jestem psychoterapeutką w trakcie szkolenia w Szkole Psychoterapii
-              Gestalt, która posiada akredytację EAGT (European Association of
-              Gestalt Therapy), jest członkiem European Association for
-              Psychotherapy (EAP) i spełnia wymogi „Ustawy o Niektórych Zawodach
-              Medycznych”. Jestem także psycholożką, terapeutką TSR i trenerką
-              grupową.
-              <br></br>
-              <br></br>
-              Doświadczenie zawodowe kształtowałam współpracując z Fundacją
-              Itaka, w Centrum Wsparcia dla Osób w Kryzysie Psychicznym, w
-              Centrum Wsparcia i Mediacji dla Rodzin, Samodzielnym Wojewódzkim
-              Zespole Publicznych Zakładów Psychiatrycznej Opieki Zdrowotnej w
-              Warszawie, oraz przez 20 lat w pracy z młodzieżą i młodymi
-              dorosłymi w szkole średniej.
-              <br></br>
-              <br></br>
-              Ponieważ wierzę, że człowiek kształci się przez całe życie, nadal
-              doskonalę swoje umiejętności podczas szkoleń i warsztatów
+              Jestem psychoterapeutką w trakcie szkolenia
+              <b> w Szkole Psychoterapii Gestalt,</b> która posiada akredytację
+              <b> EAGT </b> (European Association of Gestalt Therapy), jest
+              członkiem European Association for Psychotherapy <b> (EAP) </b> i
+              spełnia wymogi „Ustawy o Niektórych Zawodach Medycznych”. Jestem
+              także <b> psycholożką, terapeutką TSR i trenerką grupową. </b>
+            </p>
+          </div>
+          <div className="about-text-box white-box">
+            <p>
+              <b>Doświadczenie zawodowe kształtowałam współpracując z:</b>
+            </p>
+            <ul className="exp-ul">
+              <li className="exp-li">Fundacją Itaka, </li>
+              <li className="exp-li">
+                w Centrum Wsparcia dla Osób w Kryzysie Psychicznym,
+              </li>
+              <li className="exp-li">
+                w Centrum Wsparcia i Mediacji dla Rodzin,
+              </li>
+              <li className="exp-li">
+                Samodzielnym Wojewódzkim Zespole Publicznych Zakładów
+                Psychiatrycznej Opieki Zdrowotnej w Warszawie,
+              </li>
+              <li className="exp-li">
+                20 lat w pracy z młodzieżą i młodymi dorosłymi w szkole
+                średniej.
+              </li>
+            </ul>
+          </div>
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
+          <div className="about-box-image pic-therapy"></div>
+          <div className="about-text-box">
+            <p style={{ textIndent: "20px" }}>
+              Ponieważ wierzę, że
+              <b> człowiek kształci się przez całe życie, </b>
+              nadal doskonalę swoje umiejętności podczas szkoleń i warsztatów
               prowadzonych przez certyfikowanych trenerów różnych podejść
               psychoterapeutycznych.
             </p>
@@ -54,20 +81,37 @@ function About() {
         >
           <div className="about-text-box">
             <p style={{ textIndent: "20px" }}>
-              Pracuję indywidualnie z młodzieżą w wieku od 16 roku życia oraz z
-              osobami dorosłymi. Superwizuję swoją praktykę indywidualną u
-              certyfikowanych superwizorów. Kieruję się Kodeksami Etyki
-              Psychologa i Polskiego Towarzystwa Psychoterapii Gestalt.
-              <br></br>
-              <br></br>W pracy psychoterapeutki ważna jest dla mnie otwartość
-              oraz uważność na drugiego człowieka, które pomagają budować
-              autentyczną relację, opartą na szacunku i współodczuwaniu.
+              W pracy psychoterapeutki ważna jest dla mnie <b> otwartość </b>
+              oraz <b> uważność na drugiego człowieka, </b> które pomagają
+              budować autentyczną relację, opartą na szacunku i współodczuwaniu.
               Towarzyszę ludziom w podróży do satysfakcjonującego życia,
-              nazywania potrzeb i rozpoznawania składników potencjału,
-              akceptowania siebie. Aby odzyskiwali kontrolę, doświadczali
-              sprawczości, przezwyciężali kryzys.
-              <br></br>
-              <br></br>
+              <b> nazywania potrzeb </b>i rozpoznawania składników potencjału,{" "}
+              <b> akceptowania siebie. </b>
+              Aby odzyskiwali kontrolę, doświadczali sprawczości, przezwyciężali
+              kryzys.
+            </p>
+          </div>
+          <div className="about-text-box white-box">
+            <p>
+              Pracuję indywidualnie z <b>młodzieżą</b> w wieku od 16 roku życia
+              oraz z <b>osobami dorosłymi</b>. Superwizuję swoją praktykę
+              indywidualną u certyfikowanych superwizorów. Kieruję się Kodeksami{" "}
+              <b>Etyki Psychologa </b> i
+              <b> Polskiego Towarzystwa Psychoterapii Gestalt</b>.
+            </p>
+          </div>
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
+          <div className="about-box-image pic-change"></div>
+          <div className="about-text-box">
+            <p>
               Wierzę, że akceptujący kontakt jest początkiem zmiany a każdy
               człowiek ma wystarczające zasoby i umiejętności żeby poradzić
               sobie z trudnościami.
@@ -82,15 +126,39 @@ function About() {
           transition={{ duration: 1 }}
           variants={boxVariants}
         >
-          <div className="about-text-box">
-            <p style={{ textIndent: "20px" }}>
+          <div className="about-text-box ">
+            <p className="white-text">
               Ponieważ gotowe rozwiązania nie istnieją, zapraszam do wspólnych
               poszukiwań.
-              <br></br>
-              <br></br>
+            </p>
+          </div>
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
+          <div className="about-text-box">
+            <p className="white-text">
               Bogate doświadczenia zawodowe i osobiste pomagają mi lepiej
               zrozumieć świat moich klientów.
-              <br></br> <br></br>
+            </p>
+          </div>
+        </motion.div>
+        <motion.div
+          className="about-box"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={boxVariants}
+        >
+          <div className="about-text-box ">
+            <div className="about-box-picture"></div>
+            <p className="white-text">
               Prywatnie jestem żoną i mamą. W wolnym czasie lubię kontakt z
               naturą, piesze wędrówki i wycieczki rowerowe.
             </p>
