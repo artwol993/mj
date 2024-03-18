@@ -19,10 +19,15 @@
   justify-content: center;
   align-items: center;
 }
+.about-box-image {
+  width: 400px;
+  height: 200px;
+  background-color: antiquewhite;
+}
 
 .about-box-picture {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 15px;
   background-image: url('../assets/staw.jpg');
   background-size: cover;
@@ -70,8 +75,26 @@
   }
 
   .about-container {
-    padding: 50px 0;
     width: 700px;
+  }
+
+  .about-box {
+   flex-direction: row;
+   align-items: start;
+  }
+
+  .about-text-box {
+    width: 50%;
+    justify-content: start;
+    text-align: start;
+    padding-top: 10px;
+  }
+
+  .white-text {
+    margin-inline: 35px;
+    margin-block: 0;
+    text-align: center;
+    width: 150%;
   }
 }
 
