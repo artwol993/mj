@@ -27,6 +27,7 @@
 .about-box-picture {
   width: 300px;
   height: 300px;
+  margin-bottom: 15px;
   background-image: url('../assets/staw.jpg');
   background-size: cover;
   background-position: center;
@@ -37,6 +38,13 @@
 .about-text-box {
   margin: 15px 20px;
   text-align: center;
+}
+
+.white-box {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  font-weight: 600;
 }
 
 @include for-tablet {

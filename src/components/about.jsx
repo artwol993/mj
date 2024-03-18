@@ -49,10 +49,10 @@ function About() {
           transition={{ duration: 1 }}
           variants={boxVariants}
         >
-          <div className="about-text-box">
+          <div className="about-text-box white-box">
             <p>
-              Ponieważ wierzę, że człowiek kształci się przez całe życie, nadal
-              doskonalę swoje umiejętności podczas szkoleń i warsztatów
+              Ponieważ wierzę, że <b>człowiek kształci się przez całe życie,</b>{" "}
+              nadal doskonalę swoje umiejętności podczas szkoleń i warsztatów
               prowadzonych przez certyfikowanych trenerów różnych podejść
               psychoterapeutycznych.
             </p>
@@ -68,25 +68,27 @@ function About() {
         >
           <div className="about-text-box">
             <p style={{ textIndent: "20px" }}>
-              Pracuję indywidualnie z młodzieżą w wieku od 16 roku życia oraz z
-              osobami dorosłymi. Superwizuję swoją praktykę indywidualną u
-              certyfikowanych superwizorów. Kieruję się Kodeksami Etyki
-              Psychologa i Polskiego Towarzystwa Psychoterapii Gestalt.
+              Pracuję indywidualnie z <b>młodzieżą</b> w wieku od 16 roku życia
+              oraz z <b>osobami dorosłymi</b>. Superwizuję swoją praktykę
+              indywidualną u certyfikowanych superwizorów. Kieruję się Kodeksami{" "}
+              <b>Etyki Psychologa </b> i
+              <b> Polskiego Towarzystwa Psychoterapii Gestalt</b>.
             </p>
           </div>
 
           <div className="about-text-box">
             <p>
-              W pracy psychoterapeutki ważna jest dla mnie otwartość oraz
-              uważność na drugiego człowieka, które pomagają budować autentyczną
-              relację, opartą na szacunku i współodczuwaniu. Towarzyszę ludziom
-              w podróży do satysfakcjonującego życia, nazywania potrzeb i
-              rozpoznawania składników potencjału, akceptowania siebie. Aby
-              odzyskiwali kontrolę, doświadczali sprawczości, przezwyciężali
+              W pracy psychoterapeutki ważna jest dla mnie <b> otwartość </b>
+              oraz <b> uważność na drugiego człowieka, </b> które pomagają
+              budować autentyczną relację, opartą na szacunku i współodczuwaniu.
+              Towarzyszę ludziom w podróży do satysfakcjonującego życia,
+              <b> nazywania potrzeb </b>i rozpoznawania składników potencjału,{" "}
+              <b> akceptowania siebie. </b>
+              Aby odzyskiwali kontrolę, doświadczali sprawczości, przezwyciężali
               kryzys.
             </p>
           </div>
-          <div className="about-text-box">
+          <div className="about-text-box white-box">
             <p>
               Wierzę, że akceptujący kontakt jest początkiem zmiany a każdy
               człowiek ma wystarczające zasoby i umiejętności żeby poradzić
@@ -101,9 +103,7 @@ function About() {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
           variants={boxVariants}
-        >
-          <div className="about-box-picture"></div>
-        </motion.div>
+        ></motion.div>
         <motion.div
           className="about-box"
           initial="hidden"
@@ -112,14 +112,11 @@ function About() {
           transition={{ duration: 1 }}
           variants={boxVariants}
         >
-          <div className="about-text-box">
-            <p style={{ textIndent: "20px" }}>
+          <div className="about-text-box ">
+            <p>
               Ponieważ gotowe rozwiązania nie istnieją, zapraszam do wspólnych
               poszukiwań.
             </p>
-          </div>
-
-          <div className="about-text-box">
             <p>
               Bogate doświadczenia zawodowe i osobiste pomagają mi lepiej
               zrozumieć świat moich klientów.
@@ -127,6 +124,11 @@ function About() {
           </div>
 
           <div className="about-text-box">
+            <p></p>
+          </div>
+
+          <div className="about-text-box white-box">
+            <div className="about-box-picture"></div>
             <p>
               Prywatnie jestem żoną i mamą. W wolnym czasie lubię kontakt z
               naturą, piesze wędrówki i wycieczki rowerowe.
