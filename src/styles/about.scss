@@ -19,18 +19,30 @@
   justify-content: center;
   align-items: center;
 }
+
 .about-box-image {
-  width: 400px;
+  width: 300px;
   height: 200px;
-  background-color: antiquewhite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.pic-therapy {
+  background-image: url('../assets/terapia.jpg');
+}
+
+.pic-change {
+  background-image: url('../assets/zmiana.jpg');
 }
 
 .about-box-picture {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin-bottom: 15px;
   background-image: url('../assets/staw.jpg');
-  background-size: cover;
+  background-size:contain;
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -69,7 +81,7 @@
   text-align: start;
 }
 
-@include for-tablet {
+@include for-tablet-up {
   .about-section{
     padding: 20px 50px 50px 50px;
   }
@@ -81,6 +93,16 @@
   .about-box {
    flex-direction: row;
    align-items: start;
+  }
+
+  .about-box-image {
+    width: 400px;
+    height: 250px;
+  }
+
+  .about-box-picture {
+    width: 400px;
+    height: 400px;
   }
 
   .about-text-box {
@@ -105,7 +127,21 @@
 
   .about-container {
     padding: 50px 0;
-    width: 850px;
+    width: 900px;
+  }
+
+  .about-box {
+   margin: 30px 20px;
+   }
+
+   .about-box-image {
+    width: 500px;
+    height: 300px;
+  }
+
+  .about-box-picture {
+    width: 500px;
+    height: 500px;
   }
 }
 

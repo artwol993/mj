@@ -60,7 +60,7 @@ function About() {
           transition={{ duration: 1 }}
           variants={boxVariants}
         >
-          <div className="about-box-image"></div>
+          <div className="about-box-image pic-therapy"></div>
           <div className="about-text-box">
             <p style={{ textIndent: "20px" }}>
               Ponieważ wierzę, że
@@ -109,7 +109,7 @@ function About() {
           transition={{ duration: 1 }}
           variants={boxVariants}
         >
-          <div className="about-box-image"></div>
+          <div className="about-box-image pic-change"></div>
           <div className="about-text-box">
             <p>
               Wierzę, że akceptujący kontakt jest początkiem zmiany a każdy
