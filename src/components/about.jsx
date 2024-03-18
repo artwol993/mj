@@ -22,23 +22,34 @@ function About() {
           <div className="about-text-box">
             <p style={{ textIndent: "20px" }}>
               Jestem psychoterapeutką w trakcie szkolenia
-              <b>w Szkole Psychoterapii Gestalt,</b> która posiada akredytację
-              <b> EAGT</b> (European Association of Gestalt Therapy), jest
-              członkiem European Association for Psychotherapy <b>(EAP)</b> i
+              <b> w Szkole Psychoterapii Gestalt,</b> która posiada akredytację
+              <b> EAGT </b> (European Association of Gestalt Therapy), jest
+              członkiem European Association for Psychotherapy <b> (EAP) </b> i
               spełnia wymogi „Ustawy o Niektórych Zawodach Medycznych”. Jestem
-              także <b>psycholożką, terapeutką TSR i trenerką grupową.</b>
+              także <b> psycholożką, terapeutką TSR i trenerką grupową. </b>
             </p>
           </div>
-          <div className="about-text-box">
+          <div className="about-text-box white-box">
             <p>
-              Doświadczenie zawodowe kształtowałam współpracując z
-              <b> Fundacją Itaka,</b> w Centrum Wsparcia dla Osób w Kryzysie
-              Psychicznym, w <b>Centrum Wsparcia i Mediacji dla Rodzin, </b>
-              Samodzielnym Wojewódzkim Zespole Publicznych Zakładów
-              Psychiatrycznej Opieki Zdrowotnej w Warszawie,
-              <b> oraz przez 20 lat w pracy z młodzieżą </b> i młodymi dorosłymi
-              w szkole średniej.
+              <b>Doświadczenie zawodowe kształtowałam współpracując z:</b>
             </p>
+            <ul className="exp-ul">
+              <li className="exp-li">Fundacją Itaka, </li>
+              <li className="exp-li">
+                w Centrum Wsparcia dla Osób w Kryzysie Psychicznym,
+              </li>
+              <li className="exp-li">
+                w Centrum Wsparcia i Mediacji dla Rodzin,
+              </li>
+              <li className="exp-li">
+                Samodzielnym Wojewódzkim Zespole Publicznych Zakładów
+                Psychiatrycznej Opieki Zdrowotnej w Warszawie,
+              </li>
+              <li className="exp-li">
+                20 lat w pracy z młodzieżą i młodymi dorosłymi w szkole
+                średniej.
+              </li>
+            </ul>
           </div>
         </motion.div>
         <motion.div
@@ -49,9 +60,10 @@ function About() {
           transition={{ duration: 1 }}
           variants={boxVariants}
         >
-          <div className="about-text-box white-box">
+          <div className="about-text-box">
             <p>
-              Ponieważ wierzę, że <b>człowiek kształci się przez całe życie,</b>{" "}
+              Ponieważ wierzę, że{" "}
+              <b> człowiek kształci się przez całe życie, </b>
               nadal doskonalę swoje umiejętności podczas szkoleń i warsztatów
               prowadzonych przez certyfikowanych trenerów różnych podejść
               psychoterapeutycznych.
@@ -66,7 +78,7 @@ function About() {
           transition={{ duration: 1 }}
           variants={boxVariants}
         >
-          <div className="about-text-box">
+          <div className="about-text-box white-box">
             <p style={{ textIndent: "20px" }}>
               Pracuję indywidualnie z <b>młodzieżą</b> w wieku od 16 roku życia
               oraz z <b>osobami dorosłymi</b>. Superwizuję swoją praktykę
@@ -113,18 +125,17 @@ function About() {
           variants={boxVariants}
         >
           <div className="about-text-box ">
-            <p>
-              Ponieważ gotowe rozwiązania nie istnieją, zapraszam do wspólnych
-              poszukiwań.
-            </p>
-            <p>
-              Bogate doświadczenia zawodowe i osobiste pomagają mi lepiej
-              zrozumieć świat moich klientów.
+            <p className="white-text">
+              Ponieważ gotowe rozwiązania nie istnieją,
+              <b> zapraszam do wspólnych poszukiwań. </b>
             </p>
           </div>
 
           <div className="about-text-box">
-            <p></p>
+            <p className="white-text">
+              Bogate doświadczenia zawodowe i osobiste pomagają mi lepiej
+              zrozumieć świat moich klientów.
+            </p>
           </div>
 
           <div className="about-text-box white-box">
