@@ -4,6 +4,8 @@
   "description": "Wizytówka Marzanny Jakoniuk - psychologa i psychoterapeuty.",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -24,6 +26,7 @@
   "dependencies": {
     "babel-preset-react-app": "^10.0.1",
     "framer-motion": "^11.0.3",
+    "gh-pages": "^6.1.1",
     "npm": "^10.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
