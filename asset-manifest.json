@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.9fe210ee.css",
-    "main.js": "/static/js/main.d2fa6ced.js",
-    "static/media/zmiana.jpg": "/static/media/zmiana.edd3884f245f141ca23a.jpg",
-    "static/media/terapia.jpg": "/static/media/terapia.8aa5ddd2536852528220.jpg",
-    "static/media/background.jpg": "/static/media/background.3a91a7562287a341b96b.jpg",
-    "static/media/staw.jpg": "/static/media/staw.634d6d671ded120a2637.jpg",
-    "static/media/terapia_długoterminowa.webp": "/static/media/terapia_długoterminowa.e2a779896ba682ad17cf.webp",
-    "static/media/terapia_16.webp": "/static/media/terapia_16.5941ac675ad8696cac90.webp",
-    "static/media/terapia_krótkoterminowa.webp": "/static/media/terapia_krótkoterminowa.db1dca9d141c0231de7a.webp",
-    "static/media/konsultacja_psychologiczna.webp": "/static/media/konsultacja_psychologiczna.8e99f5ffcd6120008d0b.webp",
-    "static/media/mj.jpg": "/static/media/mj.38afbd35e42829dcd3d4.jpg",
-    "static/media/logo.png": "/static/media/logo.2568319bb2b106e5be0d.png",
-    "static/media/skype.png": "/static/media/skype.d8e3245be701f4106a57.png",
-    "static/media/phone.png": "/static/media/phone.5e431ca748e6b0862cf5.png",
-    "static/media/gm-1.png": "/static/media/gm-1.9afc9ba2f8a052ff41d4.png",
-    "index.html": "/index.html",
-    "main.9fe210ee.css.map": "/static/css/main.9fe210ee.css.map",
-    "main.d2fa6ced.js.map": "/static/js/main.d2fa6ced.js.map"
+    "main.css": "/mj/static/css/main.c4fe1203.css",
+    "main.js": "/mj/static/js/main.bf439b1b.js",
+    "static/media/zmiana.jpg": "/mj/static/media/zmiana.edd3884f245f141ca23a.jpg",
+    "static/media/terapia.jpg": "/mj/static/media/terapia.8aa5ddd2536852528220.jpg",
+    "static/media/background.jpg": "/mj/static/media/background.3a91a7562287a341b96b.jpg",
+    "static/media/staw.jpg": "/mj/static/media/staw.634d6d671ded120a2637.jpg",
+    "static/media/terapia_długoterminowa.webp": "/mj/static/media/terapia_długoterminowa.e2a779896ba682ad17cf.webp",
+    "static/media/terapia_16.webp": "/mj/static/media/terapia_16.5941ac675ad8696cac90.webp",
+    "static/media/terapia_krótkoterminowa.webp": "/mj/static/media/terapia_krótkoterminowa.db1dca9d141c0231de7a.webp",
+    "static/media/konsultacja_psychologiczna.webp": "/mj/static/media/konsultacja_psychologiczna.8e99f5ffcd6120008d0b.webp",
+    "static/media/mj.jpg": "/mj/static/media/mj.38afbd35e42829dcd3d4.jpg",
+    "static/media/logo.png": "/mj/static/media/logo.2568319bb2b106e5be0d.png",
+    "static/media/skype.png": "/mj/static/media/skype.d8e3245be701f4106a57.png",
+    "static/media/phone.png": "/mj/static/media/phone.5e431ca748e6b0862cf5.png",
+    "static/media/gm-1.png": "/mj/static/media/gm-1.9afc9ba2f8a052ff41d4.png",
+    "index.html": "/mj/index.html",
+    "main.c4fe1203.css.map": "/mj/static/css/main.c4fe1203.css.map",
+    "main.bf439b1b.js.map": "/mj/static/js/main.bf439b1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fe210ee.css",
-    "static/js/main.d2fa6ced.js"
+    "static/css/main.c4fe1203.css",
+    "static/js/main.bf439b1b.js"
   ]
 }
