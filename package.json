@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Wizytówka Marzanny Jakoniuk - psychologa i psychoterapeuty.",
   "main": "index.js",
+  "homepage":"https://artwol993.github.io/mj/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
