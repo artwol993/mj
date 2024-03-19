@@ -32,7 +32,7 @@
 
 .price-picture {
   position: relative;
-  background-image: url('../assets/price.jpg');
+  background-image: url('../assets/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,21 +41,6 @@
   justify-content:center;
   align-items: center;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.153);
-    z-index: 1;
-  }
-
-  > * {
-    position: relative;
-    z-index: 2;
-  }
 }
 
 

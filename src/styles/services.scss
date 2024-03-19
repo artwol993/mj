@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../assets/services-theme.jpg');
+  background-image: url('../assets/background.jpg');
 }
 
 .services-container {
@@ -21,7 +21,7 @@
  .services {
   width: 100%;
   max-width: 1200px;
-  padding: 30px 50px; 
+  padding: 50px; 
   color: $c-accent;
   text-align: center;
   
@@ -50,11 +50,9 @@
   }
 }
 
-@include for-desktop-up {
+@include for-tablet-up {
   .services__title {
-
     font-size: $header-size-semi-large; 
-
   }
 }
 

@@ -46,8 +46,8 @@ function About() {
                 Psychiatrycznej Opieki Zdrowotnej w Warszawie,
               </li>
               <li className="exp-li">
-                20 lat w pracy z młodzieżą i młodymi dorosłymi w szkole
-                średniej.
+                młodzieżą i młodymi dorosłymi w szkole średniej przez ponad 20
+                lat.
               </li>
             </ul>
           </div>
@@ -131,23 +131,13 @@ function About() {
               Ponieważ gotowe rozwiązania nie istnieją, zapraszam do wspólnych
               poszukiwań.
             </p>
-          </div>
-        </motion.div>
-        <motion.div
-          className="about-box"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          variants={boxVariants}
-        >
-          <div className="about-text-box">
             <p className="white-text">
               Bogate doświadczenia zawodowe i osobiste pomagają mi lepiej
               zrozumieć świat moich klientów.
             </p>
           </div>
         </motion.div>
+
         <motion.div
           className="about-box"
           initial="hidden"
