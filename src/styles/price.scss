@@ -1,5 +1,5 @@
 .price-section {
-  background-color: $c-primary;
+  background-color: $c-theme;
   padding:30px 20px;
   text-align: center;
 }
@@ -10,7 +10,6 @@
   flex-direction: column;
 
   .price-header {
-    color: $c-theme;
     padding-bottom: 20px;
     font-size: $header-size-medium;
   }
@@ -33,7 +32,6 @@
 
 .price-picture {
   position: relative;
-  color: $c-white;
   background-image: url('../assets/price.jpg');
   background-size: cover;
   background-position: center;
@@ -50,7 +48,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.351);
+    background: rgba(0, 0, 0, 0.153);
     z-index: 1;
   }
 
@@ -61,7 +59,7 @@
 }
 
 
-@include for-tablet {
+@include for-tablet-up {
   .price-container {
     padding: 20px 80px;
     display: flex;
@@ -98,10 +96,6 @@
     margin: 20px 40px;
   }
   
-  .price-header {
-    font-size: $header-size-semi-large;
-    padding-bottom: 25px;
-   }
 
   .price-box-text{
     font-size: $font-size-large;
