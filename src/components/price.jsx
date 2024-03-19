@@ -14,7 +14,7 @@ function Price() {
   return (
     <>
       <div className="price-section" id="price">
-        <h2 className="price-header">Oferta</h2>
+        <h3 className="price-header">Oferta</h3>
         <motion.div
           className="price-container price-picture"
           initial="hidden"

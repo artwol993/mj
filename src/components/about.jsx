@@ -9,7 +9,7 @@ function About() {
 
   return (
     <div className="about-section" id="about">
-      <h2>O mnie</h2>
+      <h3 className="about-header">O mnie</h3>
       <div className="about-container">
         <motion.div
           className="about-box"
@@ -20,7 +20,7 @@ function About() {
           variants={boxVariants}
         >
           <div className="about-text-box">
-            <p style={{ textIndent: "20px" }}>
+            <p>
               Jestem psychoterapeutką w trakcie szkolenia
               <b> w Szkole Psychoterapii Gestalt,</b> która posiada akredytację
               <b> EAGT </b> (European Association of Gestalt Therapy), jest
@@ -46,8 +46,8 @@ function About() {
                 Psychiatrycznej Opieki Zdrowotnej w Warszawie,
               </li>
               <li className="exp-li">
-                20 lat w pracy z młodzieżą i młodymi dorosłymi w szkole
-                średniej.
+                młodzieżą i młodymi dorosłymi w szkole średniej przez ponad 20
+                lat.
               </li>
             </ul>
           </div>
@@ -62,10 +62,11 @@ function About() {
         >
           <div className="about-box-image pic-therapy"></div>
           <div className="about-text-box">
-            <p style={{ textIndent: "20px" }}>
-              Ponieważ wierzę, że
-              <b> człowiek kształci się przez całe życie, </b>
-              nadal doskonalę swoje umiejętności podczas szkoleń i warsztatów
+            <p>
+              Ponieważ wierzę, że człowiek kształci się przez całe życie,
+              <b>
+                nadal doskonalę swoje umiejętności podczas szkoleń i warsztatów{" "}
+              </b>
               prowadzonych przez certyfikowanych trenerów różnych podejść
               psychoterapeutycznych.
             </p>
@@ -95,8 +96,8 @@ function About() {
             <p>
               Pracuję indywidualnie z <b>młodzieżą</b> w wieku od 16 roku życia
               oraz z <b>osobami dorosłymi</b>. Superwizuję swoją praktykę
-              indywidualną u certyfikowanych superwizorów. Kieruję się Kodeksami{" "}
-              <b>Etyki Psychologa </b> i
+              indywidualną u certyfikowanych superwizorów. Kieruję się
+              <b> Kodeksami Etyki Psychologa </b> i
               <b> Polskiego Towarzystwa Psychoterapii Gestalt</b>.
             </p>
           </div>
@@ -131,23 +132,13 @@ function About() {
               Ponieważ gotowe rozwiązania nie istnieją, zapraszam do wspólnych
               poszukiwań.
             </p>
-          </div>
-        </motion.div>
-        <motion.div
-          className="about-box"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          variants={boxVariants}
-        >
-          <div className="about-text-box">
             <p className="white-text">
               Bogate doświadczenia zawodowe i osobiste pomagają mi lepiej
               zrozumieć świat moich klientów.
             </p>
           </div>
         </motion.div>
+
         <motion.div
           className="about-box"
           initial="hidden"

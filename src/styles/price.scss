@@ -1,5 +1,5 @@
 .price-section {
-  background-color: $c-primary;
+  background-color: $c-theme;
   padding:30px 20px;
   text-align: center;
 }
@@ -9,9 +9,9 @@
   display: flex;
   flex-direction: column;
 
-  .price-headepricer {
-    color: $c-theme;
+  .price-header {
     padding-bottom: 20px;
+    font-size: $header-size-medium;
   }
 }
 
@@ -32,8 +32,7 @@
 
 .price-picture {
   position: relative;
-  color: $c-white;
-  background-image: url('../assets/relax.jpg');
+  background-image: url('../assets/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,25 +41,10 @@
   justify-content:center;
   align-items: center;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.582); // Czarna nakładka z 50% nieprzezroczystości
-    z-index: 1;
-  }
-
-  > * {
-    position: relative;
-    z-index: 2;
-  }
 }
 
 
-@include for-tablet {
+@include for-tablet-up {
   .price-container {
     padding: 20px 80px;
     display: flex;
@@ -97,10 +81,6 @@
     margin: 20px 40px;
   }
   
-  .price-header {
-    font-size: $header-size-semi-large;
-    padding-bottom: 25px;
-   }
 
   .price-box-text{
     font-size: $font-size-large;

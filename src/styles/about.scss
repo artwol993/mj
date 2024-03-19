@@ -7,9 +7,10 @@
   justify-content: center;
   align-items: center;
 
-  h2 {
-    padding: 10px 0 20px 0;
-  }
+}
+
+.about-header {
+  font-size: $header-size-medium;
 }
 
 .about-box {
@@ -60,7 +61,6 @@
 .white-box {
   background-color: white;
   padding: 25px 15px;
-  border-radius: 15px;
   font-weight: 600;
 }
 
@@ -68,8 +68,8 @@
   color: white;
   font-weight: 600;
   font-size: $font-size-large;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-block: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
 }
 
 .exp-ul {
@@ -90,9 +90,12 @@
     width: 700px;
   }
 
+  .about-header {
+    font-size: $header-size-semi-large;
+  }
+
   .about-box {
    flex-direction: row;
-   align-items: start;
   }
 
   .about-box-image {
@@ -107,8 +110,6 @@
 
   .about-text-box {
     width: 50%;
-    justify-content: start;
-    text-align: start;
     padding-top: 10px;
   }
 

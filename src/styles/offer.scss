@@ -33,16 +33,13 @@
   @include for-tablet-up {
     font-size: $header-size-semi-large;
   }
-
-  @include for-desktop-up {
-    font-size: $header-size-large;
-  }
 }
 
 .offer-paragraph {
   font-family: $f-main-regular;
   font-size: $font-size-medium;
   margin-bottom: 20px;
+  padding-inline: 30px;
 
   @include for-tablet-up {
     font-size: $font-size-semi-large;
@@ -55,7 +52,7 @@
 }
 
 .offer-container {
-  display: flex; // Domyślnie użyj flexboxa
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -95,8 +92,8 @@
   }
 
   @include for-desktop-up {
-    height: 210px;
-    width: 210px;
+    height: 220px;
+    width: 220px;
     gap: 5px;
 
     &:hover {
@@ -160,8 +157,8 @@
   }
   
   &__title {
-    font-family: $f-detal-light;
-    font-size: $font-size-small;
+    font-family: $f-main-regular;
+    font-size: 13px;
     font-weight: 200;
     color: $c-white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);

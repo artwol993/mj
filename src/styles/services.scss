@@ -2,6 +2,15 @@
 @import './config/breakpoints';
 @import './config/fonts';
 
+.services-section {
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../assets/background.jpg');
+}
+
 .services-container {
   display: flex;
   flex-direction: column;
@@ -12,8 +21,7 @@
  .services {
   width: 100%;
   max-width: 1200px;
-  padding: 30px 50px; 
-  background-color: $c-theme;
+  padding: 50px; 
   color: $c-accent;
   text-align: center;
   
@@ -21,12 +29,14 @@
   &__title {
     margin-bottom: 32px;
     text-align: center;
-    font-size: 22px; 
+    font-size: $header-size-medium; 
+    color: $c-white;
+    background-color: #505d6899;
   }
 
   &__box {
     padding: 25px;
-    background-color: $c-support;
+    background-color: #505d6899;
     border: solid 1px $c-accent;
     position: relative;
     box-sizing: border-box;
@@ -37,6 +47,12 @@
     padding: 5px;
     margin: 10px 2px;
     color: $c-white;
+  }
+}
+
+@include for-tablet-up {
+  .services__title {
+    font-size: $header-size-semi-large; 
   }
 }
 
