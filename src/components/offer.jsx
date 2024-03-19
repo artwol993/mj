@@ -40,7 +40,7 @@ function Offer() {
   };
 
   return (
-    <section className="offer-section">
+    <section className="offer-section" id="offer">
       <h3 className="offer-header">
         Czego spodziewać się podczas spotkań terapii indywidualnej?
       </h3>

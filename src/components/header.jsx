@@ -69,22 +69,22 @@ function Header() {
               </li>
               <li className="h-c-list">
                 <Link
-                  to="specialization"
-                  smooth={true}
-                  duration={500}
-                  onClick={toggleMenu}
-                >
-                  Metody leczenia
-                </Link>
-              </li>
-              <li className="h-c-list">
-                <Link
                   to="services"
                   smooth={true}
                   duration={500}
                   onClick={toggleMenu}
                 >
                   Oferta
+                </Link>
+              </li>
+              <li className="h-c-list">
+                <Link
+                  to="offer"
+                  smooth={true}
+                  duration={500}
+                  onClick={toggleMenu}
+                >
+                  Metody leczenia
                 </Link>
               </li>
               <li className="h-c-list">
@@ -102,7 +102,7 @@ function Header() {
             <ul className="desktop-nav">
               <li className="h-c-list">
                 <Link to="welcome" smooth={true} duration={500}>
-                  Witaj
+                  Start
                 </Link>
               </li>
               <li className="h-c-list">
@@ -111,13 +111,13 @@ function Header() {
                 </Link>
               </li>
               <li className="h-c-list">
-                <Link to="specialization" smooth={true} duration={500}>
-                  Metody leczenia
+                <Link to="services" smooth={true} duration={500}>
+                  Oferta
                 </Link>
               </li>
               <li className="h-c-list">
-                <Link to="services" smooth={true} duration={500}>
-                  Zakres leczenia
+                <Link to="offer" smooth={true} duration={500}>
+                  Metody leczenia
                 </Link>
               </li>
               <li className="h-c-list">
