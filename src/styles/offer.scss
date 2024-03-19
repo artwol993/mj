@@ -33,10 +33,6 @@
   @include for-tablet-up {
     font-size: $header-size-semi-large;
   }
-
-  @include for-desktop-up {
-    font-size: $header-size-large;
-  }
 }
 
 .offer-paragraph {

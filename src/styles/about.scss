@@ -7,9 +7,10 @@
   justify-content: center;
   align-items: center;
 
-  h2 {
-    padding: 10px 0 20px 0;
-  }
+}
+
+.about-header {
+  font-size: $header-size-medium;
 }
 
 .about-box {
@@ -88,6 +89,10 @@
 
   .about-container {
     width: 700px;
+  }
+
+  .about-header {
+    font-size: $header-size-semi-large;
   }
 
   .about-box {

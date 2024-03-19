@@ -29,7 +29,7 @@
   &__title {
     margin-bottom: 32px;
     text-align: center;
-    font-size: 22px; 
+    font-size: $header-size-medium; 
     color: $c-white;
     background-color: #505d6899;
   }
@@ -47,6 +47,14 @@
     padding: 5px;
     margin: 10px 2px;
     color: $c-white;
+  }
+}
+
+@include for-desktop-up {
+  .services__title {
+
+    font-size: $header-size-semi-large; 
+
   }
 }
 
