@@ -20,7 +20,7 @@ function About() {
           variants={boxVariants}
         >
           <div className="about-text-box">
-            <p style={{ textIndent: "20px" }}>
+            <p>
               Jestem psychoterapeutką w trakcie szkolenia
               <b> w Szkole Psychoterapii Gestalt,</b> która posiada akredytację
               <b> EAGT </b> (European Association of Gestalt Therapy), jest
@@ -62,10 +62,11 @@ function About() {
         >
           <div className="about-box-image pic-therapy"></div>
           <div className="about-text-box">
-            <p style={{ textIndent: "20px" }}>
-              Ponieważ wierzę, że
-              <b> człowiek kształci się przez całe życie, </b>
-              nadal doskonalę swoje umiejętności podczas szkoleń i warsztatów
+            <p>
+              Ponieważ wierzę, że człowiek kształci się przez całe życie,
+              <b>
+                nadal doskonalę swoje umiejętności podczas szkoleń i warsztatów{" "}
+              </b>
               prowadzonych przez certyfikowanych trenerów różnych podejść
               psychoterapeutycznych.
             </p>
@@ -95,8 +96,8 @@ function About() {
             <p>
               Pracuję indywidualnie z <b>młodzieżą</b> w wieku od 16 roku życia
               oraz z <b>osobami dorosłymi</b>. Superwizuję swoją praktykę
-              indywidualną u certyfikowanych superwizorów. Kieruję się Kodeksami{" "}
-              <b>Etyki Psychologa </b> i
+              indywidualną u certyfikowanych superwizorów. Kieruję się
+              <b> Kodeksami Etyki Psychologa </b> i
               <b> Polskiego Towarzystwa Psychoterapii Gestalt</b>.
             </p>
           </div>
