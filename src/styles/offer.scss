@@ -39,6 +39,7 @@
   font-family: $f-main-regular;
   font-size: $font-size-medium;
   margin-bottom: 20px;
+  padding-inline: 30px;
 
   @include for-tablet-up {
     font-size: $font-size-semi-large;
