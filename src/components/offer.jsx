@@ -45,8 +45,8 @@ function Offer() {
         Czego spodziewać się podczas spotkań terapii indywidualnej?
       </h3>
       <p className="offer-paragraph">
-        Każde spotkanie terapii indywidualnej trwa <b> 50 minut </b> i odbywa
-        się <b> raz w tygodniu, </b> w ustalony dzień i godzinę.
+        Każde spotkanie terapii indywidualnej trwa 50 minut i odbywa się raz w
+        tygodniu, w ustalony dzień i godzinę.
         <br></br>
         <br></br>
         Pierwsze 2-3 spotkania to spotkania konsultacyjne. Na pierwszym
