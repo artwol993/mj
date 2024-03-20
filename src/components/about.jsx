@@ -65,6 +65,7 @@ function About() {
             <p>
               Ponieważ wierzę, że człowiek kształci się przez całe życie,
               <b>
+                {" "}
                 nadal doskonalę swoje umiejętności podczas szkoleń i warsztatów{" "}
               </b>
               prowadzonych przez certyfikowanych trenerów różnych podejść
