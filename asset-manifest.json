@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mj/static/css/main.c4fe1203.css",
-    "main.js": "/mj/static/js/main.bf439b1b.js",
+    "main.css": "/mj/static/css/main.e13bff8f.css",
+    "main.js": "/mj/static/js/main.fdcf6570.js",
     "static/media/zmiana.jpg": "/mj/static/media/zmiana.edd3884f245f141ca23a.jpg",
     "static/media/terapia.jpg": "/mj/static/media/terapia.8aa5ddd2536852528220.jpg",
     "static/media/background.jpg": "/mj/static/media/background.3a91a7562287a341b96b.jpg",
@@ -16,11 +16,11 @@
     "static/media/phone.png": "/mj/static/media/phone.5e431ca748e6b0862cf5.png",
     "static/media/gm-1.png": "/mj/static/media/gm-1.9afc9ba2f8a052ff41d4.png",
     "index.html": "/mj/index.html",
-    "main.c4fe1203.css.map": "/mj/static/css/main.c4fe1203.css.map",
-    "main.bf439b1b.js.map": "/mj/static/js/main.bf439b1b.js.map"
+    "main.e13bff8f.css.map": "/mj/static/css/main.e13bff8f.css.map",
+    "main.fdcf6570.js.map": "/mj/static/js/main.fdcf6570.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4fe1203.css",
-    "static/js/main.bf439b1b.js"
+    "static/css/main.e13bff8f.css",
+    "static/js/main.fdcf6570.js"
   ]
 }
