@@ -32,18 +32,8 @@ function Welcome() {
 
   return (
     <>
-      <div
-        className={`container welcome-container ${
-          showBottomSection ? "show-bottom" : ""
-        }`}
-        id="welcome"
-      >
-        <div className="top-section">
-          <div
-            className="logo-container"
-            style={{ backgroundImage: `url(${logoBackground})` }}
-          ></div>
-        </div>
+      <div className="welcome-container" id="welcome">
+        <div className="top-section"></div>
         <div className="bottom-section">
           <div className="name">
             <p>
