@@ -22,7 +22,13 @@ function About() {
           <div className="about-box about-box-with-image">
             <div className="about-box-image"></div>
             <div className="about-text-box about-text-box-with-image ">
-              <p>
+              <div className="name">
+                <h1>Marzanna Jakoniuk</h1>
+                <p className="about-paragraph">
+                  Psycholog <br></br>Psychoterapeutka
+                </p>{" "}
+              </div>
+              <p className="about-paragraph">
                 Jestem <b> psychologiem </b> i <b> psychoterapeutką </b> w
                 trakcie 4-letniego szkolenia w Szkole Psychoterapii Gestalt,
                 która posiada akredytację EAGT (European Association of Gestalt
@@ -34,8 +40,7 @@ function About() {
           </div>
           <div className="about-box">
             <div className="about-text-box">
-              {" "}
-              <p>
+              <p className="about-paragraph">
                 <b>Doświadczenie zawodowe </b> kształtowałam współpracując z
                 Fundacją Itaka, w Centrum Wsparcia dla Osób Dorosłych w Kryzysie
                 Psychicznym, w Pogotowiu Psychologicznym, w Centrum Wsparcia i
@@ -43,18 +48,18 @@ function About() {
                 Wojewódzkim Zespole Publicznych Zakładów Psychiatrycznej Opieki
                 Zdrowotnej w Warszawie.
               </p>
-              <p>
+              <p className="about-paragraph">
                 Ponieważ wierzę, że człowiek kształci się przez całe życie,
                 nadal doskonalę swoje umiejętności podczas szkoleń i warsztatów
                 prowadzonych przez certyfikowanych trenerów różnych podejść
                 psychoterapeutycznych.
               </p>
-              <p>
+              <p className="about-paragraph">
                 Superwizuję swoją praktykę indywidualną u certyfikowanych
                 superwizorów. Kieruję się Kodeksami Etyki Zawodowej Psychologa i
                 Polskiego Towarzystwa Psychoterapii Gestalt.
               </p>
-              <p>
+              <p className="about-paragraph">
                 W pracy psychoterapeutki ważna jest dla mnie <b> otwartość </b>
                 oraz <b> uważność </b> na drugiego człowieka, które pomagają
                 budować <b> autentyczną relację, </b> opartą na{" "}
@@ -66,7 +71,7 @@ function About() {
                 jest początkiem zmiany a każdy człowiek ma wystarczające zasoby
                 i umiejętności żeby poradzić sobie z trudnościami.
               </p>
-              <p>
+              <p className="about-paragraph">
                 Pracuję indywidualnie z <b> osobami dorosłymi </b> i z{" "}
                 <b> młodzieżą </b> w wieku od 16 roku życia. <b> Każda osoba</b>
                 , bez względu na płeć, wyznanie, kolor skóry, orientację jest u

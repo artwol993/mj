@@ -2,14 +2,6 @@
 @import './config/breakpoints';
 @import './config/fonts';
 
-.services-section {
-  display: flex;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../assets/background.jpg');
-}
 
 .services-container {
   display: flex;
@@ -21,32 +13,12 @@
  .services {
   width: 100%;
   max-width: 1200px;
-  padding: 50px; 
-  color: $c-accent;
-  text-align: center;
-  
+  padding: 50px;   
 
   &__title {
     margin-bottom: 32px;
     text-align: center;
     font-size: $header-size-medium; 
-    color: $c-white;
-    background-color: #505d6899;
-  }
-
-  &__box {
-    padding: 25px;
-    background-color: #505d6899;
-    border: solid 1px $c-accent;
-    position: relative;
-    box-sizing: border-box;
-  }
-
-  &__paragraph {
-    font-size: $font-size-semi-large;
-    padding: 5px;
-    margin: 10px 2px;
-    color: $c-white;
   }
 }
 

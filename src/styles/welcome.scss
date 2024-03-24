@@ -3,86 +3,15 @@
 @import './config/fonts';
 
 .welcome-container {
-  position: relative;
-
-  .top-section {
-    background-image: url('../assets/lake.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
+  background-image: url('../assets/lake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  height: 400px;
 
   @include for-tablet {
-    .logo-container {
-    width: 350px;
-    height: 350px;
-
-    }
-  }
-
-  @include for-desktop {
-    .logo-container {
-    width: 500px;
-    height: 500px;
-    }
-  }
-
-
-  .bottom-section {
-    background-color: $c-theme; 
-    box-sizing: border-box;
-    height: 0; 
-    transition: height 0.5s ease; 
-    overflow: hidden;
-    position: absolute; 
-    bottom: 0; 
-    left: 0;
-    right: 0;
-    z-index: 0; 
-    display: flex;
-    justify-content: flex-end;
-
-    .name {
-      padding: 100px 30px 0 0;
-      text-align: right;
-      font-size: $header-size-large;
-      
-      p{
-        font-size: 25px;
-      }
-    }
-
-    @include for-desktop {
-      .name {
-        padding: 100px 70px 0 0;
-        line-height: 44px;
-      }
-    }
-
-    @include for-wide-desktop {
-      .name {
-        padding: 100px 170px 0 0;
-        font-size: $header-size-extra-large;
-      }
-    }
-  }
-
- 
-
-  &.show-bottom {
-    .top-section {
-      background-color: rgba(0, 0, 0, 0.49); 
-    }
-  
-    .bottom-section {
-      height: 50%; 
-    }
+    height: 600px;
   }
 }
 

@@ -1,7 +1,6 @@
 .about-section{
   background: linear-gradient(to bottom, $c-theme, $c-primary);
   padding: 20px 30px;
-  color: $c-accent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,6 +45,14 @@
   justify-content: center;
 }
 
+.name {
+  padding-bottom: 20px;
+}
+
+.about-paragraph {
+  padding-bottom: 10px;
+}
+
 @include for-tablet-up {
   .about-section{
     padding: 20px 50px 50px 50px;
@@ -68,8 +75,8 @@
   }
 
   .about-box-image {
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 500px;
   }
 
   .about-text-box-with-image {
