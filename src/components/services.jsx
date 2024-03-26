@@ -14,8 +14,9 @@ function Services() {
           viewport={{ once: true }}
         >
           <div className="services-box">
+            <div className="services-box-image image-1"></div>
             <div className="services-box-text">
-              <p>
+              <p className="services-box-p">
                 Psychoterapia Gestalt jest jednym z wiodących podejść nurtu
                 humanistycznego. Oznacza to, że w centrum jej zainteresowania
                 stoi człowiek, jego zasoby oraz relacja międzyludzka.
@@ -27,11 +28,10 @@ function Services() {
                 co się dzieje w nas, z nami i dookoła nas.
               </p>
             </div>
-            <div className="services-box-image"></div>
           </div>
           <div className="services-box">
             <div className="services-box-text">
-              <p>
+              <p className="services-box-p">
                 Cierpienie psychiczne powstaje gdy przeżywane emocje i
                 niezrealizowane potrzeby pozostają poza świadomością człowieka.
                 <b> Celem psychoterapii Gestalt </b> jest budowanie przez
@@ -42,11 +42,11 @@ function Services() {
                 tak się z nim kontaktować, aby nie cierpieć.
               </p>
             </div>
-            <div className="services-box-image"></div>
+            <div className="services-box-image image-2"></div>
           </div>
           <div className="services-box">
-            <div className="services-box-text">
-              <p>
+            <div className="services-box-text-last">
+              <p className="services-box-p">
                 Proces terapeutyczny powinien zmierzać do odkrycia tego, co
                 zaburza korzystne funkcjonowanie w środowisku. To odkrywanie
                 odbywa się w oparciu o <b> terapeutyczny sojusz </b> -
