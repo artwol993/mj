@@ -6,9 +6,9 @@ function Services() {
   return (
     <div className="services-section" id="services">
       <div className="services">
-        <h3 className="services__title">Gestalt</h3>
+        <h3 className="services-title">Gestalt</h3>
         <motion.div
-          className="services__box"
+          className="services-container"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

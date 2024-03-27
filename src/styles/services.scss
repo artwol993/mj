@@ -3,43 +3,46 @@
 @import './config/fonts';
 
 
-.services-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
- .services {
+.services {
   width: 100%;
-  max-width: 1200px;
-  padding: 20px 50px;   
-
-  &__title {
-    margin-bottom: 32px;
-    text-align: center;
-    font-size: $header-size-medium; 
-  }
 }
 
-.services-box {
-  display: flex;
+.services-title {
+  margin:20px;
+  text-align: center;
+  font-size: $header-size-medium; 
+}
+
+.services-container {  
+  display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
 }
 
+.services-box {  
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+}
+
 .services-box-text {
   padding: 10px;
 }
+
+.services-box-text-last {
+  padding-bottom: 20px;
+} 
 
 .services-box-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  height:350px;
+  height:370px;
   width: 320px;
   margin-bottom: 20px;
 }
@@ -53,17 +56,20 @@
 }
 
 @include for-tablet-up {
-  .services__title {
+  .services-title {
     font-size: $header-size-semi-large; 
   }
 
   .services-box {
+    width: 700px;
     flex-direction: row;
-    padding-bottom: 20px;
+    padding: 10px;
+    align-items: start;
   }
 
   .services-box-text {
     width: 50%;
+    padding: 0 20px;
   }
 
   .services-box-text-last {
@@ -71,3 +77,18 @@
   }
 }
 
+
+@include for-desktop-up {
+  .services-box {
+    width: 1000px;
+  }
+
+  .services-box-image {
+    height:470px;
+    width: 420px;
+  }
+
+  .services-box-p {
+    font-size: $font-size-large;
+  }
+}
