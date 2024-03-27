@@ -28,7 +28,7 @@ function About() {
                   Psycholog <br></br>Psychoterapeutka
                 </p>{" "}
               </div>
-              <p className="about-paragraph">
+              <p className="about-paragraph about-paragraph-1">
                 Jestem <b> psychologiem </b> i <b> psychoterapeutką </b> w
                 trakcie 4-letniego szkolenia w Szkole Psychoterapii Gestalt,
                 która posiada akredytację EAGT (European Association of Gestalt

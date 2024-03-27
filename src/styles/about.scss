@@ -106,8 +106,21 @@
    }
 
    .about-box-image {
-    width: 300px;
-    height: 400px;
+    width: 430px;
+    height: 630px;
+  }
+
+  .about-paragraph{
+    font-size: $font-size-large;
+  }
+
+ .name {
+  padding-left: 50px;
+ }
+
+  .about-paragraph-1 {
+    font-size: $font-size-large;
+    padding-left: 50px;
   }
 }
 

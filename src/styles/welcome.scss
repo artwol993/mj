@@ -13,5 +13,9 @@
   @include for-tablet {
     height: 600px;
   }
+
+  @include for-desktop {
+    height: 800px;
+  }
 }
 
