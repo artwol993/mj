@@ -181,3 +181,87 @@
   background-size: cover;
   background-position: center;
 }
+
+.price-section {
+  background-color: $c-theme;
+  padding:30px 20px;
+  text-align: center;
+}
+
+.offer-container {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+
+  .price-header {
+    padding-bottom: 20px;
+    font-size: $header-size-medium;
+  }
+}
+
+.price-box {
+  background-color: $c-white;
+  height: 70px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  color: $c-black;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@include for-tablet-up {
+  .price-container {
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .-picture {
+    height: 300px;
+  }
+
+  .price-box {
+    height: 200px;
+  }
+  
+  .price-header {
+    font-size: $header-size-semi-large;
+    padding-bottom: 25px;
+   }
+
+  .price-box-text{
+    font-size: $font-size-large;
+    font-weight: 500;
+  }
+}
+
+@include for-desktop {
+  .price-container {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+  }
+  .price-box {
+    height: 150px;
+    margin: 20px 40px;
+  }
+  
+
+  .price-box-text{
+    font-size: $font-size-large;
+    font-weight: 500;
+  }
+}
+
+@include for-wide-desktop {
+  .price-box {
+    height: 150px;
+    margin: 40px 70px;
+  }
+}

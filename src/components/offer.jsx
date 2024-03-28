@@ -1,21 +1,19 @@
 import React, { useState } from "react";
 import Modal from "./modal";
-
-import konsultacjaPsychologicznaImg from "../assets/konsultacja_psychologiczna.webp";
-import terapia16PImg from "../assets/terapia_16.webp";
-import terapiaDlugoterminowaImg from "../assets/terapia_długoterminowa.webp";
-import terapiaKrotkoterminowaImg from "../assets/terapia_krótkoterminowa.webp";
+import { motion } from "framer-motion";
 
 function Offer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
   const [modalContent, setModalContent] = useState("");
 
-  const images = {
-    "Konsultacja psychologiczna": konsultacjaPsychologicznaImg,
-    "Terapia młodzieży (16+)": terapia16PImg,
-    "Terapia długoterminowa": terapiaDlugoterminowaImg,
-    "Terapia krótkoterminowa": terapiaKrotkoterminowaImg,
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeInOut" },
+    },
   };
 
   const modalData = {
@@ -41,24 +39,25 @@ function Offer() {
 
   return (
     <section className="offer-section" id="offer">
-      <h3 className="offer-header">
-        Czego spodziewać się podczas spotkań terapii indywidualnej?
-      </h3>
-      <p className="offer-paragraph">
-        Każde spotkanie terapii indywidualnej trwa 50 minut i odbywa się raz w
-        tygodniu, w ustalony dzień i godzinę.
-        <br></br>
-        <br></br>
-        Pierwsze 2-3 spotkania to spotkania konsultacyjne. Na pierwszym
-        spotkaniu standardowo zadaję szereg pytań dotyczących sytuacji życiowej
-        zgłaszającej się osoby oraz doświadczanych przez nią trudności, z
-        którymi chciałaby poradzić sobie w terapii.
-        <br></br>
-        <br></br>
-        Podczas kolejnych spotkań jest czas dla obu stron na podjęcie decyzji co
-        do dalszej współpracy. Jest to także przestrzeń na wstępne sformułowanie
-        celów terapeutycznych zgłaszającej się osoby.
-      </p>
+      <div className="price-section" id="price">
+        <h3 className="price-header">Oferta</h3>
+        <motion.div
+          className="price-container price-picture"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={containerVariants}
+        >
+          <div className="price-box">
+            <p className="price-box-text">Konsultacja psychologiczna</p>
+            <p className="price-box-text">200 zł</p>
+          </div>
+          <div className="price-box">
+            <p className="price-box-text">Psychoterapia</p>
+            <p className="price-box-text">200 zł</p>
+          </div>
+        </motion.div>
+      </div>
       <div className="offer-container">
         {Object.keys(modalData).map((title) => (
           <div
@@ -66,18 +65,36 @@ function Offer() {
             onClick={() => openModal(title)}
             key={title}
           >
-            <div
-              className="offer-box__picture"
-              style={{ backgroundImage: `url(${images[title]})` }}
-            ></div>
             <h4 className="offer-box__title">{title}</h4>
+            <div className="offer-box__picture"></div>
           </div>
         ))}
       </div>
-
       <Modal show={isModalOpen} onHide={closeModal} title={modalTitle}>
         <p>{modalContent}</p>
       </Modal>
+
+      <motion.div
+        className="offer-container offer-picture"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={containerVariants}
+      >
+        <h3 className="offer-header">
+          Czego spodziewać się podczas spotkań terapii indywidualnej?
+        </h3>
+        <p className="offer-paragraph">
+          Każde spotkanie terapii indywidualnej trwa 50 minut i odbywa się raz w
+          tygodniu w ustalony dzień i godzinę. Pierwsze 2-3 spotkania to
+          spotkania konsultacyjne. Na pierwszym spotkaniu standardowo zadaję
+          pytania dotyczące sytuacji życiowej zgłaszającej się osoby oraz
+          doświadczanych przez nią trudności, z którymi chciałaby poradzić sobie
+          podczas terapii. Kolejne dwa spotkania to czas dla obu stron na
+          podjęcie decyzji co do dalszej współpracy. Jest to także przestrzeń na
+          wstępne sformułowanie celów terapeutycznych zgłaszającej się osoby.
+        </p>
+      </motion.div>
     </section>
   );
 }
