@@ -39,34 +39,40 @@ function Offer() {
 
   return (
     <section className="offer-section" id="offer">
-      <div className="price-section" id="price">
-        <h3 className="price-header">Oferta</h3>
+      <h3 className="offer-price-header">Oferta</h3>
+
+      //price-section
+      
+      <div className="offer-price-section" id="price">
         <motion.div
-          className="price-container price-picture"
+          className="offer-price-container"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={containerVariants}
         >
-          <div className="price-box">
-            <p className="price-box-text">Konsultacja psychologiczna</p>
-            <p className="price-box-text">200 zł</p>
+          <div className="offer-price-box">
+            <p className="offer-price-box-text">Konsultacja psychologiczna</p>
+            <p className="offer-price-box-text">200 zł</p>
           </div>
-          <div className="price-box">
-            <p className="price-box-text">Psychoterapia</p>
-            <p className="price-box-text">200 zł</p>
+          <div className="offer-price-box">
+            <p className="offer-price-box-text">Psychoterapia</p>
+            <p className="offer-price-box-text">200 zł</p>
           </div>
         </motion.div>
       </div>
-      <div className="offer-container">
+
+      //type-section
+
+      <div className="offer-type-container">
         {Object.keys(modalData).map((title) => (
           <div
-            className="offer-box"
+            className="offer-type-box"
             onClick={() => openModal(title)}
             key={title}
           >
-            <h4 className="offer-box__title">{title}</h4>
-            <div className="offer-box__picture"></div>
+            <h4 className="offer-type-box__title">{title}</h4>
+            <div className="offer-type-box__picture"></div>
           </div>
         ))}
       </div>
@@ -74,17 +80,19 @@ function Offer() {
         <p>{modalContent}</p>
       </Modal>
 
+      //info section
+
       <motion.div
-        className="offer-container offer-picture"
+        className="offer-info-container"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={containerVariants}
       >
-        <h3 className="offer-header">
+        <h3 className="offer-info-header">
           Czego spodziewać się podczas spotkań terapii indywidualnej?
         </h3>
-        <p className="offer-paragraph">
+        <p className="offer-info-paragraph">
           Każde spotkanie terapii indywidualnej trwa 50 minut i odbywa się raz w
           tygodniu w ustalony dzień i godzinę. Pierwsze 2-3 spotkania to
           spotkania konsultacyjne. Na pierwszym spotkaniu standardowo zadaję
