@@ -12,19 +12,7 @@
   align-items: center;
 }
 
-.offer-info-header {
-  font-family: $f-detal-bold;
-  color: $c-accent;
-  font-size: $header-size-medium;
-  margin-bottom: 20px;
-}
 
-.offer-info-paragraph {
-  font-family: $f-main-regular;
-  font-size: $font-size-medium;
-  margin-bottom: 20px;
-  padding-inline: 30px;
-}
 
 @include for-mobile {
   .offer-section{
@@ -36,23 +24,10 @@
   .offer-section {
     padding: 50px;
   }
-
-  .offer-info-header {
-    font-size: $header-size-semi-large;
-  }
-
-  .offer-info-paragraph {
-    font-size: $font-size-semi-large;
-    padding-inline: 30px;
-  }
 }
 
 @include for-desktop-up {
   .offer-section{
     padding: 60px;
-  }
-
-  .offer-info-paragraph {
-    padding-inline: 100px;
   }
 }
