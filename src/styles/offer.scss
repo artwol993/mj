@@ -12,7 +12,10 @@
   align-items: center;
 }
 
-
+.offer-header {
+  padding-bottom: 20px;
+  font-size: $header-size-medium;
+}
 
 @include for-mobile {
   .offer-section{
@@ -24,6 +27,11 @@
   .offer-section {
     padding: 50px;
   }
+
+  .offer-header {
+    font-size: $header-size-semi-large;
+    padding-bottom: 25px;
+   }
 }
 
 @include for-desktop-up {

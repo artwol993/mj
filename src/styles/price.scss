@@ -10,11 +10,6 @@
   justify-content: center;
 }
 
-.price-header {
-  padding-bottom: 20px;
-  font-size: $header-size-medium;
-}
-
 .price-box {
   background-color: $c-white;
   height: 70px;
@@ -41,11 +36,6 @@
     height: 100px;
     width: 450px;
   }
-  
-  .price-header {
-    font-size: $header-size-semi-large;
-    padding-bottom: 25px;
-   }
 
   .price-box-text{
     font-size: $font-size-large;
@@ -58,13 +48,13 @@
     display: flex;
     flex-direction: row;
   }
+  
   .price-box {
     height: 150px;
     width: 450px;
     margin: 20px 40px;
   }
   
-
   .price-box-text{
     font-size: $font-size-large;
     font-weight: 500;
