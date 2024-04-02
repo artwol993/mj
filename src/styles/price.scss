@@ -1,13 +1,13 @@
 .price-section {
   background-color: $c-theme;
-  padding:30px 20px;
   text-align: center;
 }
 
 .price-container {
-  padding: 20px 40px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .price-header {
@@ -28,22 +28,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.397);
 }
 
 
 @include for-tablet-up {
   .price-container {
-    padding: 20px 80px;
     display: flex;
-    flex-direction: row;
-  }
-
-  .price-picture {
-    height: 300px;
   }
 
   .price-box {
-    height: 200px;
+    height: 100px;
+    width: 450px;
   }
   
   .price-header {
@@ -59,12 +55,12 @@
 
 @include for-desktop {
   .price-container {
-    padding: 20px 100px;
     display: flex;
     flex-direction: row;
   }
   .price-box {
     height: 150px;
+    width: 450px;
     margin: 20px 40px;
   }
   
