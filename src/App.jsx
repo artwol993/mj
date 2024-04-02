@@ -4,7 +4,6 @@ import Header from "./components/header";
 import Welcome from "./components/welcome";
 import About from "./components/about";
 import Offer from "./components/offer";
-import Price from "./components/price";
 import Services from "./components/services";
 import Contact from "./components/contact";
 
@@ -15,7 +14,6 @@ function App() {
       <Welcome />
       <About />
       <Services />
-      <Price />
       <Offer />
       <Contact />
     </div>

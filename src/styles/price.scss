@@ -8,17 +8,17 @@
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
+}
 
-  .price-header {
-    padding-bottom: 20px;
-    font-size: $header-size-medium;
-  }
+.price-header {
+  padding-bottom: 20px;
+  font-size: $header-size-medium;
 }
 
 .price-box {
-  background-color: $c-black;
+  background-color: $c-white;
   height: 70px;
-  width: 100%;
+  width: 350px;
   padding: 10px;
   margin: 10px;
   text-align: center;

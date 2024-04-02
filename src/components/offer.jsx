@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "./modal";
 import { motion } from "framer-motion";
+import Price from "./price";
 
 function Offer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,30 +41,9 @@ function Offer() {
   return (
     <section className="offer-section" id="offer">
       <h3 className="offer-price-header">Oferta</h3>
-
       //price-section
-      
-      <div className="offer-price-section" id="price">
-        <motion.div
-          className="offer-price-container"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={containerVariants}
-        >
-          <div className="offer-price-box">
-            <p className="offer-price-box-text">Konsultacja psychologiczna</p>
-            <p className="offer-price-box-text">200 zł</p>
-          </div>
-          <div className="offer-price-box">
-            <p className="offer-price-box-text">Psychoterapia</p>
-            <p className="offer-price-box-text">200 zł</p>
-          </div>
-        </motion.div>
-      </div>
-
+      <Price />
       //type-section
-
       <div className="offer-type-container">
         {Object.keys(modalData).map((title) => (
           <div
@@ -79,9 +59,7 @@ function Offer() {
       <Modal show={isModalOpen} onHide={closeModal} title={modalTitle}>
         <p>{modalContent}</p>
       </Modal>
-
       //info section
-
       <motion.div
         className="offer-info-container"
         initial="hidden"

@@ -13,7 +13,24 @@ function Price() {
 
   return (
     <>
-
+      <div className="price-section" id="price">
+        <motion.div
+          className="price-container"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={containerVariants}
+        >
+          <div className="price-box">
+            <p className="price-box-text">Konsultacja psychologiczna</p>
+            <p className="price-box-text">200 zł</p>
+          </div>
+          <div className="price-box">
+            <p className="price-box-text">Psychoterapia</p>
+            <p className="price-box-text">200 zł</p>
+          </div>
+        </motion.div>
+      </div>
     </>
   );
 }
