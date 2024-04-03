@@ -9,11 +9,8 @@ function Offer() {
     <section className="offer-section" id="offer">
       <h3 className="offer-header">Oferta</h3>
       <List />
-      //price-section
       <Price />
-      //type-section
       <Type />
-      //info section
       <Info />
     </section>
   );
