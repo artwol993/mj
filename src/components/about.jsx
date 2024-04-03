@@ -9,7 +9,6 @@ function About() {
 
   return (
     <div className="about-section" id="about">
-      <h3 className="about-header">O mnie</h3>
       <div className="about-container">
         <motion.div
           className="about-box"

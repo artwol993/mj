@@ -1,68 +1,50 @@
-.price-section {
-  background-color: $c-theme;
+.price__section {
   text-align: center;
+  width: 100%;
 }
 
-.price-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.price__title {
+  padding-top: 10px;
+
 }
 
-.price-box {
-  background-color: $c-white;
-  height: 70px;
-  width: 350px;
+.price__container {
   padding: 10px;
-  margin: 10px;
-  text-align: center;
-  color: $c-black;
-  font-weight: 400;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: $font-size-large;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.397);
 }
 
 
 @include for-tablet-up {
-  .price-container {
-    display: flex;
+  .price__container {
+    padding: 20px;
   }
 
-  .price-box {
-    height: 100px;
-    width: 450px;
-  }
-
-  .price-box-text{
+  .price__text{
     font-size: $font-size-large;
     font-weight: 500;
   }
 }
 
 @include for-desktop {
-  .price-container {
-    display: flex;
-    flex-direction: row;
+  .price__title {
+    padding-top: 10px;
   }
-  
-  .price-box {
-    height: 150px;
-    width: 450px;
-    margin: 20px 40px;
-  }
-  
-  .price-box-text{
-    font-size: $font-size-large;
+
+  .price__text{
+    font-size: 23px;
     font-weight: 500;
+    padding-bottom: 10px;
   }
 }
 
 @include for-wide-desktop {
-  .price-box {
+  .price__box {
     height: 150px;
     margin: 40px 70px;
   }

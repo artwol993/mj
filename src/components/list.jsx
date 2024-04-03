@@ -42,6 +42,8 @@ function List() {
             <li className="list__item">trudności szkolne</li>
             <li className="list__item">choroba bliskiej osoby, żałoba</li>
           </ul>
+
+          <div className="list__picture"></div>
         </motion.div>
       </div>
     </>

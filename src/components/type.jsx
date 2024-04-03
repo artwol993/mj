@@ -46,9 +46,9 @@ function Type() {
 
   return (
     <>
-      <section className="type-section">
+      <section className="type__section">
         <motion.div
-          className="type-container"
+          className="type__container"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -56,12 +56,12 @@ function Type() {
         >
           {Object.keys(modalData).map((title) => (
             <div
-              className="type-box"
+              className="type__box"
               onClick={() => openModal(title)}
               key={title}
             >
-              <h4 className="type-box__title">{title}</h4>
-              <div className="type-box__text">
+              <h4 className="type__box__title">{title}</h4>
+              <div className="type__box__text">
                 {truncateText(modalData[title], 160)}{" "}
               </div>
             </div>

@@ -3,13 +3,13 @@
 @import './config/fonts';
 
 .offer-section {
-  padding: 20px;
   background-color: $c-theme;
   color: $c-black;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-block: 20px;
 }
 
 .offer-header {
@@ -24,18 +24,13 @@
 }
 
 @include for-tablet-up {
+
   .offer-section {
-    padding: 50px;
+    padding-block: 30px;
   }
 
   .offer-header {
     font-size: $header-size-semi-large;
-    padding-bottom: 25px;
+    padding-block: 25px;
    }
-}
-
-@include for-desktop-up {
-  .offer-section{
-    padding: 60px;
-  }
 }

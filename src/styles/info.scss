@@ -1,11 +1,11 @@
-.offer-info-header {
+.info__header {
   font-family: $f-detal-bold;
   color: $c-accent;
   font-size: $header-size-medium;
   margin-bottom: 20px;
 }
 
-.offer-info-paragraph {
+.info__paragraph {
   font-family: $f-main-regular;
   font-size: $font-size-medium;
   margin-bottom: 20px;
@@ -13,18 +13,31 @@
 }
 
 @include for-tablet-up {
-  .offer-info-header {
+  .info__header {
     font-size: $header-size-semi-large;
   }
 
-  .offer-info-paragraph {
+  .info__paragraph {
     font-size: $font-size-semi-large;
     padding-inline: 30px;
   }
 }
 
 @include for-desktop-up {
-  .offer-info-paragraph {
+  .info__header {
+    padding-inline: 50px;
+    padding-bottom: 20px;
+  }
+
+  .info__paragraph {
+    margin-top: 20px;
     padding-inline: 100px;
+  }
+}
+
+@include for-wide-desktop {
+  .offer-info-paragraph {
+    margin-top: 50px;
+    padding-inline: 150px;
   }
 }

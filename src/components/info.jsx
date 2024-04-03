@@ -14,16 +14,16 @@ function Info() {
   return (
     <>
       <motion.div
-        className="offer-info-container"
+        className="info__container"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={containerVariants}
       >
-        <h3 className="offer-info-header">
+        <h3 className="info__header">
           Czego spodziewać się podczas spotkań terapii indywidualnej?
         </h3>
-        <p className="offer-info-paragraph">
+        <p className="info__paragraph">
           Każde spotkanie terapii indywidualnej trwa 50 minut i odbywa się raz w
           tygodniu w ustalony dzień i godzinę. Pierwsze 2-3 spotkania to
           spotkania konsultacyjne. Na pierwszym spotkaniu standardowo zadaję
