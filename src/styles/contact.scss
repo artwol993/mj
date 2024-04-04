@@ -2,9 +2,13 @@
 @import './config/fonts';
 @import './config/breakpoints';
 
+.contact-section {
+  padding-block: 30px;
+}
+
 .contact-header {
   padding: 10px;
-  margin-block: 10px;
+  margin-top: 25px;
   text-align: center;
   font-size: $header-size-medium;
 }

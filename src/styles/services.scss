@@ -2,13 +2,16 @@
 @import './config/breakpoints';
 @import './config/fonts';
 
+.services-section {
+  padding-block: 30px;
+}
 
 .services {
   width: 100%;
 }
 
 .services-title {
-  margin:20px;
+  margin:25px;
   text-align: center;
   font-size: $header-size-medium; 
 }
