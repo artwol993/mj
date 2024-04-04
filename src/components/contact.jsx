@@ -13,11 +13,16 @@ function Contact() {
           <div className="map-container">
             <div className="map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5649.889256183399!2d20.998597155499343!3d52.20536030460206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecccf837dfe5f%3A0x10a3621ae11bcc8f!2sAkacjowa%204%2C%2002-534%20Warszawa!5e0!3m2!1spl!2spl!4v1710278182016!5m2!1spl!2spl"
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+                width="100%"
+                height="600"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Agrestowa%204%20warszawa+(Psychoterapia%20-%20Marzanna%20Jakoniuk%20)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              >
+                <a href="https://www.gps.ie/">gps devices</a>
+              </iframe>
             </div>
           </div>
           <div className="contact-box">
