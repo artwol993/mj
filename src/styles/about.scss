@@ -1,6 +1,6 @@
 .about-section{
   background: linear-gradient(to bottom, $c-theme, $c-primary);
-  padding: 20px 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +51,7 @@
 
 .about-paragraph {
   padding-bottom: 10px;
+  text-align: justify;
 }
 
 @include for-tablet-up {
