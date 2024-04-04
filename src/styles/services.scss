@@ -34,10 +34,12 @@
 
 .services-box-text {
   padding: 10px;
+  text-align: justify;
 }
 
 .services-box-text-last {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+  text-align: justify;
 } 
 
 .services-box-image {
@@ -76,7 +78,7 @@
   }
 
   .services-box-text-last {
-    padding: 10px;
+    padding-inline: 25px;
   }
 }
 
