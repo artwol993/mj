@@ -1,37 +1,49 @@
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .info__header {
   font-family: $f-detal-bold;
   color: $c-accent;
   font-size: $header-size-medium;
   margin-bottom: 20px;
+  width: 330px;
+  text-align: center;
 }
 
 .info__paragraph {
+  width: 330px;
   font-family: $f-main-regular;
   font-size: $font-size-medium;
   margin-bottom: 20px;
-  padding-inline: 30px;
+  text-align: justify;
 }
 
 @include for-tablet-up {
   .info__header {
     font-size: $header-size-semi-large;
+    width: 500px;
   }
 
   .info__paragraph {
     font-size: $font-size-semi-large;
-    padding-inline: 30px;
+    width: 600px;
   }
 }
 
 @include for-desktop-up {
   .info__header {
-    padding-inline: 50px;
-    padding-bottom: 20px;
+    width: 700px;
   }
 
   .info__paragraph {
     margin-top: 20px;
-    padding-inline: 100px;
+    width: 900px;
   }
 }
 
