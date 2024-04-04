@@ -21,46 +21,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-
-  &__2 {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('../assets/background.jpg');
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-  
-  }
-}
-
-.contact-box-background {
-  width: 380px;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.781);
-  display: flex;
-  flex-direction: column;
 }
 
 .contact-box-row {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 
   &__icons {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
-  }
-
-  &__2 {
-    width: 350px;
-    padding: 10px;
   }
 }
 
@@ -103,102 +77,79 @@
   background-image: url('../assets/phone.png');
 }
 
-.skype-icon {
-  background-image: url('../assets/skype.png');
-  width: 50px;
-  height: 50px;
-  margin-right: 45px;
-}
-
-.gm-icon {
-  background-image: url('../assets/gm-1.png');
-  width: 45px;
-  height: 45px;
+.map-container {
+  width: 100%;
 }
 
 .map {
-  padding-bottom: 10px;
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 .map iframe {
-  width: 350px;
+  width: 100%;
   height: 250px;
-  border:solid 2px $c-accent;
-
 }
 
 .map-paragraph {
   font-weight: 500;
   font-size: $font-size-semi-large;
-  padding: 0 5px 15px ;
+  padding: 20px;
   text-align: center;
+}
+
+.contact-color {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(78,75,134,1) 0%, rgba(71, 162, 253, 0.778) 50%, rgba(250, 244, 244, 0.108) 100%);
 }
 
 @include for-tablet-up {
   .contact-container {
     width: 100%;
-    padding: 50px 20px 70px 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('../assets/background.jpg');
   }
 
   .contact-header {
     font-size: $header-size-semi-large;
   }
 
-  .contact-box {
-    &__2 {
-      width: auto;
-      background-image: none;
-    }
-  }
-
-  .contact-box-background {
-    height: 400px;
-    width: 370px;
-    justify-content: center;
-  }
-
-  .contact-container {
-    flex-direction: row;
-  }
-
-  .contact-box-row {
-    &__2 {
-      padding: 10px;
-    }
-  }
 
   .map-paragraph {
-    width: 300px;
+    width: 400px;
     color: $c-black;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 350px;
+  }
+
+  .contact-box {
+    padding-block: 20px;
   }
 
   .contact-link {
     white-space: nowrap;
     text-align: left;
   }
+
+  .contact-link-p {
+    font-size: $font-size-large;
+  }
+
+  .paragraph-online {
+    font-size: $font-size-large;
+  }
 }
 
 @include for-desktop {
   .contact-box {
     padding: 50px;
-    &__2 {
-      padding: 50px;
-    }
   }
 
   .contact-box-background {
     width: 450px;
     height: 450px;
-  }
-
-  .contact-box-row {
-    &__2 {
-      width: 400px;
-    }
   }
   
   .contact-link {
@@ -209,8 +160,7 @@
 
   .map iframe {
     padding: 15px;
-    width: 410px;
-    height: 350px;
+    height: 450px;
     border: none;
   }
 
