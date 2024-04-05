@@ -1,26 +1,19 @@
 {
   "files": {
-    "main.css": "/mj/static/css/main.e13bff8f.css",
-    "main.js": "/mj/static/js/main.fdcf6570.js",
-    "static/media/zmiana.jpg": "/mj/static/media/zmiana.edd3884f245f141ca23a.jpg",
-    "static/media/terapia.jpg": "/mj/static/media/terapia.8aa5ddd2536852528220.jpg",
-    "static/media/background.jpg": "/mj/static/media/background.3a91a7562287a341b96b.jpg",
+    "main.css": "/mj/static/css/main.cd52a7d5.css",
+    "main.js": "/mj/static/js/main.6162cc97.js",
+    "static/media/image-2.jpg": "/mj/static/media/image-2.7ffdb7cc17618ad28a76.jpg",
+    "static/media/image-1.jpg": "/mj/static/media/image-1.5202e69551a6125ba1fa.jpg",
     "static/media/staw.jpg": "/mj/static/media/staw.634d6d671ded120a2637.jpg",
-    "static/media/terapia_długoterminowa.webp": "/mj/static/media/terapia_długoterminowa.e2a779896ba682ad17cf.webp",
-    "static/media/terapia_16.webp": "/mj/static/media/terapia_16.5941ac675ad8696cac90.webp",
-    "static/media/terapia_krótkoterminowa.webp": "/mj/static/media/terapia_krótkoterminowa.db1dca9d141c0231de7a.webp",
-    "static/media/konsultacja_psychologiczna.webp": "/mj/static/media/konsultacja_psychologiczna.8e99f5ffcd6120008d0b.webp",
-    "static/media/mj.jpg": "/mj/static/media/mj.38afbd35e42829dcd3d4.jpg",
-    "static/media/logo.png": "/mj/static/media/logo.2568319bb2b106e5be0d.png",
-    "static/media/skype.png": "/mj/static/media/skype.d8e3245be701f4106a57.png",
+    "static/media/lake.jpg": "/mj/static/media/lake.077dd87fd137484162e3.jpg",
+    "static/media/mj.jpg": "/mj/static/media/mj.3004e1795d70c01b1e0f.jpg",
     "static/media/phone.png": "/mj/static/media/phone.5e431ca748e6b0862cf5.png",
-    "static/media/gm-1.png": "/mj/static/media/gm-1.9afc9ba2f8a052ff41d4.png",
     "index.html": "/mj/index.html",
-    "main.e13bff8f.css.map": "/mj/static/css/main.e13bff8f.css.map",
-    "main.fdcf6570.js.map": "/mj/static/js/main.fdcf6570.js.map"
+    "main.cd52a7d5.css.map": "/mj/static/css/main.cd52a7d5.css.map",
+    "main.6162cc97.js.map": "/mj/static/js/main.6162cc97.js.map"
   },
   "entrypoints": [
-    "static/css/main.e13bff8f.css",
-    "static/js/main.fdcf6570.js"
+    "static/css/main.cd52a7d5.css",
+    "static/js/main.6162cc97.js"
   ]
 }
