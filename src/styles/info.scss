@@ -10,7 +10,6 @@
 .info__header {
   font-family: $f-detal-bold;
   color: $c-accent;
-  font-size: $header-size-medium;
   margin-bottom: 20px;
   width: 330px;
   text-align: center;
@@ -26,7 +25,6 @@
 
 @include for-tablet-up {
   .info__header {
-    font-size: $header-size-semi-large;
     width: 500px;
   }
 

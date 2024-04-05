@@ -8,10 +8,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block: 20px;
+  padding-block: 30px;
 }
 
 .offer-header {
+  margin: 25px;
   padding-bottom: 20px;
   font-size: $header-size-medium;
 }
