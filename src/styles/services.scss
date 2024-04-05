@@ -53,11 +53,11 @@
 }
 
 .image-1 {
-  background-image: url('../assets/image1.jpg');
+  background-image: url('../assets/image-11.jpg');
 }
 
 .image-2 {
-  background-image: url('../assets/image2.jpg');
+  background-image: url('../assets/image-22.jpg');
 }
 
 @include for-tablet-up {
@@ -66,31 +66,31 @@
   }
 
   .services-box {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    gap: 10px; 
     width: 700px;
-    flex-direction: row;
-    padding: 10px;
-    align-items: start;
-  }
-
-  .services-box-text {
-    width: 50%;
-    padding: 0 20px;
-  }
-
-  .services-box-text-last {
-    padding-inline: 25px;
-  }
-}
-
-
-@include for-desktop-up {
-  .services-box {
-    width: 1000px;
+    padding: 20px;
   }
 
   .services-box-image {
-    height:470px;
-    width: 420px;
+  width: 100%;
+  }
+
+  .services-box-text {
+    padding: 0; 
+  }
+
+  .services-box-text-last {
+    grid-column: 1 / -1; 
+  }
+}
+
+@include for-desktop-up {
+  .services-box {
+    width: 950px;
+    gap: 20px;
   }
 
   .services-box-p {
