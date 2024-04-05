@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-block: 20px;
 }
 
 .contact-box-row {
@@ -118,7 +119,6 @@
     font-size: $header-size-semi-large;
   }
 
-
   .map-paragraph {
     width: 400px;
     color: $c-black;
@@ -195,6 +195,10 @@
 
   .contact-box {
     padding: 10px;
+  }
+
+  .contact-color {
+    height: 300px;
   }
 }
 
