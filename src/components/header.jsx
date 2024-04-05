@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Header() {
   const [isVisible, setIsVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [isDisplayed, setIsDisplayed] = useState(false); // Nowy stan
+  const [isDisplayed, setIsDisplayed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY; // Zaktualizowane
+      const scrollTop = window.scrollY;
       setIsVisible(scrollTop > 0);
     };
 
@@ -16,6 +16,11 @@ function Header() {
 
     const timer = setTimeout(() => {
       setIsDisplayed(true);
+      scroll.scrollTo(document.getElementById("about").offsetTop, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+      });
     }, 2000);
 
     return () => {
