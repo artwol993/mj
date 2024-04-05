@@ -13,23 +13,17 @@ function Price() {
 
   return (
     <>
-      <div className="price-section" id="price">
-        <h3 className="price-header">Oferta</h3>
+      <div className="price__section" id="price">
+        <h3 className="price__title">Cennik</h3>
         <motion.div
-          className="price-container price-picture"
+          className="price__container"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={containerVariants}
         >
-          <div className="price-box">
-            <p className="price-box-text">Konsultacja psychologiczna</p>
-            <p className="price-box-text">200 zł</p>
-          </div>
-          <div className="price-box">
-            <p className="price-box-text">Psychoterapia</p>
-            <p className="price-box-text">200 zł</p>
-          </div>
+          <p className="price__text"> Psychoterapia - 200 zł </p>
+          <p className="price__text">Konsultacja psychologiczna - 200 zł</p>
         </motion.div>
       </div>
     </>

@@ -3,56 +3,97 @@
 @import './config/fonts';
 
 .services-section {
-  display: flex;
+  padding-block: 30px;
+}
+
+.services {
+  width: 100%;
+}
+
+.services-title {
+  margin:25px;
+  text-align: center;
+  font-size: $header-size-medium; 
+}
+
+.services-container {  
+  display: flex; 
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.services-box {  
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+}
+
+.services-box-text {
+  padding: 10px;
+  text-align: justify;
+}
+
+.services-box-text-last {
+  padding-bottom: 25px;
+  text-align: justify;
+} 
+
+.services-box-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../assets/background.jpg');
+  box-sizing: border-box;
+  height:370px;
+  width: 320px;
+  margin-bottom: 20px;
 }
 
-.services-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+.image-1 {
+  background-image: url('../assets/image-1.jpg');
 }
 
- .services {
-  width: 100%;
-  max-width: 1200px;
-  padding: 50px; 
-  color: $c-accent;
-  text-align: center;
-  
-
-  &__title {
-    margin-bottom: 32px;
-    text-align: center;
-    font-size: $header-size-medium; 
-    color: $c-white;
-    background-color: #505d6899;
-  }
-
-  &__box {
-    padding: 25px;
-    background-color: #505d6899;
-    border: solid 1px $c-accent;
-    position: relative;
-    box-sizing: border-box;
-  }
-
-  &__paragraph {
-    font-size: $font-size-semi-large;
-    padding: 5px;
-    margin: 10px 2px;
-    color: $c-white;
-  }
+.image-2 {
+  background-image: url('../assets/image-2.jpg');
 }
 
 @include for-tablet-up {
-  .services__title {
+  .services-title {
     font-size: $header-size-semi-large; 
+  }
+
+  .services-box {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    gap: 10px; 
+    width: 700px;
+    padding: 20px;
+  }
+
+  .services-box-image {
+  width: 100%;
+  }
+
+  .services-box-text {
+    padding: 0; 
+  }
+
+  .services-box-text-last {
+    grid-column: 1 / -1; 
   }
 }
 
+@include for-desktop-up {
+  .services-box {
+    width: 950px;
+    gap: 20px;
+  }
+
+  .services-box-p {
+    font-size: $font-size-large;
+  }
+}

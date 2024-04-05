@@ -1,12 +1,17 @@
 .about-section{
   background: linear-gradient(to bottom, $c-theme, $c-primary);
-  padding: 20px 30px;
-  color: $c-accent;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
+.about-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-header {
@@ -14,7 +19,7 @@
 }
 
 .about-box {
-  margin: 20px 10px;
+  margin: 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,62 +28,30 @@
 
 .about-box-image {
   width: 300px;
-  height: 200px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  background-image: url('../assets/mj.jpg');
 }
 
-.pic-therapy {
-  background-image: url('../assets/terapia.jpg');
-}
-
-.pic-change {
-  background-image: url('../assets/zmiana.jpg');
-}
-
-.about-box-picture {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 15px;
-  background-image: url('../assets/staw.jpg');
-  background-size:contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-}
 
 .about-text-box {
-  margin: 15px 20px;
-  text-align: center;
+  margin: 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.white-box {
-  background-color: white;
-  padding: 25px 15px;
-  font-weight: 600;
+.name {
+  padding-bottom: 20px;
 }
 
-.white-text {
-  color: white;
-  font-weight: 600;
-  font-size: $font-size-large;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  margin-top: 10px;
-}
-
-.exp-ul {
-  margin-top: 5px;
-}
-
-.exp-li {
-  margin-left: 20px;
-  text-align: start;
+.about-paragraph {
+  padding-bottom: 10px;
+  text-align: justify;
 }
 
 @include for-tablet-up {
@@ -95,22 +68,20 @@
   }
 
   .about-box {
-   flex-direction: row;
+    align-items: end;
+  }
+
+  .about-box-with-image {
+    flex-direction: row;
   }
 
   .about-box-image {
-    width: 400px;
-    height: 250px;
+    width: 350px;
+    height: 500px;
   }
 
-  .about-box-picture {
-    width: 400px;
-    height: 400px;
-  }
-
-  .about-text-box {
+  .about-text-box-with-image {
     width: 50%;
-    padding-top: 10px;
   }
 
   .white-text {
@@ -123,7 +94,7 @@
 
 @include for-desktop {
   .about-section{
-    padding: 30px 50px;
+    padding: 10px 50px;
   }
 
   .about-container {
@@ -132,17 +103,25 @@
   }
 
   .about-box {
-   margin: 30px 20px;
+   margin: 10px 20px;
    }
 
    .about-box-image {
-    width: 500px;
-    height: 300px;
+    width: 430px;
+    height: 630px;
   }
 
-  .about-box-picture {
-    width: 500px;
-    height: 500px;
+  .about-paragraph{
+    font-size: $font-size-large;
+  }
+
+ .name {
+  padding-left: 50px;
+ }
+
+  .about-paragraph-1 {
+    font-size: $font-size-large;
+    padding-left: 50px;
   }
 }
 

@@ -1,0 +1,78 @@
+.list__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list__container {
+  width: 330px;
+  padding-block: 20px;
+}
+
+.list__title {
+  text-align: center;
+  width: 350px;
+}
+
+.list__items {
+  text-align: justify;
+  padding-left: 10px;
+}
+
+.list__picture {
+  width: 330px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-image: url('../assets/staw.jpg');
+  margin-block: 30px;
+}
+
+@include for-tablet-up {
+  .list__container {
+    width: 700px;
+    padding-block: 30px;
+    padding-left: 40px;
+    display: flex;
+   }
+
+   .list__title{
+    width: 500px;
+  }
+   
+   .list__items {
+    text-align: start;
+    padding: 10px;
+    width: 330px;
+  }
+
+  .list__picture {
+    width: 330px;
+    height: 430px;
+    margin: 10px;
+  }
+}
+
+@include for-desktop-up {
+  .list__container {
+    width: 970px;
+    padding-block: 30px;
+   }
+   
+   .list__title {
+    padding-bottom: 10px;
+   }
+ 
+   .list__items {
+    font-size: $font-size-semi-large;
+    width: 450px;
+  }
+
+    .list__picture {
+    width: 450px;
+    height: auto;
+  }
+}

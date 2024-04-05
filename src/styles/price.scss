@@ -1,95 +1,49 @@
-.price-section {
-  background-color: $c-theme;
-  padding:30px 20px;
+.price__section {
   text-align: center;
-}
-
-.price-container {
-  padding: 20px 40px;
-  display: flex;
-  flex-direction: column;
-
-  .price-header {
-    padding-bottom: 20px;
-    font-size: $header-size-medium;
-  }
-}
-
-.price-box {
-  background-color: $c-theme;
-  height: 70px;
   width: 100%;
+}
+
+.price__title {
+  padding-top: 10px;
+}
+
+.price__container {
   padding: 10px;
-  margin: 10px;
-  text-align: center;
-  color: $c-accent;
-  font-weight: 400;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: $font-size-large;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.price-picture {
-  position: relative;
-  background-image: url('../assets/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-
-}
-
 
 @include for-tablet-up {
-  .price-container {
-    padding: 20px 80px;
-    display: flex;
-    flex-direction: row;
+  .price__container {
+    padding: 20px;
   }
 
-  .price-picture {
-    height: 300px;
-  }
-
-  .price-box {
-    height: 200px;
-  }
-  
-  .price-header {
-    font-size: $header-size-semi-large;
-    padding-bottom: 25px;
-   }
-
-  .price-box-text{
+  .price__text{
     font-size: $font-size-large;
     font-weight: 500;
   }
 }
 
 @include for-desktop {
-  .price-container {
-    padding: 20px 100px;
-    display: flex;
-    flex-direction: row;
+  .price__title {
+    padding-top: 10px;
   }
-  .price-box {
-    height: 150px;
-    margin: 20px 40px;
-  }
-  
 
-  .price-box-text{
-    font-size: $font-size-large;
+  .price__text{
+    font-size: 23px;
     font-weight: 500;
+    padding-bottom: 10px;
   }
 }
 
 @include for-wide-desktop {
-  .price-box {
+  .price__box {
     height: 150px;
     margin: 40px 70px;
   }
