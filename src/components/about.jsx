@@ -62,7 +62,7 @@ function About() {
                 W pracy psychoterapeutki ważna jest dla mnie <b> otwartość </b>
                 oraz <b> uważność </b> na drugiego człowieka, które pomagają
                 budować <b> autentyczną relację, </b> opartą na{" "}
-                <b> szacunku </b> i <b> współodczuwaniu </b>. Towarzyszę ludziom
+                <b> szacunku </b> i <b> współodczuwaniu</b>. Towarzyszę ludziom
                 w podróży do satysfakcjonującego życia, nazywania potrzeb i
                 rozpoznawania składników potencjału, akceptowania siebie. Aby
                 odzyskiwali kontrolę, doświadczali sprawczości, przezwyciężali
@@ -75,7 +75,7 @@ function About() {
                 <b> młodzieżą </b> w wieku od 16 roku życia. <b> Każda osoba</b>
                 , bez względu na płeć, wyznanie, kolor skóry, orientację jest u
                 mnie
-                <b> mile widziana </b>.
+                <b> mile widziana</b>.
               </p>
             </div>
           </div>
