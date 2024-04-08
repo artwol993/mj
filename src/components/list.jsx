@@ -26,20 +26,17 @@ function List() {
             <li className="list__item">
               doświadczanie przemocy, wybuchy agresji
             </li>
-            <li className="list__item"> lęk, napady paniki, nerwica</li>
+            <li className="list__item">lęk, napady paniki, nerwica, stres</li>
             <li className="list__item">
               niska samoocena, niskie poczucie własnej wartości
             </li>
-            <li className="list__item">stres</li>
             <li className="list__item">
-              trudności z wyrażaniem uczuć, trudności w relacjach partnerskich,
-              trudności ze snem, trudności w komunikacji
+              trudności z wyrażaniem uczuć, trudności w relacjach, trudności ze
+              snem, trudności w komunikacji
             </li>
             <li className="list__item">
               utrata sensu życia, samotność, cierpienie
             </li>
-            <li className="list__item">trudności w relacjach z innymi</li>
-            <li className="list__item">trudności szkolne</li>
             <li className="list__item">choroba bliskiej osoby, żałoba</li>
           </ul>
 
