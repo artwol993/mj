@@ -23,11 +23,11 @@ function About() {
             <div className="about-text-box-with-image ">
               <div className="name">
                 <h1 className="about-name-h1">Marzanna Jakoniuk</h1>
-                <p className="about-paragraph">
+                <p className="about-paragraph about-name-paragraph">
                   Psycholog <br></br>Psychoterapeutka
                 </p>{" "}
               </div>
-              <p className=" about-paragraph-1">
+              <p className="about-paragraph about-paragraph-1">
                 Jestem <b> psychologiem </b> i <b> psychoterapeutką </b> w
                 trakcie 4-letniego szkolenia w Szkole Psychoterapii Gestalt,
                 która posiada akredytację EAGT (European Association of Gestalt
