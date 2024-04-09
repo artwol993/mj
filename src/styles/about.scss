@@ -111,7 +111,6 @@
   .about-paragraph {
     padding-bottom: 10px;
   }
-
 }
 
 @include for-desktop {
@@ -125,7 +124,7 @@
   }
 
   .about-box {
-   margin: 10px 20px;
+   margin: 0 20px;
    }
 
    .about-box-image {
@@ -133,18 +132,35 @@
     height: 630px;
   }
 
-  .about-paragraph{
-    font-size: $font-size-large;
+  .about-text-box-with-image {
+    padding-left: 15px;
+    padding-right: 0;
   }
 
- .name {
-  padding-left: 50px;
- }
+  .about-paragraph{
+    font-size: 19px;
+    padding-bottom: 15px;
+  }
+
+  .name {
+    padding: 0;
+  }
+
+  .about-name-h1 {
+    padding-bottom: 15px;
+  }
+
+  .about-name-paragraph {
+    font-size: 24px;
+  }
 
   .about-paragraph-1 {
-    font-size: $font-size-large;
-    padding-left: 50px;
+    font-size: 19px;
   }
+
+  .about-text-box {
+    margin: 15px 0;
+}
 }
 
 @include for-wide-desktop {
