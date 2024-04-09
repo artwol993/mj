@@ -19,16 +19,19 @@
 }
 
 .about-box {
-  margin: 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.about-text-box-with-image {
+  padding: 0 20px;
+}
+
 .about-box-image {
   width: 300px;
-  height: 400px;
+  height: 370px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,20 +40,21 @@
 }
 
 
+
 .about-text-box {
-  margin: 10px 20px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+
 .name {
   padding-bottom: 20px;
 }
 
 .about-paragraph {
-  padding-bottom: 10px;
   text-align: justify;
 }
 
@@ -82,14 +86,25 @@
 
   .about-text-box-with-image {
     width: 50%;
+    padding: 0 10px;
   }
 
-  .white-text {
-    margin-inline: 35px;
-    margin-block: 0;
-    text-align: center;
-    width: 150%;
+  .name {
+    padding-bottom: 0;
+
+    .about-name-h1 {
+      padding-bottom: 10px;
+    }
   }
+
+  .about-text-box {
+    margin: 10px 0;
+  }
+
+  .about-paragraph {
+    padding-bottom: 10px;
+  }
+
 }
 
 @include for-desktop {
