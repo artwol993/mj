@@ -80,6 +80,10 @@
 
   .about-box-with-image {
     flex-direction: row;
+
+    .about-paragraph-1 {
+      padding: 0;
+    }
   }
 
   .about-box-image {
