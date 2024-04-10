@@ -26,11 +26,11 @@
 }
 
 .about-text-box-with-image {
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 .about-box-image {
-  width: 300px;
+  width: 330px;
   height: 450px;
   background-size: cover;
   background-position: center;
@@ -40,7 +40,7 @@
 }
 
 .about-text-box {
-  margin: 0 40px;
+  margin: 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,7 @@
 }
 
 .about-paragraph {
-  text-align: justify;
+  text-align: start;
   font-size: 14px;
   padding-bottom: 10px;
 }
@@ -67,7 +67,7 @@
   }
 
   .about-container {
-    width: 700px;
+    width: 710px;
   }
 
   .about-header {
@@ -119,8 +119,8 @@
   }
 
   .about-container {
-    padding: 50px 0;
-    width: 900px;
+    width: 850px;
+    
   }
 
   .about-box {
