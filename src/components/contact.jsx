@@ -29,7 +29,7 @@ function Contact() {
             </div>
             <div className="contact-box-row">
               <p className="paragraph-online">
-                Pracuję także <b>online</b>, przez komunikator
+                Pracuję także <b>online</b>
               </p>
             </div>
           </div>

@@ -16,7 +16,7 @@
 }
 
 .list__items {
-  text-align: justify;
+  text-align: start;
   padding-left: 10px;
 }
 
@@ -46,12 +46,12 @@
    .list__items {
     text-align: start;
     padding: 10px;
-    width: 330px;
+    width: 350px;
   }
 
   .list__picture {
-    width: 330px;
-    height: 430px;
+    width: 350px;
+    height: 350px;
     margin: 10px;
   }
 }
@@ -71,8 +71,5 @@
     width: 450px;
   }
 
-    .list__picture {
-    width: 450px;
-    height: auto;
-  }
+
 }
