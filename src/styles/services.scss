@@ -8,6 +8,10 @@
 
 .services {
   width: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .services-title {
@@ -17,6 +21,7 @@
 }
 
 .services-container {  
+  width: 350px;
   display: flex; 
   flex-direction: column;
   justify-content: center;
@@ -70,6 +75,11 @@
 }
 
 @include for-tablet-up {
+
+  .services-container {  
+    width: 700px;
+  }
+
   .services-title {
     font-size: $header-size-semi-large; 
   }
@@ -79,7 +89,7 @@
     grid-template-columns: 1fr 1fr; 
     align-items: start; 
     gap: 10px; 
-    width: 710px;
+    width: 700px;
     padding-inline: 20px;
     padding-bottom: 10px;
   }
@@ -106,6 +116,11 @@
 }
 
 @include for-desktop-up {
+
+  .services-container {  
+    width: 900px;
+  }
+
   .services-box {
     width: 850px;
     gap: 20px;
@@ -129,5 +144,12 @@
 
   .services-box-text-author {
     width: 810px;
+  }
+}
+
+
+@include for-wide-desktop {
+  .services-container {  
+    width: 1050px;
   }
 }

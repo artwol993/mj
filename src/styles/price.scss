@@ -1,5 +1,9 @@
 .price__section {
-  text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
   width: 100%;
 }
 
@@ -8,6 +12,7 @@
 }
 
 .price__container {
+  width: 350px;
   padding: 10px;
   font-weight: 500;
   display: flex;
@@ -19,7 +24,7 @@
 
 @include for-tablet-up {
   .price__container {
-    padding: 10px;
+    width: 700px;
   }
 
   .price__text{
@@ -29,6 +34,11 @@
 }
 
 @include for-desktop {
+
+  .price__container {
+    width: 900px;
+  }
+
   .price__title {
     padding-top: 10px;
   }
@@ -41,6 +51,11 @@
 }
 
 @include for-wide-desktop {
+  .price__container {
+    width: 1050px;
+  }
+
+
   .price__box {
     height: 150px;
     margin: 40px 70px;

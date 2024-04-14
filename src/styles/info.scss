@@ -1,5 +1,6 @@
 
 .info__container {
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +25,11 @@
 }
 
 @include for-tablet-up {
+
+  .info__container {
+    width: 700px;
+  }
+
   .info__header {
     width: 500px;
   }
@@ -35,6 +41,11 @@
 }
 
 @include for-desktop-up {
+
+  .info__container {
+    width: 900px;
+  }
+
   .info__header {
     width: 700px;
   }
@@ -46,6 +57,11 @@
 }
 
 @include for-wide-desktop {
+
+  .info__container {
+    width: 1050px;
+  }
+
   .offer-info-paragraph {
     margin-top: 50px;
     padding-inline: 150px;

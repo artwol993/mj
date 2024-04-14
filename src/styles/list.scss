@@ -6,7 +6,7 @@
 }
 
 .list__container {
-  width: 320px;
+  width: 350px;
   padding-bottom: 10px;
 }
 
@@ -35,7 +35,7 @@
 
 @include for-tablet-up {
   .list__container {
-    width: 710px;
+    width: 700px;
     padding-block: 20px;
     padding-left: 40px;
     display: flex;
@@ -60,7 +60,7 @@
 
 @include for-desktop-up {
   .list__container {
-    width: 850px;
+    width: 900px;
     padding-block: 20px;
    }
    
@@ -79,3 +79,10 @@
     width: 400px;
   }
 }
+
+@include for-wide-desktop {
+  .list__container {
+    width: 1050px;
+    padding-block: 30px;
+   }
+  }
