@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import Modal from "./modal";
 import { motion } from "framer-motion";
 
 function Type() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalTitle, setModalTitle] = useState("");
-  const [modalContent, setModalContent] = useState("");
+  const [expandedBox, setExpandedBox] = useState(null);
+
+  const toggleBox = (title) => {
+    setExpandedBox(expandedBox === title ? null : title);
+  };
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -16,7 +17,7 @@ function Type() {
     },
   };
 
-  const modalData = {
+  const typeData = {
     "Konsultacja psychologiczna":
       "To rozmowa, podczas której psycholog zbiera informacje dotyczące zgłaszanych problemów, omawia z osobą zgłaszającą się na konsultację bieżące dolegliwości emocjonalne, relacyjne, rodzinne i ich historię. Nie proponuje gotowych rozwiązań ale pomaga dobrać najbardziej odpowiedni rodzaj dalszej pracy (np. terapia grupowa, terapia indywidualna, terapia pary, mediacje, leczenie psychiatryczne, itp.)",
     "Terapia krótkoterminowa":
@@ -27,23 +28,12 @@ function Type() {
       "Osoby w wieku 16-18 lat na pierwsze spotkanie zapraszam z osobą dorosłą, rodzicem lub opiekunem. Pierwsze spotkanie to rozmowa psychoterapeutki z nastolatkiem i opiekunem. Jej celem jest poznanie oczekiwań zgłaszających się osób i motywacji nastolatka do terapii. Spotkanie z opiekunem jest także ważne ze względów formalnych – to rodzic wyraża zgodę na terapię osoby poniżej osiemnastego roku życia. Kolejne spotkania odbywają się już z nastolatkiem indywidualnie.",
   };
 
-  const openModal = (title) => {
-    setModalTitle(title);
-    setModalContent(modalData[title]);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   const truncateText = (text, maxLength) => {
     if (text.length > maxLength) {
       return text.substring(0, maxLength) + " ...";
     }
     return text;
   };
-
   return (
     <>
       <section className="type__section">
@@ -52,24 +42,22 @@ function Type() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={containerVariants}
         >
-          {Object.keys(modalData).map((title) => (
+          {Object.keys(typeData).map((title) => (
             <div
-              className="type__box"
-              onClick={() => openModal(title)}
+              className={`type__box ${expandedBox === title ? "expanded" : ""}`}
+              onClick={() => toggleBox(title)}
               key={title}
             >
               <h4 className="type__box__title">{title}</h4>
               <div className="type__box__text">
-                {truncateText(modalData[title], 160)}{" "}
+                {expandedBox === title
+                  ? typeData[title]
+                  : typeData[title].substring(0, 100) + "..."}
               </div>
             </div>
           ))}
         </motion.div>
-        <Modal show={isModalOpen} onHide={closeModal} title={modalTitle}>
-          <p>{modalContent}</p>
-        </Modal>
       </section>
     </>
   );

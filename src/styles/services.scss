@@ -43,6 +43,14 @@
   font-size: 14px;
 } 
 
+.services-box-text-author {
+  width: 320px;
+  padding-top: 10px;
+  text-align: end;
+  font-size: 12px;
+  font-style: italic;
+}
+
 .services-box-image {
   background-size: cover;
   background-position: center;
@@ -91,6 +99,10 @@
     grid-column: 1 / -1; 
     font-size: 14px;
   }
+
+  .services-box-text-author {
+    width: 670px;
+  }
 }
 
 @include for-desktop-up {
@@ -113,5 +125,9 @@
 
   .services-box-text-last {
     font-size: 19px;
+  }
+
+  .services-box-text-author {
+    width: 810px;
   }
 }
