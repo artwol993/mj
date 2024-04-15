@@ -28,11 +28,11 @@ function About() {
                 </p>{" "}
               </div>
               <p className="about-paragraph about-paragraph-1">
-                Jestem <b> psychologiem </b> i <b> psychoterapeutką </b> w
-                trakcie 4-letniego szkolenia w Szkole Psychoterapii Gestalt,
-                która posiada akredytację EAGT (European Association of Gestalt
-                Therapy). Ukończyłam także kurs podstawowy i zaawansowany
-                Terapii Skoncentrowanej na Rozwiązaniach (TSR).
+                Jestem <b> psychologiem </b> i <b> psychoterapeutką </b>
+                <br></br> w trakcie 4-letniego szkolenia w Szkole Psychoterapii
+                Gestalt, która posiada akredytację EAGT (European Association{" "}
+                <br></br> of Gestalt Therapy). Ukończyłam także kurs podstawowy
+                i zaawansowany Terapii Skoncentrowanej na Rozwiązaniach (TSR).
               </p>
             </div>
           </div>
@@ -42,7 +42,7 @@ function About() {
                 <b>Doświadczenie zawodowe </b> kształtowałam współpracując z
                 Fundacją Itaka, w Centrum Wsparcia dla Osób Dorosłych w Kryzysie
                 Psychicznym, w Pogotowiu Psychologicznym, w Centrum Wsparcia i
-                Mediacji dla Rodzin a także podczas stażu w Szpitalu
+                Mediacji dla Rodzin <br></br> a także podczas stażu w Szpitalu
                 Nowowiejskim w Warszawie.
               </p>
               <p className="about-paragraph">
@@ -50,26 +50,34 @@ function About() {
                 nadal doskonalę swoje umiejętności podczas szkoleń i warsztatów.
               </p>
               <p className="about-paragraph">
-                Superwizuję swoją praktykę indywidualną i kieruję się Kodeksami
-                Etyki Zawodowej Psychologa i Polskiego Towarzystwa Psychoterapii
-                Gestalt.
+                Superwizuję swoją praktykę indywidualną <br></br> i kieruję się
+                Kodeksami Etyki Zawodowej Psychologa i Polskiego Towarzystwa
+                Psychoterapii Gestalt.
               </p>
               <p className="about-paragraph">
                 W pracy psychoterapeutki ważna jest dla mnie <b> otwartość </b>
                 oraz <b> uważność </b> na drugiego człowieka, które pomagają
                 budować <b> autentyczną relację, </b> opartą na{" "}
-                <b> szacunku </b> i <b> współodczuwaniu</b>. Towarzyszę ludziom
-                w podróży do satysfakcjonującego życia, nazywania potrzeb i
+                <b>
+                  {" "}
+                  szacunku <br></br>{" "}
+                </b>{" "}
+                i <b> współodczuwaniu</b>. Towarzyszę ludziom <br></br> w
+                podróży do satysfakcjonującego życia, nazywania potrzeb i
                 rozpoznawania składników potencjału, akceptowania siebie. Aby
                 odzyskiwali kontrolę, doświadczali sprawczości, przezwyciężali
-                kryzys, uczyli się samoregulacji. Wierzę, że akceptujący kontakt
-                jest początkiem zmiany.
+                kryzys, uczyli <br></br> się samoregulacji. Wierzę, że
+                akceptujący kontakt jest początkiem zmiany.
               </p>
               <p className="about-paragraph">
-                Pracuję indywidualnie z <b> osobami dorosłymi </b> i z{" "}
-                <b> młodzieżą </b> w wieku od 16 roku życia. <b> Każda osoba</b>
-                , bez względu na płeć, wyznanie, kolor skóry, orientację jest u
-                mnie
+                Pracuję indywidualnie z{" "}
+                <b>
+                  {" "}
+                  osobami dorosłymi <br></br>{" "}
+                </b>{" "}
+                i z <b> młodzieżą </b> w wieku od 16 roku życia.{" "}
+                <b> Każda osoba</b>, bez względu na płeć, wyznanie, kolor skóry,
+                orientację jest u mnie
                 <b> mile widziana</b>.
               </p>
             </div>
