@@ -3,7 +3,7 @@
   width: 350px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 15px;
   margin-bottom: 30px;
@@ -11,8 +11,8 @@
 
 .type__box {
   width: 330px;
-  height: auto; /* Zmiana na 'auto', aby dopasować wysokość */
-  min-height: 330px; /* Minimalna wysokość, aby zachować jednolity wygląd */
+  height: auto;
+  min-height: 330px;
   margin: 15px;
   background-color: white;
   display: flex;
@@ -20,8 +20,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  overflow: hidden; /* Zapobiega wyświetlaniu zawartości poza boxem */
-  transition: max-height 0.5s ease-in-out; /* Animacja dla max-height */
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; 
   position: relative;
   
   &__title {
@@ -29,23 +29,23 @@
     font-weight: 600;
     color: $c-black;
     transition: transform 0.3s ease;
-    margin: 10px;
     text-align: center;
+    padding-bottom: 10px;
+    width: 250px;
   }
 
   &__text {
     background-color: $c-white;
     color: $c-black; 
-    padding: 20px 40px;
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     text-align: start;
+    width: 250px;
   }
 
   &.expanded {
     max-height: 1000px;
-    padding: 0;
+    padding-block: 30px;
   }
 }
 
@@ -68,7 +68,7 @@
 
 .type__box.expanded {
   height: auto;
-  max-height: 1000px; /* Zakładana maksymalna wysokość, dostosuj zgodnie z potrzebą */
+  max-height: 1000px;
 }
 
 @include for-tablet-up {
@@ -94,8 +94,8 @@
   }
 
   .type__box {
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     gap: 5px;
 
     &::before,
