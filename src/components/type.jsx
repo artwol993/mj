@@ -53,7 +53,7 @@ function Type() {
               <div className="type__box__text">
                 {expandedBox === title
                   ? typeData[title]
-                  : typeData[title].substring(0, 100) + "..."}
+                  : typeData[title].substring(0, 110) + "..."}
               </div>
             </div>
           ))}
