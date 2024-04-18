@@ -65,6 +65,10 @@
     padding: 15px;
     font-size: $font-size-medium;
   }
+
+  .type__box__text {
+    width: 260px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -88,8 +92,9 @@
   .type__box__title {
   font-size: 20px;
   }
+
   .type__box__text {
-    width: 300px;
+    width: 280px;
     font-size: 18px;
   }
 }
