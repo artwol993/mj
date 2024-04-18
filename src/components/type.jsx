@@ -41,6 +41,7 @@ function Type() {
           className="type__container"
           initial="hidden"
           whileInView="visible"
+          variants={containerVariants}
           viewport={{ once: true }}
         >
           {Object.keys(typeData).map((title) => (
@@ -53,7 +54,7 @@ function Type() {
               <div className="type__box__text">
                 {expandedBox === title
                   ? typeData[title]
-                  : typeData[title].substring(0, 110) + "..."}
+                  : truncateText(typeData[title], 110)}
               </div>
             </div>
           ))}
