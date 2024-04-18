@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-inline: 20px;
 }
 
 .about-header {
@@ -124,10 +125,6 @@
     width: 900px;
     
   }
-
-  .about-box {
-   margin: 0 20px;
-   }
 
    .about-box-image {
     width: 430px;
