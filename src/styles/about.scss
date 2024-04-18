@@ -13,10 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.about-header {
-  font-size: $header-size-medium;
+  padding-top: 25px;
 }
 
 .about-box {
@@ -24,7 +21,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
   width: 320px;
 }
 
@@ -61,9 +57,6 @@
 }
 
 @include for-tablet-up {
-  .about-section{
-    padding-block: 20px;
-  }
 
   .about-container {
     width: 700px;
@@ -74,7 +67,12 @@
   }
 
   .about-box {
+    width: 650px;
     align-items: end;
+  }
+
+  .about-text-box {
+    padding-top: 15px;
   }
 
   .about-box-with-image {
@@ -87,62 +85,62 @@
 
   .about-box-image {
     width: 350px;
-    height: 500px;
+    height: 530px;
   }
 
   .about-text-box-with-image {
     width: 50%;
-    padding: 0 10px;
+    padding-left: 15px;
   }
 
   .name {
     padding-bottom: 0;
 
     .about-name-h1 {
-      padding-bottom: 10px;
+      padding-bottom: 15px;
     }
   }
 
-  .about-text-box {
-    margin: 10px 0;
-  }
 
   .about-paragraph {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 }
 
-@include for-desktop {
-  .about-section{
-    padding: 10px 50px;
-  }
+@include for-desktop-up {
 
   .about-container {
     width: 900px;
-    
+  }
+
+  .about-box {
+    width: 880px;
   }
 
    .about-box-image {
     width: 430px;
-    height: 630px;
+    height: 660px;
+  }
+
+  .about-text-box {
+    padding-top: 20px;
   }
 
   .about-text-box-with-image {
-    padding-left: 15px;
-    padding-right: 0;
+    padding-left: 20px;
   }
 
   .about-paragraph{
     font-size: 19px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
 
   .name {
     padding: 0;
-  }
 
-  .about-name-h1 {
-    padding-bottom: 15px;
+    .about-name-h1 {
+      padding-bottom: 20px;
+    }
   }
 
   .about-name-paragraph {
@@ -152,15 +150,10 @@
   .about-paragraph-1 {
     font-size: 19px;
   }
-
-  .about-text-box {
-    margin: 15px 0;
-}
 }
 
 @include for-wide-desktop {
   .about-section{
-    padding: 30px 50px;
 
     h2 {
       font-size: $header-size-semi-large;

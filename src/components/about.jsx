@@ -28,11 +28,11 @@ function About() {
                 </p>{" "}
               </div>
               <p className="about-paragraph about-paragraph-1">
-                Jestem <b> psychologiem </b> i <b> psychoterapeutką </b>
-                <br></br> w trakcie 4-letniego szkolenia w Szkole Psychoterapii
-                Gestalt, która posiada akredytację EAGT (European Association of
-                Gestalt Therapy). Ukończyłam także kurs podstawowy i
-                zaawansowany Terapii Skoncentrowanej na Rozwiązaniach (TSR).
+                Jestem <b> psychologiem </b> i <b> psychoterapeutką </b>w
+                trakcie 4-letniego szkolenia w Szkole Psychoterapii Gestalt,
+                która posiada akredytację EAGT (European Association of Gestalt
+                Therapy). Ukończyłam także kurs podstawowy i zaawansowany
+                Terapii Skoncentrowanej na Rozwiązaniach (TSR).
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ function About() {
                 W pracy psychoterapeutki ważna jest dla mnie <b> otwartość </b>
                 oraz <b> uważność </b> na drugiego człowieka, które pomagają
                 budować <b> autentyczną relację, </b> opartą na
-                <b>szacunku</b> i <b> współodczuwaniu</b>. Towarzyszę ludziom w
+                <b> szacunku </b> i <b> współodczuwaniu</b>. Towarzyszę ludziom w
                 podróży do satysfakcjonującego życia, nazywania potrzeb i
                 rozpoznawania składników potencjału, akceptowania siebie. Aby
                 odzyskiwali kontrolę, doświadczali sprawczości, przezwyciężali
@@ -66,7 +66,7 @@ function About() {
                 jest początkiem zmiany.
               </p>
               <p className="about-paragraph">
-                Pracuję indywidualnie z<b>osobami dorosłymi</b>i z{" "}
+                Pracuję indywidualnie z <b> osobami dorosłymi</b> i z{" "}
                 <b> młodzieżą </b> w wieku od 16 roku życia. <b> Każda osoba</b>
                 , bez względu na płeć, wyznanie, kolor skóry, orientację jest u
                 mnie
