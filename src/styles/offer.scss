@@ -13,24 +13,12 @@
 
 .offer-header {
   margin: 25px;
-  padding-bottom: 20px;
   font-size: $header-size-medium;
 }
 
-@include for-mobile {
-  .offer-section{
-    padding: 30px;
-  }
-}
 
 @include for-tablet-up {
-
-  .offer-section {
-    padding-block: 30px;
-  }
-
   .offer-header {
     font-size: $header-size-semi-large;
-    padding-block: 25px;
    }
 }
