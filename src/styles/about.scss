@@ -1,6 +1,6 @@
 .about-section{
   background: linear-gradient(to bottom, $c-theme, $c-primary);
-  padding: 30px;
+  padding-block: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +13,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-inline: 20px;
 }
 
 .about-header {
@@ -26,15 +25,13 @@
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  width: 320px;
 }
 
-.about-text-box-with-image {
-  padding: 0 30px;
-}
 
 .about-box-image {
-  width: 330px;
-  height: 450px;
+  width: 320px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,7 +40,6 @@
 }
 
 .about-text-box {
-  margin: 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
