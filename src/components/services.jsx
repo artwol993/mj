@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+
 import "../styles/services.scss";
 
 function Services() {
@@ -7,13 +8,13 @@ function Services() {
     <div className="services-section" id="services">
       <div className="services">
         <h3 className="services-title">Gestalt</h3>
-        <motion.div
-          className="services-container"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <div className="services-box">
+        <div className="services-container">
+          <motion.div
+            className="services-box"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             <div className="services-box-image image-1"></div>
             <div className="services-box-text">
               <p className="services-box-p">
@@ -28,8 +29,13 @@ function Services() {
                 co się dzieje w nas, <br></br> z nami i dookoła nas.
               </p>
             </div>
-          </div>
-          <div className="services-box">
+          </motion.div>
+          <motion.div
+            className="services-box"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             <div className="services-box-text">
               <p className="services-box-p">
                 Cierpienie psychiczne powstaje gdy przeżywane emocje i
@@ -44,7 +50,7 @@ function Services() {
               </p>
             </div>
             <div className="services-box-image image-2"></div>
-          </div>
+          </motion.div>
           <div className="services-box">
             <div className="services-box-text-last">
               <p className="services-box-p">
@@ -62,7 +68,7 @@ function Services() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

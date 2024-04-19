@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import "../styles/contact.scss";
 
 function Contact() {
@@ -6,7 +8,12 @@ function Contact() {
     <>
       <div className="contact-section" id="contact">
         <h3 className="contact-header">Kontakt</h3>
-        <div className="contact-container">
+        <motion.div
+          className="contact-container"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <div className="contact-box">
             <div className="contact-box-row">
               <a className="contact-box-link" href="tel:+48509019090">
@@ -54,7 +61,7 @@ function Contact() {
           </div>
 
           <div className="contact-color"></div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
