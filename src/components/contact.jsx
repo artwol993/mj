@@ -38,6 +38,14 @@ function Contact() {
               <p className="paragraph-online">
                 Pracuję także <b>online</b>
               </p>
+              <a
+                className="online-link"
+                href="https://www.kluczowymoment.pl/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>kluczowymoment.pl</p>
+              </a>
             </div>
           </div>
           <p className="map-paragraph">
