@@ -75,10 +75,14 @@ function Services() {
                 zaburza korzystne funkcjonowanie w środowisku. To odkrywanie
                 odbywa się w oparciu o <b> terapeutyczny sojusz </b> -
                 niepowtarzalną relację Klientki/Klienta z terapeutką, opartą na
-                <b> zaufaniu, uważności i szacunku </b>.
+                <b> zaufaniu, uważności i szacunku</b>.
               </p>
               <div className="services-box-text-author">
-                <a href="https://gestaltpolska.org.pl/o-metodzie/">
+                <a
+                  href="https://gestaltpolska.org.pl/o-metodzie/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   na podstawie red. M.Katolo, D.Sałdak
                   https://gestaltpolska.org.pl/o-metodzie/
                 </a>
