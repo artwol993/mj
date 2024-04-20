@@ -35,9 +35,7 @@ function Contact() {
               </div>
             </div>
             <div className="contact-box-row">
-              <p className="paragraph-online">
-                Pracuję także <b>online</b>
-              </p>
+              <p className="paragraph-online">Pracuję online</p>
               <a
                 className="online-link"
                 href="https://www.kluczowymoment.pl/"
@@ -49,8 +47,7 @@ function Contact() {
             </div>
           </div>
           <p className="map-paragraph">
-            Przyjmuję stacjonarnie w <br></br>Warszawie Miedzeszyn, ul.
-            Agrestowa 4
+            oraz stacjonarnie w <br></br>Warszawie Miedzeszyn, ul. Agrestowa 4
           </p>
           <div className="map-container">
             <div className="map">

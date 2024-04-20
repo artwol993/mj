@@ -24,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .contact-box-row {
@@ -32,7 +32,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   &__icons {
     display: flex;
@@ -60,7 +60,14 @@
   font-weight: 500;
   text-align: center;
   width: 340px;
+  font-size: $font-size-medium;
 }
+
+.online-link {
+  font-weight: 500;
+  font-size: $font-size-medium;
+}
+
 
 .icon {
   width: 30px;
@@ -87,7 +94,7 @@
 
 .map {
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .map iframe {
@@ -104,17 +111,12 @@
 }
 
 .contact-color {
-  height: 200px;
+  height: 150px;
   width: 100%;
   background: linear-gradient(0deg, rgb(87, 80, 177) 0%, rgba(71, 162, 253, 0.778) 50%, rgba(250, 244, 244, 0.108) 100%);
 }
 
 
-.online-link {
-  font-weight: 600;
-  font-size: 18px;
-  padding-top: 10px;
-}
 
 @include for-tablet-up {
   .contact-container {
@@ -125,9 +127,14 @@
     font-size: $header-size-semi-large;
   }
 
+  .map {
+    padding-bottom: 70px;
+  }
+
   .map-paragraph {
     width: 400px;
     color: $c-black;
+    font-size: $font-size-large;
   }
 
   .map iframe {
@@ -151,6 +158,11 @@
   .online-link {
     font-size: $font-size-large;
   }
+
+  .online-link {
+    font-size: $font-size-large;
+  }
+  
 
 }
 
