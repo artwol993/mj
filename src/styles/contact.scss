@@ -109,6 +109,13 @@
   background: linear-gradient(0deg, rgba(78,75,134,1) 0%, rgba(71, 162, 253, 0.778) 50%, rgba(250, 244, 244, 0.108) 100%);
 }
 
+
+.online-link {
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
 @include for-tablet-up {
   .contact-container {
     width: 100%;
@@ -133,13 +140,18 @@
     text-align: left;
   }
 
-  .contact-link-p {
+  .contact-link-p  {
     font-size: $font-size-large;
   }
 
   .paragraph-online {
     font-size: $font-size-large;
   }
+
+  .online-link {
+    font-size: $font-size-large;
+  }
+
 }
 
 @include for-desktop {
@@ -170,6 +182,10 @@
   .paragraph-online {
     font-size: $font-size-large;
     width: 400px;
+  }
+
+  .online-link:hover {
+    text-decoration: underline;
   }
 }
 
