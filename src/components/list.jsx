@@ -2,6 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 
 function List() {
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeInOut" },
+    },
+  };
+
   return (
     <>
       <div className="list__section">
@@ -9,9 +18,10 @@ function List() {
           W terapii indywidualnej pracuję z osobami, którym towarzyszy:
         </h3>
         <motion.div
-          className="list__container"
+          className="services-box"
           initial="hidden"
           whileInView="visible"
+          variants={containerVariants}
           viewport={{ once: true }}
         >
           <ul className="list__items">

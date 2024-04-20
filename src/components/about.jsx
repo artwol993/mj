@@ -2,9 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 
 function About() {
-  const boxVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeInOut" },
+    },
   };
 
   return (
@@ -16,7 +20,7 @@ function About() {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          variants={boxVariants}
+          variants={containerVariants}
         >
           <div className="about-box about-box-with-image">
             <div className="about-box-image"></div>
@@ -36,7 +40,14 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="about-box">
+          <motion.div
+            className="about-box"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            variants={containerVariants}
+          >
             <div className="about-text-box">
               <p className="about-paragraph">
                 <b>Doświadczenie zawodowe </b> kształtowałam współpracując z
@@ -58,8 +69,8 @@ function About() {
                 W pracy psychoterapeutki ważna jest dla mnie <b> otwartość </b>
                 oraz <b> uważność </b> na drugiego człowieka, które pomagają
                 budować <b> autentyczną relację, </b> opartą na
-                <b> szacunku </b> i <b> współodczuwaniu</b>. Towarzyszę ludziom w
-                podróży do satysfakcjonującego życia, nazywania potrzeb i
+                <b> szacunku </b> i <b> współodczuwaniu</b>. Towarzyszę ludziom
+                w podróży do satysfakcjonującego życia, nazywania potrzeb i
                 rozpoznawania składników potencjału, akceptowania siebie. Aby
                 odzyskiwali kontrolę, doświadczali sprawczości, przezwyciężali
                 kryzys, uczyli się samoregulacji. Wierzę, że akceptujący kontakt
@@ -73,7 +84,7 @@ function About() {
                 <b> mile widziana</b>.
               </p>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </div>

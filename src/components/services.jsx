@@ -4,6 +4,15 @@ import { motion } from "framer-motion";
 import "../styles/services.scss";
 
 function Services() {
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeInOut" },
+    },
+  };
+
   return (
     <div className="services-section" id="services">
       <div className="services">
@@ -13,6 +22,7 @@ function Services() {
             className="services-box"
             initial="hidden"
             whileInView="visible"
+            variants={containerVariants}
             viewport={{ once: true }}
           >
             <div className="services-box-image image-1"></div>
@@ -34,6 +44,7 @@ function Services() {
             className="services-box"
             initial="hidden"
             whileInView="visible"
+            variants={containerVariants}
             viewport={{ once: true }}
           >
             <div className="services-box-text">
@@ -51,7 +62,13 @@ function Services() {
             </div>
             <div className="services-box-image image-2"></div>
           </motion.div>
-          <div className="services-box">
+          <motion.div
+            className="services-box"
+            initial="hidden"
+            whileInView="visible"
+            variants={containerVariants}
+            viewport={{ once: true }}
+          >
             <div className="services-box-text-last">
               <p className="services-box-p">
                 Proces terapeutyczny powinien zmierzać do odkrycia tego, co
@@ -67,7 +84,7 @@ function Services() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
