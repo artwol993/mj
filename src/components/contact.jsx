@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import "../styles/contact.scss";
 
 function Contact() {
@@ -6,25 +8,12 @@ function Contact() {
     <>
       <div className="contact-section" id="contact">
         <h3 className="contact-header">Kontakt</h3>
-        <div className="contact-container">
-          <p className="map-paragraph">
-            Przyjmuję stacjonarnie w Warszawie Miedzeszyn, ul. Agrestowa 4
-          </p>
-          <div className="map-container">
-            <div className="map">
-              <iframe
-                width="100%"
-                height="600"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Agrestowa%204%20warszawa+(Psychoterapia%20-%20Marzanna%20Jakoniuk%20)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              >
-                <a href="https://www.gps.ie/">gps devices</a>
-              </iframe>
-            </div>
-          </div>
+        <motion.div
+          className="contact-container"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <div className="contact-box">
             <div className="contact-box-row">
               <a className="contact-box-link" href="tel:+48509019090">
@@ -46,14 +35,38 @@ function Contact() {
               </div>
             </div>
             <div className="contact-box-row">
-              <p className="paragraph-online">
-                Pracuję także <b>online</b>, przez komunikator, skype lub google
-                meet
-              </p>
+              <p className="paragraph-online">Pracuję online</p>
+              <a
+                className="online-link"
+                href="https://www.kluczowymoment.pl/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>kluczowymoment.pl</p>
+              </a>
             </div>
           </div>
+          <p className="map-paragraph">
+            oraz stacjonarnie w <br></br>Warszawie Miedzeszyn, ul. Agrestowa 4
+          </p>
+          <div className="map-container">
+            <div className="map">
+              <iframe
+                width="100%"
+                height="600"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Agrestowa%204%20warszawa+(Psychoterapia%20-%20Marzanna%20Jakoniuk%20)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              >
+                <a href="https://www.gps.ie/">gps devices</a>
+              </iframe>
+            </div>
+          </div>
+
           <div className="contact-color"></div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

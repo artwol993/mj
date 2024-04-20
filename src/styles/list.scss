@@ -6,73 +6,78 @@
 }
 
 .list__container {
-  width: 330px;
-  padding-block: 20px;
+  width: 350px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .list__title {
   text-align: center;
   width: 350px;
+  padding-bottom: 10px;
 }
 
 .list__items {
-  text-align: justify;
-  padding-left: 10px;
+  width: 320px;
+  text-align: start;
+  padding-left: 15px;
+  font-size: 14px;
 }
 
 .list__picture {
-  width: 330px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-image: url('../assets/staw.jpg');
-  margin-block: 30px;
+  margin-block: 10px;
 }
 
 @include for-tablet-up {
   .list__container {
     width: 700px;
-    padding-block: 30px;
-    padding-left: 40px;
-    display: flex;
-   }
+    padding-block: 15px;
+    flex-direction: row;   
+  }
 
    .list__title{
-    width: 500px;
+    width: 600px;
   }
    
    .list__items {
     text-align: start;
-    padding: 10px;
-    width: 330px;
+    padding-inline: 15px;
+    width: 350px;
   }
 
   .list__picture {
-    width: 330px;
-    height: 430px;
-    margin: 10px;
+    width: 290px;
+    height: 290px;
+    margin-block: 0;
   }
 }
 
 @include for-desktop-up {
   .list__container {
-    width: 970px;
-    padding-block: 30px;
+    width: 900px;
+    padding-block: 20px;
    }
-   
-   .list__title {
-    padding-bottom: 10px;
-   }
+
+   .list__picture {
+    width: 400px;
+    height: 400px;
+    margin-block: 0;
+  }
  
    .list__items {
     font-size: $font-size-semi-large;
-    width: 450px;
-  }
-
-    .list__picture {
-    width: 450px;
-    height: auto;
+    width: 400px;
+    padding-inline: 20px;
   }
 }
+

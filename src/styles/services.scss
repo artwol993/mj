@@ -8,6 +8,10 @@
 
 .services {
   width: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .services-title {
@@ -17,11 +21,11 @@
 }
 
 .services-container {  
+  width: 350px;
   display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
 }
 
 .services-box {  
@@ -33,14 +37,24 @@
 }
 
 .services-box-text {
-  padding: 10px;
-  text-align: justify;
+  padding-bottom: 10px;
+  text-align: start;
+  font-size: 14px;
 }
 
 .services-box-text-last {
   padding-bottom: 25px;
   text-align: justify;
+  font-size: 14px;
 } 
+
+.services-box-text-author {
+  width: 320px;
+  padding-top: 10px;
+  text-align: end;
+  font-size: 12px;
+  font-style: italic;
+}
 
 .services-box-image {
   background-size: cover;
@@ -49,7 +63,7 @@
   box-sizing: border-box;
   height:370px;
   width: 320px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .image-1 {
@@ -61,6 +75,11 @@
 }
 
 @include for-tablet-up {
+
+  .services-container {  
+    width: 700px;
+  }
+
   .services-title {
     font-size: $header-size-semi-large; 
   }
@@ -68,32 +87,73 @@
   .services-box {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    align-items: center; 
+    align-items: start; 
     gap: 10px; 
     width: 700px;
-    padding: 20px;
+    padding-inline: 10px;
+    padding-bottom: 10px;
   }
 
   .services-box-image {
-  width: 100%;
+    height:245px;
+    width: 325px;
+    margin-bottom: 0;
   }
 
   .services-box-text {
     padding: 0; 
+    font-size: 14px;
   }
 
   .services-box-text-last {
     grid-column: 1 / -1; 
+    font-size: 14px;
+  }
+
+  .services-box-text-author {
+    width: 670px;
   }
 }
 
 @include for-desktop-up {
-  .services-box {
-    width: 950px;
-    gap: 20px;
+
+  .services-container {  
+    width: 900px;
   }
 
-  .services-box-p {
-    font-size: $font-size-large;
+  .services-box {
+    width: 880px;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .services-box-image {
+    height:370px;
+    width: 420px;
+    margin-bottom: 0;
+  }
+
+  .services-box-text {
+    padding: 0; 
+    font-size: 19px;
+  }
+
+  .services-box-text-last {
+    font-size: 19px;
+  }
+
+  .services-box-text-author {
+    width: 810px;
+  }
+
+  .services-box-text-author {
+    width: 860px;
+  }
+}
+
+
+@include for-wide-desktop {
+  .services-container {  
+    width: 1050px;
   }
 }
