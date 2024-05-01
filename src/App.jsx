@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/config/main.scss";
 
-import "./components/replaceLetters";
+import "./scripts/replaceLetters";
 
 import Header from "./components/header";
 import Welcome from "./components/welcome";

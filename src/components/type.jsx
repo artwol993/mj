@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import replaceLetters from "../scripts/replaceLetters";
 
 function Type() {
   const [expandedBox, setExpandedBox] = useState(null);
@@ -35,7 +36,9 @@ function Type() {
     return text;
   };
 
-  useEffect(() => {}, [expandedBox]);
+  useEffect(() => {
+    replaceLetters(); // Wywołanie funkcji zamieniającej litery
+  }, [expandedBox]); // Ponowne wywołanie funkcji przy zmianie expandedBox
 
   return (
     <>
