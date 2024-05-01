@@ -37,8 +37,8 @@ function Type() {
   };
 
   useEffect(() => {
-    replaceLetters(); // Wywołanie funkcji zamieniającej litery
-  }, [expandedBox]); // Ponowne wywołanie funkcji przy zmianie expandedBox
+    replaceLetters();
+  }, [expandedBox]);
 
   return (
     <>
