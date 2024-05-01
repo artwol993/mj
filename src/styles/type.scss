@@ -101,7 +101,7 @@
 
 @media (min-width: 1440px) {
   .type__container{
-    width: 1050px;
+    width: 1450px;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
   }
@@ -109,10 +109,21 @@
   .type__box {
     width: 310px;
     min-height: 310px;
+    justify-content: flex-start;
+  }
+
+  .type__box__title {
+    margin-top: 60px;
   }
 
   
   .type__box__text {
     width: 250px;
     }
+}
+
+.type__box.expanded {
+  .type__box__text {
+    margin-bottom: 60px;
+  }
 }
