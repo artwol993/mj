@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import $ from "jquery";
 
 function Type() {
   const [expandedBox, setExpandedBox] = useState(null);
@@ -36,35 +35,7 @@ function Type() {
     return text;
   };
 
-  useEffect(() => {
-    $("h4, p").each(function () {
-      var htmlContent = $(this).html();
-      var lettersToReplace = [
-        "a",
-        "i",
-        "o",
-        "u",
-        "w",
-        "z",
-        "A",
-        "I",
-        "O",
-        "U",
-        "W",
-        "Z",
-      ];
-
-      lettersToReplace.forEach(function (letter) {
-        var regex = new RegExp("(\\s)" + letter + "(\\s)", "g");
-        htmlContent = htmlContent.replace(
-          regex,
-          '$1<span class="replaced-letter">' + letter + "&nbsp;" + "</span>"
-        );
-      });
-
-      $(this).html(htmlContent);
-    });
-  }, [expandedBox]);
+  useEffect(() => {}, [expandedBox]);
 
   return (
     <>
