@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import $ from "jquery";
 
 function Type() {
   const [expandedBox, setExpandedBox] = useState(null);
@@ -34,6 +35,37 @@ function Type() {
     }
     return text;
   };
+
+  useEffect(() => {
+    $("h4, p").each(function () {
+      var htmlContent = $(this).html();
+      var lettersToReplace = [
+        "a",
+        "i",
+        "o",
+        "u",
+        "w",
+        "z",
+        "A",
+        "I",
+        "O",
+        "U",
+        "W",
+        "Z",
+      ];
+
+      lettersToReplace.forEach(function (letter) {
+        var regex = new RegExp("(\\s)" + letter + "(\\s)", "g");
+        htmlContent = htmlContent.replace(
+          regex,
+          '$1<span class="replaced-letter">' + letter + "&nbsp;" + "</span>"
+        );
+      });
+
+      $(this).html(htmlContent);
+    });
+  }, [expandedBox]);
+
   return (
     <>
       <section className="type__section">
@@ -52,9 +84,11 @@ function Type() {
             >
               <h4 className="type__box__title">{title}</h4>
               <div className="type__box__text">
-                {expandedBox === title
-                  ? typeData[title]
-                  : truncateText(typeData[title], 110)}
+                <p>
+                  {expandedBox === title
+                    ? typeData[title]
+                    : truncateText(typeData[title], 110)}
+                </p>
               </div>
             </div>
           ))}

@@ -32,7 +32,7 @@ function About() {
                 </p>{" "}
               </div>
               <p className="about-paragraph about-paragraph-1">
-                Jestem <b> psychologiem </b> i <b> psychoterapeutką </b>w
+                Jestem <b> psychologiem </b> i <b> psychoterapeutką </b> w
                 trakcie 4-letniego szkolenia w Szkole Psychoterapii Gestalt,
                 która posiada akredytację EAGT (European Association of Gestalt
                 Therapy). Ukończyłam także kurs podstawowy i zaawansowany
@@ -77,9 +77,9 @@ function About() {
                 jest początkiem zmiany.
               </p>
               <p className="about-paragraph">
-                Pracuję indywidualnie z <b> osobami dorosłymi</b> i z{" "}
-                <b> młodzieżą </b> w wieku od 16 roku życia. <b> Każda osoba</b>
-                , bez względu na płeć, wyznanie, kolor skóry, orientację jest u
+                Pracuję indywidualnie z <b>osobami dorosłymi </b> i z{" "}
+                <b>młodzieżą </b> w wieku od 16 roku życia. <b> Każda osoba</b>,
+                bez względu na płeć, wyznanie, kolor skóry, orientację jest u
                 mnie
                 <b> mile widziana</b>.
               </p>

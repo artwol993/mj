@@ -31,7 +31,7 @@ function Services() {
                 Psychoterapia Gestalt jest jednym z wiodących podejść nurtu
                 humanistycznego. Oznacza to, że w centrum jej zainteresowania
                 stoi człowiek, jego zasoby oraz relacja międzyludzka.
-                Współczesna psychoterapia Gestalt zakłada, że{" "}
+                Współczesna psychoterapia Gestalt zakłada, że
                 <b> każdy człowiek ma </b> w sobie <b> potencjał do rozwoju </b>{" "}
                 i ma możliwość satysfakcjonującego życia w wybranym środowisku.
                 Jest to możliwe do osiągnięcia przy spełnieniu warunku
