@@ -62,8 +62,8 @@ function About() {
               </p>
               <p className="about-paragraph">
                 Superwizuję swoją praktykę indywidualną i kieruję się Kodeksami
-                Etyki Zawodowej Psychologa i Polskiego Towarzystwa Psychoterapii
-                i Gestalt.
+                Etyki Zawodowej Psychologa i Polskiego Towarzystwa
+                <b> Psychoterapii </b> Gestalt.
               </p>
               <p className="about-paragraph">
                 W pracy psychoterapeutki ważna jest dla mnie <b> otwartość </b>

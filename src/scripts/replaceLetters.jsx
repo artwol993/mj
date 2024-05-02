@@ -3,7 +3,7 @@ import $ from "jquery";
 function replaceLetters() {
   $(document).ready(function () {
     console.log("Skrypt działa!");
-    $("p, h1, h2, h3, h4, li, b").each(function () {
+    $("p, h1, h2, h3, h4, b").each(function () {
       var htmlContent = $(this).html();
       var lettersToReplace = [
         "a",
