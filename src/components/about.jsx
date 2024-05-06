@@ -29,7 +29,7 @@ function About() {
                 <h1 className="about-name-h1">Marzanna Jakoniuk</h1>
                 <p className="about-paragraph about-name-paragraph">
                   Psycholog <br></br>Psychoterapeutka
-                </p>{" "}
+                </p>
               </div>
               <p className="about-paragraph about-paragraph-1">
                 Jestem <b> psychologiem </b> i <b> psychoterapeutką </b> w
