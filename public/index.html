@@ -28,21 +28,6 @@
       content="Strona Marzanny Jakoniuk - psychoterapeuty specjalizującej się w terapii metodą Gestalt. Poznaj jej usługi i doświadczenie zawodowe."
     />
 
-    <!-- <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="5680555b-c840-4871-9d06-08b3579e3350"
-      data-blockingmode="auto"
-      type="text/javascript"
-    ></script>
-
-    <script
-      id="CookieDeclaration"
-      src="https://consent.cookiebot.com/5680555b-c840-4871-9d06-08b3579e3350/cd.js"
-      type="text/javascript"
-      async
-    ></script> -->
-
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -92,5 +77,61 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <div
+      id="cookie-banner"
+      style="
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f8d7da;
+        color: #721c24;
+        text-align: center;
+        padding: 15px;
+        z-index: 1000;
+      "
+    >
+      <span
+        >Nasza strona używa plików cookie, aby zapewnić najlepsze doświadczenia.
+        Kontynuując przeglądanie, zgadzasz się na ich użycie.
+        <a
+          href="https://marzannajakoniuk.pl/polityka-cookies"
+          target="_blank"
+          style="color: #721c24; text-decoration: underline"
+          >Przeczytaj więcej</a
+        >.</span
+      >
+      <button
+        id="accept-cookies"
+        style="
+          margin-left: 20px;
+          background-color: #721c24;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          cursor: pointer;
+        "
+      >
+        Zgadzam się
+      </button>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sprawdź, czy cookies zostały już zaakceptowane
+        if (!localStorage.getItem("cookiesAccepted")) {
+          document.getElementById("cookie-banner").style.display = "block";
+        }
+
+        // Akceptacja cookies
+        document
+          .getElementById("accept-cookies")
+          .addEventListener("click", function () {
+            localStorage.setItem("cookiesAccepted", "true");
+            document.getElementById("cookie-banner").style.display = "none";
+          });
+      });
+    </script>
   </body>
 </html>
