@@ -35,7 +35,9 @@ function Contact() {
               </div>
             </div>
           </div>
-          <p className="map-paragraph">Warszawa Miedzeszyn, ul. Agrestowa 4</p>
+          <p className="map-paragraph">
+            Warszawa Miedzeszyn,<br></br> ul. Agrestowa 4
+          </p>
           <div className="map-container">
             <div className="map">
               <iframe

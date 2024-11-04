@@ -1,5 +1,6 @@
 # Zależności
 /node_modules/
+.history
 
 # Katalogi produkcyjne
 /build/
