@@ -16,7 +16,7 @@ function Contact() {
         >
           <div className="contact-box">
             <div className="contact-box-row">
-              <a className="contact-box-link" href="tel:+48509019090">
+              <a className="contact-box-link" href="tel:+48509019090" aria-label="Call us">
                 <div className="icon phone-icon"></div>
                 <div className="contact-link-p">
                   <p>+48 501 783 847</p>
@@ -35,23 +35,37 @@ function Contact() {
               </div>
             </div>
           </div>
-          <p className="map-paragraph">
-            Warszawa Miedzeszyn,<br></br> ul. Agrestowa 4
-          </p>
-          <div className="map-container">
-            <div className="map">
-              <iframe
-                width="100%"
-                height="600"
-                frameBorder="0"
-                scrolling="no"
-                marginHeight="0"
-                marginWidth="0"
-                title="address google map"
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Agrestowa%204%20warszawa+(Psychoterapia%20-%20Marzanna%20Jakoniuk%20)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              >
-                <a href="https://www.gps.ie/">gps devices</a>
-              </iframe>
+          <div className="map-section">
+            <div className="map-container">
+             <p className="map-paragraph">
+                Warszawa Miedzeszyn,<br></br> ul. Agrestowa 4
+              </p>
+              <div className="map-box">
+                <div className="map">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    frameBorder="0"
+                    scrolling="no"
+                    marginHeight="0"
+                    marginWidth="0"
+                    title="address google map"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Agrestowa%204%20warszawa+(Psychoterapia%20-%20Marzanna%20Jakoniuk%20)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  >
+                    <a href="https://www.gps.ie/">gps devices</a>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+            <div className="map-container">
+             <p className="map-paragraph">
+             Warszawa Mokotów,<br></br> ul. Tyniecka 38
+              </p>
+              <div className="map-box">
+                <div className="map">
+                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%20Warszawa%20Mokot%C3%B3w%20ul.%20Tyniecka%2038+(Marzanna%20Jakoniuk)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps map</a></iframe>
+                </div>
+              </div>
             </div>
           </div>
 
