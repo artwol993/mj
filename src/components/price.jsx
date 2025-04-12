@@ -22,8 +22,8 @@ function Price() {
           viewport={{ once: true }}
           variants={containerVariants}
         >
-          <p className="price__text"> Psychoterapia - 200 zł </p>
-          <p className="price__text">Konsultacja psychologiczna - 200 zł</p>
+          <p className="price__text"> Psychoterapia - 220 zł </p>
+          <p className="price__text">Konsultacja psychologiczna - 220 zł</p>
         </motion.div>
       </div>
     </>
